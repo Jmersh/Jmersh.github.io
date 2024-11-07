@@ -3,7 +3,7 @@ published: true
 ---
 ---
 
-## AI Innovation: Orca and Progressive Learning
+# AI Innovation: Orca and Progressive Learning
 Recent efforts have focused on creating smaller AI models by imitating large foundation models (LFMs). However, issues such as limited imitation signals and homogeneous training data have proven to be challenging. Orca, an innovative model developed by Microsoft Research, was developed to overcome these obstacles using a progressive learning approach.
 
 ## Overcoming Imitation Learning Challenges
