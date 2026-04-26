@@ -38,17 +38,9 @@ social:
   email: # change to your email address
   links:
     # The first element serves as the copyright owner's link
-<<<<<<< HEAD
-    - https://www.linkedin.com/in/jordan-mershimer/
     - https://www.linkedin.com/in/jordan-mershimer/
     - https://github.com/jmersh
     - https://x.com/JordanMershimer
-=======
-    - https://www.linkedin.com/in/jordan-mershimer/  # change to your twitter homepage
-    - https://github.com/jmersh 
-    - https://x.com/JordanMershimer 
-    - https://www.linkedin.com/in/jordan-mershimer/
->>>>>>> d827ee24db6087b13c4e309fd9ff076f322959f2
     # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
