@@ -1,6 +1,6 @@
 ---
 title: "GnuPG Brings Post-Quantum Crypto Closer to Everyday Use"
-date: 2026-04-26 16:45:00 -0400
+date: 2026-04-26 15:45:00 -0400
 categories: [Security, Engineering]
 tags: [post-quantum-cryptography, cryptography, gnupg, security, quantum-computing]
 description: "GnuPG's ML-KEM support shows post-quantum cryptography moving from standards into everyday tools, and why crypto agility matters now for software teams."
