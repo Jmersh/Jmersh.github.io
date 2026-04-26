@@ -1,8 +1,13 @@
 ---
+<<<<<<< HEAD
+=======
+# the default layout is 'page'
+>>>>>>> v7.5.0
 icon: fas fa-info-circle
 order: 4
 ---
 
+<<<<<<< HEAD
 # About Me
 
 Hello, there! Allow me to introduce myself: I'm **Jordan Mershimer**, a Research Engineer and Project Manager specializing in **sustainable battery technology**. My journey began as a _Chemist and Biochemist_, and has evolved to combine scientific expertise with engineering innovation and project leadership. With a strong foundation in _Physics_ and proficiency in _Python programming, PLC systems, and engineering design_, I work at the fascinating intersection of **science, sustainability, and technology**.
@@ -44,3 +49,7 @@ Through this blog, I share insights from my experiences at the intersection of *
 I aim to provide valuable perspectives and spark meaningful discussions.
 
 _Welcome to my corner of the web, where science meets sustainability and innovation never stops!_
+=======
+> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
+{: .prompt-tip }
+>>>>>>> v7.5.0
