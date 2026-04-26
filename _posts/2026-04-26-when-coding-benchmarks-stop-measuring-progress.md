@@ -82,7 +82,7 @@ A good evaluation plan for coding agents should include:
 
 This connects to a broader engineering theme I care about: simple process tools often protect complex work. In [Finding Excellence in Simplicity: My Journey with "The Checklist Manifesto"](/posts/Lessons-Learned-A-Checklist-Manifesto/), I wrote about checklists as a way to make expertise more reliable. AI evaluation needs the same humility. Before trusting a model result, check what was measured, how it was measured, and what could have leaked.
 
-It also connects back to the earlier discussion of model learning and evaluation in [AI Innovation: Orca and Progressive Learning](/posts/AI-Innovation%20-Orca-and-Progressive-Learning/). As models learn from richer traces, explanations, and public examples, evaluation has to become more careful about what information is available before the test begins.
+It also connects back to the earlier discussion of model learning and evaluation in [AI Innovation: Orca and Progressive Learning](/posts/AI-Innovation-Orca-and-Progressive-Learning/). As models learn from richer traces, explanations, and public examples, evaluation has to become more careful about what information is available before the test begins.
 
 ## What This Means For AI Coding Agents
 
