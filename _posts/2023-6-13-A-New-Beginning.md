@@ -1,38 +1,68 @@
 ---
-layout: post
-title: A Whole New Beginning
-published: true
+title: "A Whole New Beginning"
+date: 2023-06-13 09:00:00 -0400
+categories: [Personal, Blog]
+tags: [github-pages, blogging, portfolio, learning, career]
+description: "A welcome post on rebuilding this site as a cleaner technical portfolio for software, AI, engineering, chemistry, physics, learning, and growth."
+media_subpath: /assets/img/posts/2023-06-13-a-whole-new-beginning/
+image:
+  path: preview.jpg
+  alt: "A laptop and organized markdown pages moving into a polished GitHub Pages website"
+math: false
+mermaid: false
 ---
----
 
-If you've ever found yourself knee-deep in moving boxes, wrapping breakables in bubble wrap, and wondering why in the world you own so many T-shirts, then you know a thing or two about the thrills and spills of moving. The good, the bad, the **"why did I ever keep this?!"**—it's all part and parcel of embarking on a fresh chapter. 
+Starting a new site is more than a formatting project. It is a chance to decide what kind of trail I want my work to leave behind.
 
-Now, imagine this scenario, but in the digital world, with blog posts instead of boxes and lines of code instead of bubble wrap. You got it, folks! I've been elbows deep in my digital moving process, transitioning my older blog posts to my new, sleek, and dare I say, impressive [GitHub.io site](https://github.com/Jmersh/).
+This blog began as a cleaner home for older posts, technical notes, and ideas that were scattered across previous attempts at writing online. Some of those pieces were rough. Some were overexcited. Some needed better structure. But underneath the dust there was a useful pattern: I kept coming back to the same kinds of questions.
 
-While some might shudder at the prospect of sifting through years of blog posts, I see it as a kind of _treasure hunt_. And like any good treasure hunt, you find a collection of **"old gold"**—those posts that bring a smile to your face or a "hmm" to your lips. Those golden nuggets of ideas, thoughts, musings, and explorations of the scientific and tech world that I had almost forgotten about.
+How do software systems become more reliable? How can AI help us reason through complex engineering problems without replacing the need for judgment? What can chemistry, biochemistry, physics, and data teach each other when they are treated as connected fields instead of separate boxes?
 
-Let me assure you, those 'gold nuggets' are finding a new home on my GitHub.io page. They're being polished, given a fancy new coat of formatting, and being placed carefully into my digital vault.
+Those are the kinds of questions I want this site to make room for.
 
-## What's a New Home Without New Furnishings?
+![A technical blog moving into a new GitHub Pages home](preview.jpg){: w="700" h="394" .shadow }
+_A better site is not just a new container. It is a chance to organize the thinking inside it._
 
-In addition to relocating my older posts, I'm thrilled to share that I've been conjuring up a smorgasbord of new content. Yes, your digital palate is in for a real treat! I've been brewing a potent blend of data, tech, and science, peppered with the latest trends and advancements. 
+## Why Move The Blog Here
 
-If you're wondering what to expect, let me give you a sneak peek. Ever wondered how catalyst design could shape our future? Or perhaps you're curious about the ways machine learning is revolutionizing data analysis in the scientific community? Maybe you're just looking for some tips on Python programming or IT troubleshooting? I've got you covered. 
+GitHub Pages is a good fit for the kind of writing I want to do because it keeps the site close to the same habits that make software maintainable: version control, plain text, small improvements, and a structure that can evolve without becoming mysterious.
 
-For the fans of my Powerlifting and CrossFit journeys, rest assured those posts are not only being moved but also expanded. Who knows? You might find a few posts about the parallels between weightlifting and data analysis! 
+That matters to me. A professional blog should not feel like a scrapbook with a nicer font. It should show how someone thinks, how they learns, what they pay attention to, and how their interests connect over time.
 
-In essence, this moving process symbolizes not just a change of digital scenery, but a rejuvenation, a reboot—a whole new beginning. 
+For me, those interests sit in a few overlapping areas:
 
-Stay tuned for the ride—it's going to be entertaining, engaging, and packed full of everything you've enjoyed and much, much more. 
+- Software engineering, automation, and practical tooling.
+- AI systems, evaluation, and applied machine learning.
+- Chemistry, materials, catalysis, and clean energy.
+- Biochemistry and physics as ways of understanding complex systems.
+- Professional process: checklists, reliability, communication, and learning.
 
-Bear with me through this transition and pardon the digital dust. Soon, this new site will feel just like home—full of fond old memories and sparking with the promise of exciting new ones.
+The goal is not to sound like an expert in every room. The goal is to build a thoughtful public record of curiosity and progress.
 
-Let's step into this whole new beginning, together.
+## What I Want This Site To Become
 
-Thank you for being part of my journey. 
+I want the posts here to do more than summarize interesting topics. A good technical post should make a useful connection, explain the background clearly, and leave the reader with a practical takeaway.
 
-Till next time,
+That means I want the site to have a few standards:
 
-Jordan Mershimer
+- Clear titles and descriptions.
+- Sources where the claims need them.
+- Diagrams or images when they make the idea easier to understand.
+- Enough technical detail to be useful without turning every post into a textbook.
+- A tone that sounds like a working engineer thinking in public, not a press release.
 
-P.S. If you stumble upon a moving box that I've forgotten, feel free to reach out. The world of code and tech can sometimes be as slippery as a box of packing peanuts!
+Some posts will be exploratory. Some will be more polished. Some will be about science, some about code, and some about the habits that make both easier to do well.
+
+## The Value Of Keeping Older Work
+
+Refreshing older posts is a little uncomfortable because it shows the distance between where I was and where I am now. That is also the point.
+
+Old writing captures the path. It shows what caught my attention, what I was trying to understand, and what questions kept coming back. Cleaning it up does not erase that. It makes the useful parts easier to revisit.
+
+That is how I want to treat this site: not as a perfect archive, but as a living portfolio.
+
+## Moving Forward
+
+This is the starting point for a more deliberate writing practice. I want this blog to become a place where software, AI, engineering, chemistry, biochemistry, and physics can sit at the same table.
+
+The best ideas often show up at the boundaries between fields. This site is where I plan to keep looking for them.
