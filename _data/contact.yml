@@ -6,15 +6,9 @@
 - type: twitter
   icon: "fa-brands fa-x-twitter"
 
-<<<<<<< HEAD
 #- type: email
- # icon: "fas fa-envelope"
-  #noblank: true # open link in current tab
-=======
-- type: email
-  icon: "fas fa-envelope"
-  noblank: true # open link in current tab
->>>>>>> v7.5.0
+# icon: "fas fa-envelope"
+#noblank: true # open link in current tab
 
 - type: rss
   icon: "fas fa-rss"
