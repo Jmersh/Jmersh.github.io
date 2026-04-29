@@ -7,7 +7,7 @@ description: "GitHub, Copilot billing, Ghostty, and security research show why t
 media_subpath: /assets/img/posts/2026-04-28-git-forges-critical-infrastructure/
 image:
   path: preview.png
-  alt: "Technical diagram of repository hosting as critical infrastructure with code, issues, CI, releases, and archives"
+  alt: "Abstract infrastructure hub connecting code review, CI, security, archival storage, and AI cost signals"
 math: false
 mermaid: true
 ---
@@ -23,7 +23,7 @@ Those are different stories, but they point at the same engineering reality: a f
 That makes forge dependence an architecture decision.
 
 ![Repository hosting as critical infrastructure](preview.png){: w="700" h="394" .shadow }
-_A modern code forge carries far more than git objects: it carries workflow state, release evidence, and community memory._
+_A modern code forge is not just a git remote. It is the hub where review, CI, security, release evidence, AI workflow, and project memory converge._
 
 ## The Forge Is More Than Git
 
@@ -104,6 +104,8 @@ That context is not decorative. It is often the difference between "this depende
 ## A Practical Resilience Model
 
 Teams do not need to abandon GitHub, GitLab, Codeberg, Forgejo, or Azure DevOps to learn from this moment. They do need to know what they are depending on.
+
+If this diagram feels a little knotted, good. That is the point: the dependency graph around a repository can become more complicated than the repository itself.
 
 ```mermaid
 flowchart LR
