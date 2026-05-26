@@ -1,0 +1,79 @@
+<svg width="1400" height="788" viewBox="0 0 1400 788" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="88" y1="72" x2="1290" y2="708" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#081826"/>
+      <stop offset="1" stop-color="#112D3F"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="240" y1="150" x2="1170" y2="632" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F2536" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#153C52" stop-opacity="0.72"/>
+    </linearGradient>
+    <linearGradient id="ribbonA" x1="294" y1="237" x2="723" y2="502" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6FE3FF"/>
+      <stop offset="1" stop-color="#2AC1A6"/>
+    </linearGradient>
+    <linearGradient id="ribbonB" x1="701" y1="254" x2="1091" y2="540" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD36C"/>
+      <stop offset="1" stop-color="#FF8A65"/>
+    </linearGradient>
+    <filter id="shadow" x="155" y="93" width="1090" height="614" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="18"/>
+      <feGaussianBlur stdDeviation="28"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0156863 0 0 0 0 0.0823529 0 0 0 0 0.133333 0 0 0 0.42 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1" result="shape"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="788" rx="28" fill="url(#bg)"/>
+  <g opacity="0.22" stroke="#69D2FF" stroke-width="1">
+    <path d="M141 162H1259"/>
+    <path d="M141 244H1259"/>
+    <path d="M141 326H1259"/>
+    <path d="M141 408H1259"/>
+    <path d="M141 490H1259"/>
+    <path d="M141 572H1259"/>
+    <path d="M240 89V699"/>
+    <path d="M402 89V699"/>
+    <path d="M564 89V699"/>
+    <path d="M726 89V699"/>
+    <path d="M888 89V699"/>
+    <path d="M1050 89V699"/>
+    <path d="M1212 89V699"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="211" y="131" width="978" height="502" rx="30" fill="url(#panel)" stroke="#7FDBFF" stroke-opacity="0.22"/>
+  </g>
+  <g opacity="0.5" stroke="#7FDBFF" stroke-width="2">
+    <path d="M316 245L448 311L618 260L760 346L930 271L1062 332"/>
+    <path d="M304 506L444 436L603 519L756 424L932 489L1085 410"/>
+    <path d="M372 202L372 560"/>
+    <path d="M1040 202L1040 560"/>
+  </g>
+  <path d="M325 468C361 446 387 403 426 386C462 370 503 382 536 362C568 343 581 301 613 282C655 257 716 253 759 278C813 309 823 379 780 420C745 454 688 460 648 490C609 520 587 574 538 583C485 593 434 544 401 503C382 480 353 471 325 468Z" fill="url(#ribbonA)" fill-opacity="0.9"/>
+  <path d="M616 319C646 285 687 238 735 229C796 218 847 276 903 301C956 324 1025 321 1065 370C1096 408 1106 469 1078 510C1048 554 984 563 930 556C881 550 841 517 795 501C741 481 665 482 635 433C611 394 588 351 616 319Z" fill="url(#ribbonB)" fill-opacity="0.88"/>
+  <g stroke="#D8F6FF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M315 471C353 434 378 398 422 389C460 381 500 395 536 377C570 360 591 327 626 312C660 297 701 296 733 314"/>
+    <path d="M640 335C680 299 723 273 769 277C815 281 851 321 892 338C936 356 986 354 1027 381C1056 400 1077 429 1085 462"/>
+  </g>
+  <g fill="#D7FBFF">
+    <circle cx="370" cy="430" r="8"/>
+    <circle cx="455" cy="383" r="8"/>
+    <circle cx="548" cy="370" r="8"/>
+    <circle cx="642" cy="307" r="8"/>
+    <circle cx="742" cy="310" r="8"/>
+    <circle cx="838" cy="309" r="8"/>
+    <circle cx="931" cy="352" r="8"/>
+    <circle cx="1018" cy="384" r="8"/>
+  </g>
+  <g opacity="0.9">
+    <rect x="272" y="171" width="172" height="42" rx="21" fill="#0D3A50"/>
+    <text x="358" y="198" fill="#DFFAFF" font-family="Segoe UI, Arial, sans-serif" font-size="22" text-anchor="middle">SEQUENCE</text>
+    <rect x="612" y="171" width="178" height="42" rx="21" fill="#10445B"/>
+    <text x="701" y="198" fill="#DFFAFF" font-family="Segoe UI, Arial, sans-serif" font-size="22" text-anchor="middle">ATTENTION</text>
+    <rect x="953" y="171" width="174" height="42" rx="21" fill="#225061"/>
+    <text x="1040" y="198" fill="#FFF6DE" font-family="Segoe UI, Arial, sans-serif" font-size="22" text-anchor="middle">STRUCTURE</text>
+  </g>
+</svg>
