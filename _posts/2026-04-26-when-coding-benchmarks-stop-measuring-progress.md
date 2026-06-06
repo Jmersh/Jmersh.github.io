@@ -6,7 +6,7 @@ tags: [ai, software-engineering, benchmarks, coding-agents, evaluation]
 description: "SWE-bench Verified shows why AI coding benchmarks need stronger tests, contamination controls, and human review as coding agents rapidly improve."
 media_subpath: /assets/img/posts/2026-04-26-when-coding-benchmarks-stop-measuring-progress/
 image:
-  path: preview.jpg
+  path: preview.svg
   alt: "Abstract benchmark dashboard showing tests, warnings, code patches, and agent evaluation paths"
 math: false
 mermaid: true
@@ -16,7 +16,7 @@ AI coding agents are getting better, but the benchmarks used to measure them are
 
 OpenAI made that point directly in February 2026 when it said it no longer uses SWE-bench Verified as its primary measure of frontier coding capability and recommends SWE-bench Pro instead. The reason was not that SWE-bench Verified was careless. In fact, it was created to improve on earlier SWE-bench issues by using human review. The lesson is sharper than that: even good evaluations can expire.
 
-![Benchmark dashboard with coding-agent evaluation signals](preview.jpg){: w="700" h="394" .shadow }
+![Benchmark dashboard with coding-agent evaluation signals](preview.svg){: w="700" h="394" .shadow }
 _A useful coding benchmark has to test the behavior we care about, not just the behavior that is easiest to score._
 
 ## Why This Matters Now

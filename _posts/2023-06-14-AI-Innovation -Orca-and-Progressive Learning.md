@@ -6,7 +6,7 @@ tags: [ai, language-models, instruction-tuning, model-distillation, evaluation]
 description: "A refreshed look at Orca, explanation tuning, and why smaller language models need richer supervision, stronger data, and better evaluation."
 media_subpath: /assets/img/posts/2023-06-14-ai-innovation-orca-progressive-learning/
 image:
-  path: preview.jpg
+  path: preview.svg
   alt: "A large teacher model guiding a smaller model through explanation traces and evaluations"
 math: false
 mermaid: true
@@ -18,7 +18,7 @@ The Orca paper argued that this is not enough. A small model can learn to imitat
 
 Microsoft Research's approach was to train a 13-billion-parameter model on richer signals from large foundation models, including explanation traces, step-by-step reasoning-style outputs, and diverse task formats. The result was not simply a smaller chatbot. It was an experiment in whether better supervision could make a smaller model more capable.
 
-![Progressive learning from explanation traces](preview.jpg){: w="700" h="394" .shadow }
+![Progressive learning from explanation traces](preview.svg){: w="700" h="394" .shadow }
 _A student model learns more from a teacher when the training data captures process, not only final answers._
 
 {: .prompt-info }

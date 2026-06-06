@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="788" viewBox="0 0 1400 788" role="img" aria-labelledby="title desc">
+  <title id="title">Post-quantum cryptography reaches everyday tools</title>
+  <desc id="desc">Classical RSA and ECC keys give way to lattice-based ML-KEM and ML-DSA, shipped in GnuPG, framed as crypto agility.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#0a0f1c"/>
+      <stop offset="100%" stop-color="#0f1a30"/>
+    </linearGradient>
+    <linearGradient id="sig" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <pattern id="grid" width="58" height="58" patternUnits="userSpaceOnUse">
+      <path d="M58 0 H0 V58" fill="none" stroke="#9fb3cf" stroke-width="1" opacity="0.05"/>
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1400" height="788" fill="url(#bg)"/>
+  <rect width="1400" height="788" fill="url(#grid)"/>
+  <ellipse cx="800" cy="430" rx="470" ry="300" fill="url(#glow)"/>
+
+  <!-- header -->
+  <text x="92" y="92" fill="#38bdf8" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="22" font-weight="700" letter-spacing="5">SECURITY · POST-QUANTUM</text>
+  <text x="90" y="152" fill="#eef3fb" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="54" font-weight="800">Post-quantum crypto reaches everyday tools</text>
+  <text x="92" y="198" fill="#93a7c4" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="25">GnuPG ships ML-KEM. The migration just became concrete.</text>
+
+  <!-- classical panel -->
+  <rect x="108" y="262" width="372" height="286" rx="22" fill="#ffffff" fill-opacity="0.035" stroke="#94a3b8" stroke-opacity="0.20" stroke-width="1.5"/>
+  <text x="140" y="312" fill="#8ea3bf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="18" font-weight="700" letter-spacing="3">CLASSICAL</text>
+  <text x="140" y="372" fill="#cbd5e1" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="40" font-weight="800">RSA · ECC</text>
+  <!-- key glyph -->
+  <g stroke="#64748b" stroke-width="6" fill="none">
+    <circle cx="168" cy="446" r="22"/>
+    <path d="M188 446 H300" stroke-linecap="round"/>
+    <path d="M272 446 V470 M300 446 V466" stroke-linecap="round"/>
+  </g>
+  <rect x="140" y="494" width="312" height="38" rx="10" fill="#f59e0b" fill-opacity="0.12"/>
+  <circle cx="162" cy="513" r="6" fill="#fbbf24"/>
+  <text x="180" y="520" fill="#fbbf24" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="18">at risk from a large quantum computer</text>
+
+  <!-- arrow -->
+  <path d="M498 405 H548" stroke="url(#sig)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M548 405 l-20 -11 v22 z" fill="#6366f1"/>
+  <text x="470" y="372" fill="#7e90ad" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="16" text-anchor="middle">migrate</text>
+
+  <!-- post-quantum panel -->
+  <rect x="566" y="244" width="468" height="322" rx="22" fill="#ffffff" fill-opacity="0.05" stroke="url(#sig)" stroke-width="2"/>
+  <text x="598" y="296" fill="#38bdf8" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="18" font-weight="700" letter-spacing="3">POST-QUANTUM</text>
+  <text x="598" y="350" fill="#eef3fb" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="36" font-weight="800">ML-KEM · ML-DSA</text>
+  <text x="598" y="384" fill="#7e90ad" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="18">lattice-based, FIPS 203 / 204</text>
+  <!-- lattice motif -->
+  <g>
+    <g stroke="#22d3ee" stroke-width="1.5" opacity="0.55">
+      <path d="M620 470 L700 442 L780 470 L860 442 L940 470 M620 470 L700 498 L780 470 L860 498 L940 470 M700 442 L700 498 M860 442 L860 498 M780 470 L780 524"/>
+    </g>
+    <g fill="#67e8f9">
+      <circle cx="620" cy="470" r="6"/><circle cx="700" cy="442" r="6"/><circle cx="780" cy="470" r="6"/><circle cx="860" cy="442" r="6"/><circle cx="940" cy="470" r="6"/>
+      <circle cx="700" cy="498" r="6"/><circle cx="860" cy="498" r="6"/><circle cx="780" cy="524" r="6"/>
+    </g>
+  </g>
+  <!-- shield check -->
+  <path d="M978 300 l34 12 v34 c0 26 -16 42 -34 52 c-18 -10 -34 -26 -34 -52 v-34 z" fill="#34d399" fill-opacity="0.16" stroke="#34d399" stroke-width="2"/>
+  <path d="M962 350 l12 12 24 -28" fill="none" stroke="#34d399" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- crypto agility steps -->
+  <text x="1086" y="296" fill="#8ea3bf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="18" font-weight="700" letter-spacing="3">CRYPTO AGILITY</text>
+  <g font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="20" fill="#cdd9ea">
+    <g><circle cx="1090" cy="344" r="5" fill="#818cf8"/><text x="1108" y="351">Inventory</text></g>
+    <g><circle cx="1090" cy="392" r="5" fill="#818cf8"/><text x="1108" y="399">Upgrade</text></g>
+    <g><circle cx="1090" cy="440" r="5" fill="#818cf8"/><text x="1108" y="447">Test</text></g>
+    <g><circle cx="1090" cy="488" r="5" fill="#818cf8"/><text x="1108" y="495">Maintain</text></g>
+  </g>
+  <path d="M1090 356 V484" stroke="#818cf8" stroke-opacity="0.4" stroke-width="2"/>
+
+  <!-- footer -->
+  <line x1="92" y1="690" x2="1308" y2="690" stroke="#94a3b8" stroke-opacity="0.22" stroke-width="1"/>
+  <text x="92" y="730" fill="#9fb3cf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="23">Migration is less one algorithm swap than <tspan fill="#38bdf8" font-weight="700">crypto agility</tspan>: making cryptographic systems easy to change.</text>
+</svg>

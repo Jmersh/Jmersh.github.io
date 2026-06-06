@@ -6,7 +6,7 @@ tags: [github, copilot, software-engineering, platform-engineering, developer-to
 description: "GitHub, Copilot billing, Ghostty, and security research show why teams should treat git forges as critical engineering infrastructure, not hosting."
 media_subpath: /assets/img/posts/2026-04-28-git-forges-critical-infrastructure/
 image:
-  path: preview.png
+  path: preview.svg
   alt: "Abstract infrastructure hub connecting code review, CI, security, archival storage, and AI cost signals"
 math: false
 mermaid: true
@@ -22,7 +22,7 @@ Those are different stories, but they point at the same engineering reality: a f
 
 That makes forge dependence an architecture decision.
 
-![Repository hosting as critical infrastructure](preview.png){: w="700" h="394" .shadow }
+![Repository hosting as critical infrastructure](preview.svg){: w="700" h="394" .shadow }
 _A modern code forge is not just a git remote. It is the hub where review, CI, security, release evidence, AI workflow, and project memory converge._
 
 ## The Forge Is More Than Git

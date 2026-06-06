@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="788" viewBox="0 0 1400 788" role="img" aria-labelledby="title desc">
+  <title id="title">Orca and progressive learning</title>
+  <desc id="desc">A large teacher model produces explanation traces that train a smaller student model, which is then tested on harder evaluation.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#0a0f1c"/><stop offset="100%" stop-color="#0f1a30"/>
+    </linearGradient>
+    <linearGradient id="sig" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22d3ee"/><stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <pattern id="grid" width="58" height="58" patternUnits="userSpaceOnUse">
+      <path d="M58 0 H0 V58" fill="none" stroke="#9fb3cf" stroke-width="1" opacity="0.05"/>
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.4"/><stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1400" height="788" fill="url(#bg)"/>
+  <rect width="1400" height="788" fill="url(#grid)"/>
+  <ellipse cx="640" cy="430" rx="500" ry="290" fill="url(#glow)"/>
+
+  <text x="92" y="92" fill="#38bdf8" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="22" font-weight="700" letter-spacing="5">AI · MODEL TRAINING</text>
+  <text x="90" y="152" fill="#eef3fb" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="54" font-weight="800">Orca and progressive learning</text>
+  <text x="92" y="198" fill="#93a7c4" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="25">Learn the reasoning, not just the final answer.</text>
+
+  <!-- pipeline arrows -->
+  <g stroke="url(#sig)" stroke-width="5" stroke-linecap="round" fill="none">
+    <path d="M258 420 H300"/>
+    <path d="M642 420 H706"/>
+    <path d="M820 420 H872"/>
+  </g>
+  <g fill="#6366f1">
+    <path d="M300 420 l-18 -10 v20 z"/><path d="M706 420 l-18 -10 v20 z"/><path d="M872 420 l-18 -10 v20 z"/>
+  </g>
+
+  <!-- teacher -->
+  <circle cx="184" cy="420" r="74" fill="#ffffff" fill-opacity="0.05" stroke="url(#sig)" stroke-width="2"/>
+  <text x="184" y="414" text-anchor="middle" fill="#eef3fb" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="24" font-weight="800">Teacher</text>
+  <text x="184" y="442" text-anchor="middle" fill="#8ea3bf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17">large model</text>
+
+  <!-- traces panel -->
+  <rect x="300" y="318" width="338" height="204" rx="18" fill="#ffffff" fill-opacity="0.04" stroke="#94a3b8" stroke-opacity="0.20" stroke-width="1.5"/>
+  <text x="324" y="356" fill="#38bdf8" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="700" letter-spacing="2">EXPLANATION TRACES</text>
+  <g font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="19" fill="#cdd9ea">
+    <g><circle cx="332" cy="392" r="5" fill="#67e8f9"/><text x="348" y="399">Step 1: restate the problem</text></g>
+    <g><circle cx="332" cy="430" r="5" fill="#67e8f9"/><text x="348" y="437">Step 2: reason through it</text></g>
+    <g><circle cx="332" cy="468" r="5" fill="#67e8f9"/><text x="348" y="475">Step 3: justify the answer</text></g>
+  </g>
+  <text x="324" y="506" fill="#7e90ad" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="16">process, not just the final answer</text>
+
+  <!-- student -->
+  <circle cx="764" cy="420" r="58" fill="#ffffff" fill-opacity="0.05" stroke="#94a3b8" stroke-opacity="0.35" stroke-width="2"/>
+  <text x="764" y="414" text-anchor="middle" fill="#eef3fb" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="22" font-weight="800">Student</text>
+  <text x="764" y="440" text-anchor="middle" fill="#8ea3bf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="16">13B model</text>
+
+  <!-- evaluation -->
+  <rect x="876" y="336" width="408" height="168" rx="18" fill="#ffffff" fill-opacity="0.04" stroke="#94a3b8" stroke-opacity="0.20" stroke-width="1.5"/>
+  <text x="902" y="374" fill="#8ea3bf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="700" letter-spacing="2">HARDER EVALUATION</text>
+  <path d="M906 420 l16 16 30 -38" fill="none" stroke="#34d399" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="966" y="428" fill="#cdd9ea" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="20">reasoning that holds up</text>
+  <circle cx="916" cy="468" r="6" fill="#fb7185"/>
+  <text x="934" y="475" fill="#fca5b5" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="18">style imitation fools casual checks</text>
+
+  <!-- contrast strip -->
+  <text x="92" y="600" fill="#9fb3cf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21"><tspan fill="#fb7185" font-weight="700">Imitate the answer</tspan> and it looks right;  <tspan fill="#34d399" font-weight="700">learn the process</tspan> and it reasons right.</text>
+
+  <line x1="92" y1="690" x2="1308" y2="690" stroke="#94a3b8" stroke-opacity="0.22" stroke-width="1"/>
+  <text x="92" y="730" fill="#9fb3cf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="23">A smaller model learns more when its training data captures <tspan fill="#38bdf8" font-weight="700">how</tspan>, not only <tspan fill="#38bdf8" font-weight="700">what</tspan>.</text>
+</svg>

@@ -6,7 +6,7 @@ tags: [post-quantum-cryptography, cryptography, gnupg, security, quantum-computi
 description: "GnuPG's ML-KEM support shows post-quantum cryptography moving from standards into everyday tools, and why crypto agility matters now for software teams."
 media_subpath: /assets/img/posts/2026-04-26-gnupg-post-quantum-crypto-mainline/
 image:
-  path: preview.jpg
+  path: preview.svg
   alt: "Abstract security tooling graphic with a terminal, lattice pattern, lock icon, and quantum-safe key exchange paths"
 math: false
 mermaid: true
@@ -16,7 +16,7 @@ Post-quantum cryptography is leaving the standards conversation and entering the
 
 That does not mean every encrypted file, email, package signature, or key-management workflow is suddenly quantum-safe. It means the migration is becoming concrete. The work is moving from "cryptographers should solve this" to "software teams need to inventory, upgrade, test, and maintain this."
 
-![Post-quantum cryptography moving into security tooling](preview.jpg){: w="700" h="394" .shadow }
+![Post-quantum cryptography moving into security tooling](preview.svg){: w="700" h="394" .shadow }
 _Post-quantum migration is less about one algorithm swap and more about making cryptographic systems easier to change._
 
 ## First, A Vocabulary Fix
