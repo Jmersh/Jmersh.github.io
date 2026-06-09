@@ -4,9 +4,9 @@ date: 2026-05-30 09:00:00 -0400
 categories: [AI, Software]
 tags: [agentic-ai, data-management, benchmarks, llms, databases]
 description: "RUBICON makes a useful data-management argument for AI agents, but its 100% vs 0% benchmark result is too small and too stacked to carry the claim."
-media_subpath: /assets/img/posts/2026-06-08-rubicon-agentic-ai-data-architecture/
+media_subpath: /assets/img/posts/2026-05-30-rubicon-agentic-ai-data-architecture/
 image:
-  path: preview.svg
+  path: cover.png
   alt: "Agent loop contrasted with a data-wrapper architecture"
 math: false
 mermaid: true

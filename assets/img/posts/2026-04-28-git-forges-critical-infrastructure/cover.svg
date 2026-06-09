@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="788" viewBox="0 0 1400 788" role="img" aria-label="A central forge hub connected to a mesh of service tiles with a git branch motif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0d12"/><stop offset="100%" stop-color="#11151c"/>
+    </linearGradient>
+    <radialGradient id="hub" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fdba74"/><stop offset="55%" stop-color="#f97316"/><stop offset="100%" stop-color="#9a3412"/>
+    </radialGradient>
+    <radialGradient id="oglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.4"/><stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1400" height="788" fill="url(#bg)"/>
+  <ellipse cx="700" cy="394" rx="430" ry="360" fill="url(#oglow)"/>
+
+  <!-- connections -->
+  <g stroke="#3a4250" stroke-width="2.5" fill="none">
+    <path d="M700 394 L420 220"/><path d="M700 394 L980 220"/>
+    <path d="M700 394 L300 394"/><path d="M700 394 L1100 394"/>
+    <path d="M700 394 L420 568"/><path d="M700 394 L980 568"/>
+    <path d="M700 394 L560 150"/><path d="M700 394 L840 638"/>
+  </g>
+
+  <!-- satellite service tiles -->
+  <g>
+    <g transform="translate(420 220)"><rect x="-40" y="-30" width="80" height="60" rx="12" fill="#161b23" stroke="#fb923c" stroke-width="2"/><circle cx="0" cy="0" r="7" fill="#fb923c"/></g>
+    <g transform="translate(980 220)"><rect x="-40" y="-30" width="80" height="60" rx="12" fill="#161b23" stroke="#64748b" stroke-width="2"/><circle cx="0" cy="0" r="7" fill="#94a3b8"/></g>
+    <g transform="translate(300 394)"><rect x="-40" y="-30" width="80" height="60" rx="12" fill="#161b23" stroke="#64748b" stroke-width="2"/><circle cx="0" cy="0" r="7" fill="#94a3b8"/></g>
+    <g transform="translate(1100 394)"><rect x="-40" y="-30" width="80" height="60" rx="12" fill="#161b23" stroke="#fb923c" stroke-width="2"/><circle cx="0" cy="0" r="7" fill="#fb923c"/></g>
+    <g transform="translate(420 568)"><rect x="-40" y="-30" width="80" height="60" rx="12" fill="#161b23" stroke="#64748b" stroke-width="2"/><circle cx="0" cy="0" r="7" fill="#94a3b8"/></g>
+    <g transform="translate(980 568)"><rect x="-40" y="-30" width="80" height="60" rx="12" fill="#161b23" stroke="#fb923c" stroke-width="2"/><circle cx="0" cy="0" r="7" fill="#fb923c"/></g>
+    <g transform="translate(560 150)"><rect x="-34" y="-26" width="68" height="52" rx="10" fill="#161b23" stroke="#64748b" stroke-width="2"/><circle cx="0" cy="0" r="6" fill="#94a3b8"/></g>
+    <g transform="translate(840 638)"><rect x="-34" y="-26" width="68" height="52" rx="10" fill="#161b23" stroke="#64748b" stroke-width="2"/><circle cx="0" cy="0" r="6" fill="#94a3b8"/></g>
+  </g>
+
+  <!-- git branch motif (lower left) -->
+  <g stroke="#fb923c" stroke-width="3" fill="#fdba74" opacity="0.8">
+    <path d="M150 660 V540" fill="none"/>
+    <path d="M150 600 C150 565 210 565 210 530" fill="none"/>
+    <circle cx="150" cy="660" r="8"/><circle cx="150" cy="600" r="8"/><circle cx="210" cy="530" r="8"/>
+  </g>
+
+  <!-- central forge hub -->
+  <circle cx="700" cy="394" r="96" fill="url(#hub)"/>
+  <circle cx="700" cy="394" r="96" fill="#0a0d12" fill-opacity="0.12"/>
+  <g stroke="#1a0f06" stroke-width="7" stroke-linecap="round" fill="none" opacity="0.85">
+    <circle cx="700" cy="394" r="34" stroke="#fff7ed" stroke-width="6"/>
+    <path d="M700 360 V428 M666 394 H734" stroke="#fff7ed"/>
+  </g>
+</svg>

@@ -12,22 +12,22 @@ math: false
 mermaid: false
 ---
 
-Starting a new site is more than a formatting project. It is a chance to decide what kind of trail I want my work to leave behind.
+Starting a new site is more than a layout change. It is a chance to decide what kind of trail my work should leave behind.
 
-This blog began as a cleaner home for older posts, technical notes, and ideas that were scattered across previous attempts at writing online. Some of those pieces were rough. Some were overexcited. Some needed better structure. But underneath the dust there was a useful pattern: I kept coming back to the same kinds of questions.
+This blog began as a cleaner home for older posts, technical notes, and ideas that were spread across past writing online. Some of those pieces were rough. Some ran too hot. Some needed better structure. But under the dust there was a clear pattern: I kept coming back to the same kinds of questions.
 
-How do software systems become more reliable? How can AI help us reason through complex engineering problems without replacing the need for judgment? What can chemistry, biochemistry, physics, and data teach each other when they are treated as connected fields instead of separate boxes?
+How do software systems become more reliable? How can AI help us reason through hard engineering problems without replacing the need for judgment? What can chemistry, biochemistry, physics, and data teach each other when they are treated as one connected field rather than separate boxes?
 
 Those are the kinds of questions I want this site to make room for.
 
 ![A technical blog moving into a new GitHub Pages home](preview.jpg){: w="700" h="394" .shadow }
-_A better site is not just a new container. It is a chance to organize the thinking inside it._
+_A better site is a chance to sort out the thinking inside it, not only a new shell._
 
 ## Why Move The Blog Here
 
-GitHub Pages is a good fit for the kind of writing I want to do because it keeps the site close to the same habits that make software maintainable: version control, plain text, small improvements, and a structure that can evolve without becoming mysterious.
+GitHub Pages fits this kind of writing well. It keeps the site close to the habits that make software maintainable: version control, plain text, small improvements, and a structure that can evolve without becoming hard to follow.
 
-That matters to me. A professional blog should not feel like a scrapbook with a nicer font. It should show how someone thinks, how they learns, what they pay attention to, and how their interests connect over time.
+A professional blog should read as more than a scrapbook with a nicer font. It should show how someone thinks, how they learn, what they pay attention to, and how their interests connect over time.
 
 For me, those interests sit in a few overlapping areas:
 
@@ -37,9 +37,9 @@ For me, those interests sit in a few overlapping areas:
 - Biochemistry and physics as ways of understanding complex systems.
 - Professional process: checklists, reliability, communication, and learning.
 
-The goal is not to sound like an expert in every room. The goal is to build a thoughtful public record of curiosity and progress.
+The aim is a thoughtful public record of curiosity and progress, rather than sounding like an expert in every room.
 
-## What I Want This Site To Become
+## Where This Site Is Headed
 
 I want the posts here to do more than summarize interesting topics. A good technical post should make a useful connection, explain the background clearly, and leave the reader with a practical takeaway.
 
@@ -55,11 +55,11 @@ Some posts will be exploratory. Some will be more polished. Some will be about s
 
 ## The Value Of Keeping Older Work
 
-Refreshing older posts is a little uncomfortable because it shows the distance between where I was and where I am now. That is also the point.
+Refreshing older posts is a little uncomfortable because it shows the distance between where I was and where I am now. The distance is the point.
 
-Old writing captures the path. It shows what caught my attention, what I was trying to understand, and what questions kept coming back. Cleaning it up does not erase that. It makes the useful parts easier to revisit.
+Old writing captures the path. It shows what caught my attention, what I was trying to understand, and what questions kept coming back. Cleaning it up does not erase that history. It makes the worthwhile parts easier to revisit.
 
-That is how I want to treat this site: not as a perfect archive, but as a living portfolio.
+This site works best treated as a living portfolio rather than a perfect archive.
 
 ## Moving Forward
 

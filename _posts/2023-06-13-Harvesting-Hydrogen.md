@@ -16,7 +16,7 @@ Hydrogen has an appealing promise: it can store energy, support industrial proce
 
 How do we make clean hydrogen efficiently enough, cheaply enough, and reliably enough to matter?
 
-One important route is water electrolysis, where electricity splits water into hydrogen and oxygen. The hydrogen evolution reaction, or HER, is the half-reaction that produces hydrogen gas. HER is simple to write down, but difficult to optimize in the real world because performance depends heavily on the catalyst surface.
+One important route is water electrolysis, where electricity splits water into hydrogen and oxygen. The hydrogen evolution reaction, or HER, is the half-reaction that produces hydrogen gas. HER is simple to write down. It is hard to optimize in the real world, because performance depends heavily on the catalyst surface.
 
 ![AI-assisted hydrogen catalyst discovery](preview.jpg){: w="700" h="394" .shadow }
 _Catalyst discovery is a search problem. Chemistry defines the design space, and computation helps decide where to look first._
@@ -26,9 +26,9 @@ This post has been refreshed for clarity and stronger sourcing. The core idea re
 
 ## The Catalyst Bottleneck
 
-A practical HER catalyst needs to balance several properties at once. It should adsorb hydrogen neither too strongly nor too weakly. It should remain stable under operating conditions. It should conduct charge well, expose enough active sites, and be realistic to synthesize.
+A practical HER catalyst needs to balance several properties at once. It should adsorb hydrogen neither too strongly nor too weakly. Stability under operating conditions is also required. The material must conduct charge well, expose enough active sites, and be realistic to synthesize.
 
-Platinum is highly effective, but cost and scarcity make researchers interested in alternatives. That is where two-dimensional materials, doped surfaces, heterostructures, and computational screening become attractive.
+Platinum is highly effective, but cost and scarcity make researchers interested in alternatives. Two-dimensional materials, doped surfaces, heterostructures, and computational screening become attractive at that point.
 
 The challenge is scale. Once you start varying metals, surface terminations, dopants, defects, layer structures, and synthesis routes, the number of candidates grows faster than experiments or density functional theory calculations can comfortably handle.
 
@@ -70,20 +70,20 @@ A descriptor is a compact way of representing a material to a model. In catalyst
 
 For HER, descriptors often try to capture how hydrogen binds to the surface. If hydrogen binds too weakly, the surface does not activate it. If hydrogen binds too strongly, the surface does not release it efficiently. The ideal catalyst sits near the middle.
 
-That is why descriptors linked to adsorption energy, surface electronic structure, orbital interactions, or local chemical environment can be valuable. They turn an enormous materials space into a more navigable map.
+Descriptors linked to adsorption energy, surface electronic structure, orbital interactions, or local chemical environment can therefore be valuable. They turn an enormous materials space into a more navigable map.
 
 ## The Engineering Caveat
 
 There is a danger in making the workflow sound too clean. A good predicted adsorption energy is not the same as a deployable catalyst.
 
-Real HER performance also depends on overpotential, Tafel slope, exchange current density, electrolyte, pH, mass transport, surface reconstruction, durability, synthesis reproducibility, and device integration. A model trained on narrow data can also become overconfident on material families it has not really learned.
+Real HER performance also depends on many other factors. These include overpotential, Tafel slope, exchange current density, electrolyte, pH, mass transport, surface reconstruction, durability, synthesis reproducibility, and device integration. A model trained on narrow data can also become overconfident on material families it has not really learned.
 
 {: .prompt-warning }
-Machine learning can rank candidates, but it cannot certify a catalyst. The final test is still chemical, electrochemical, and practical.
+Machine learning can rank candidates, but it cannot certify a catalyst. Confirmation still requires chemical, electrochemical, and practical testing.
 
 ## Why This Matters
 
-The deeper point is that catalyst discovery is becoming more like an engineering feedback loop. Instead of treating experiments, simulations, and models as separate activities, the strongest workflows connect them.
+Catalyst discovery is becoming more like an engineering feedback loop. Instead of treating experiments, simulations, and models as separate activities, the strongest workflows connect them.
 
 Machine learning helps when it reduces wasted effort:
 
@@ -92,15 +92,15 @@ Machine learning helps when it reduces wasted effort:
 - Faster discovery of structure-activity relationships.
 - Clearer hypotheses about why a material works.
 
-For hydrogen, that can matter because clean energy systems need materials that are not only high-performing but also scalable and robust.
+For hydrogen, that can matter because clean energy systems need materials that are not only high-performing but also scalable and durable.
 
 ## Takeaway
 
-AI-assisted HER catalyst discovery is not about letting a model "invent" chemistry on its own. It is about using data-driven tools to make the next experiment or simulation smarter.
+AI-assisted HER catalyst discovery uses data-driven tools to make the next experiment or simulation smarter, rather than letting a model "invent" chemistry on its own.
 
 MXenes are a strong example because they offer a tunable materials platform with many design choices. Machine learning is valuable because it can help turn those choices from a combinatorial problem into a guided search.
 
-The future of clean hydrogen will depend on more than one catalyst. It will depend on better discovery workflows, and that is where AI can genuinely help.
+The future of clean hydrogen will depend on more than one catalyst. It will depend on better discovery workflows, which AI can meaningfully accelerate.
 
 ## References
 

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="788" viewBox="0 0 1400 788" role="img" aria-label="A large teacher model streaming reasoning steps into a smaller student model">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#08081a"/><stop offset="100%" stop-color="#100c24"/>
+    </linearGradient>
+    <radialGradient id="teach" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c4b5fd"/><stop offset="55%" stop-color="#8b5cf6"/><stop offset="100%" stop-color="#4c1d95"/>
+    </radialGradient>
+    <radialGradient id="stud" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a5b4fc"/><stop offset="100%" stop-color="#4338ca"/>
+    </radialGradient>
+    <radialGradient id="vglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.5"/><stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1400" height="788" fill="url(#bg)"/>
+  <ellipse cx="430" cy="394" rx="420" ry="380" fill="url(#vglow)"/>
+
+  <!-- teacher orb with rings -->
+  <g>
+    <circle cx="400" cy="394" r="190" fill="none" stroke="#7c3aed" stroke-opacity="0.25" stroke-width="2"/>
+    <circle cx="400" cy="394" r="158" fill="none" stroke="#8b5cf6" stroke-opacity="0.35" stroke-width="2"/>
+    <circle cx="400" cy="394" r="128" fill="url(#teach)"/>
+  </g>
+
+  <!-- stream of step-particles -->
+  <g fill="#c4b5fd">
+    <circle cx="560" cy="372" r="9" opacity="0.95"/>
+    <circle cx="640" cy="404" r="8" opacity="0.9"/>
+    <circle cx="720" cy="364" r="7.5" opacity="0.85"/>
+    <circle cx="792" cy="412" r="7" opacity="0.8"/>
+    <circle cx="864" cy="378" r="6.5" opacity="0.78"/>
+    <circle cx="930" cy="404" r="6" opacity="0.72"/>
+  </g>
+  <!-- tiny "step" marks riding the stream -->
+  <g stroke="#ddd6fe" stroke-width="3" stroke-linecap="round" opacity="0.8">
+    <path d="M598 388 h18"/><path d="M684 384 h16"/><path d="M828 396 h14"/>
+  </g>
+  <path d="M540 384 C 680 360 800 420 980 396" fill="none" stroke="#8b5cf6" stroke-opacity="0.4" stroke-width="2" stroke-dasharray="1 10"/>
+
+  <!-- student orb -->
+  <g>
+    <circle cx="1050" cy="396" r="92" fill="none" stroke="#6366f1" stroke-opacity="0.35" stroke-width="2"/>
+    <circle cx="1050" cy="396" r="70" fill="url(#stud)"/>
+  </g>
+</svg>

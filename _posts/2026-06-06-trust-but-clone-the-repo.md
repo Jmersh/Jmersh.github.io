@@ -4,9 +4,9 @@ date: 2026-06-06 10:00:00 -0400
 categories: [AI, Research]
 tags: [ai, research-integrity, reproducibility, arxiv, machine-learning, academic-publishing]
 description: "A reproducible audit of AI-assisted academic papers shows why checking code, data, citations, and regional labels matters more than polished prose."
-media_subpath: /assets/img/posts/2026-06-08-trust-but-clone-the-repo/
+media_subpath: /assets/img/posts/2026-06-06-trust-but-clone-the-repo/
 image:
-  path: preview.svg
+  path: cover.png
   alt: "Repository, paper, and verification checks connected in an audit workflow"
 math: false
 mermaid: false
@@ -14,7 +14,7 @@ mermaid: false
 
 In May 2026, [arXiv announced](https://www.nature.com/articles/d41586-026-01595-5) that authors who submit papers with clear signs of unchecked AI output, such as hallucinated references or chatbot instructions left in the text, would be banned from submitting for a year, after which they would have to clear peer review before posting again. The arXiv computer science chair, Thomas Dietterich, framed it as a response to volume: submissions are up by half since ChatGPT, desk rejections are up several times over, and a Lancet study found fabricated citations in biomedical papers climbing fast. The machine that writes plausible academic prose has met the machine meant to check it, and the checking is losing.
 
-This post is about that first failure: papers that look finished but were never checked by a human against their own data. I worked through a single connected case, centered on one prolific author, and verified every claim against the primary source. The point is not the person. It is whether the published work holds up when you check it, and the method you can use to check it yourself.
+This post is about that first failure: papers that look finished but were never checked by a human against their own data. I worked through a single connected case, centered on one prolific author, and verified every claim against the primary source. The post asks a narrow question, whether the published work holds up when you check it, and shows a method you can run yourself.
 
 A note on confidence, because it is the whole point. Every claim below sits in one of three buckets. **Verified firsthand** means I examined the primary source, usually in code, and you can reproduce it. **Unverified** means the claim came from a source I could not confirm, and it stays a lead, not a fact. **Falsified** means I checked and it was wrong.
 
@@ -96,7 +96,7 @@ The retraction notice is explicit on two points that matter for fairness: the in
 
 That is the verified skeleton: three real papers, two of them with reproducible problems I checked myself, a citation total inflated by medical hyper-authorship, and one co-author with a disputed retraction inside a publisher-identified network. Worth taking seriously as a pattern in the published record. Not, on this evidence alone, a claim about anyone's intent.
 
-## What I Could Not Pin Down, and What Stays Unproven
+## What Could Not Be Pinned Down, and What Stays Unproven
 
 Two things I am keeping at their true confidence level rather than overstating:
 
