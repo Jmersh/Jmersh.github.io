@@ -1,79 +1,64 @@
-<svg width="1400" height="788" viewBox="0 0 1400 788" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="788" viewBox="0 0 1400 788" role="img" aria-labelledby="title desc">
+  <title id="title">AlphaFold crosses the CASP14 threshold</title>
+  <desc id="desc">Two bars on a 0-to-100 GDT axis showing a 92.4 overall median and 87.0 on the hardest targets, beside what DeepMind reported at CASP14.</desc>
   <defs>
-    <linearGradient id="bg" x1="88" y1="72" x2="1290" y2="708" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#081826"/>
-      <stop offset="1" stop-color="#112D3F"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#0a0f1c"/><stop offset="100%" stop-color="#0f1a30"/>
     </linearGradient>
-    <linearGradient id="panel" x1="240" y1="150" x2="1170" y2="632" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0F2536" stop-opacity="0.9"/>
-      <stop offset="1" stop-color="#153C52" stop-opacity="0.72"/>
+    <linearGradient id="sig" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#34d399"/><stop offset="100%" stop-color="#6366f1"/>
     </linearGradient>
-    <linearGradient id="ribbonA" x1="294" y1="237" x2="723" y2="502" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#6FE3FF"/>
-      <stop offset="1" stop-color="#2AC1A6"/>
-    </linearGradient>
-    <linearGradient id="ribbonB" x1="701" y1="254" x2="1091" y2="540" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFD36C"/>
-      <stop offset="1" stop-color="#FF8A65"/>
-    </linearGradient>
-    <filter id="shadow" x="155" y="93" width="1090" height="614" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-      <feOffset dy="18"/>
-      <feGaussianBlur stdDeviation="28"/>
-      <feComposite in2="hardAlpha" operator="out"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 0.0156863 0 0 0 0 0.0823529 0 0 0 0 0.133333 0 0 0 0.42 0"/>
-      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1"/>
-      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1" result="shape"/>
-    </filter>
+    <pattern id="grid" width="58" height="58" patternUnits="userSpaceOnUse">
+      <path d="M58 0 H0 V58" fill="none" stroke="#9fb3cf" stroke-width="1" opacity="0.05"/>
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.35"/><stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
   </defs>
-  <rect width="1400" height="788" rx="28" fill="url(#bg)"/>
-  <g opacity="0.22" stroke="#69D2FF" stroke-width="1">
-    <path d="M141 162H1259"/>
-    <path d="M141 244H1259"/>
-    <path d="M141 326H1259"/>
-    <path d="M141 408H1259"/>
-    <path d="M141 490H1259"/>
-    <path d="M141 572H1259"/>
-    <path d="M240 89V699"/>
-    <path d="M402 89V699"/>
-    <path d="M564 89V699"/>
-    <path d="M726 89V699"/>
-    <path d="M888 89V699"/>
-    <path d="M1050 89V699"/>
-    <path d="M1212 89V699"/>
-  </g>
-  <g filter="url(#shadow)">
-    <rect x="211" y="131" width="978" height="502" rx="30" fill="url(#panel)" stroke="#7FDBFF" stroke-opacity="0.22"/>
-  </g>
-  <g opacity="0.5" stroke="#7FDBFF" stroke-width="2">
-    <path d="M316 245L448 311L618 260L760 346L930 271L1062 332"/>
-    <path d="M304 506L444 436L603 519L756 424L932 489L1085 410"/>
-    <path d="M372 202L372 560"/>
-    <path d="M1040 202L1040 560"/>
-  </g>
-  <path d="M325 468C361 446 387 403 426 386C462 370 503 382 536 362C568 343 581 301 613 282C655 257 716 253 759 278C813 309 823 379 780 420C745 454 688 460 648 490C609 520 587 574 538 583C485 593 434 544 401 503C382 480 353 471 325 468Z" fill="url(#ribbonA)" fill-opacity="0.9"/>
-  <path d="M616 319C646 285 687 238 735 229C796 218 847 276 903 301C956 324 1025 321 1065 370C1096 408 1106 469 1078 510C1048 554 984 563 930 556C881 550 841 517 795 501C741 481 665 482 635 433C611 394 588 351 616 319Z" fill="url(#ribbonB)" fill-opacity="0.88"/>
-  <g stroke="#D8F6FF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M315 471C353 434 378 398 422 389C460 381 500 395 536 377C570 360 591 327 626 312C660 297 701 296 733 314"/>
-    <path d="M640 335C680 299 723 273 769 277C815 281 851 321 892 338C936 356 986 354 1027 381C1056 400 1077 429 1085 462"/>
-  </g>
-  <g fill="#D7FBFF">
-    <circle cx="370" cy="430" r="8"/>
-    <circle cx="455" cy="383" r="8"/>
-    <circle cx="548" cy="370" r="8"/>
-    <circle cx="642" cy="307" r="8"/>
-    <circle cx="742" cy="310" r="8"/>
-    <circle cx="838" cy="309" r="8"/>
-    <circle cx="931" cy="352" r="8"/>
-    <circle cx="1018" cy="384" r="8"/>
-  </g>
-  <g opacity="0.9">
-    <rect x="272" y="171" width="172" height="42" rx="21" fill="#0D3A50"/>
-    <text x="358" y="198" fill="#DFFAFF" font-family="Segoe UI, Arial, sans-serif" font-size="22" text-anchor="middle">SEQUENCE</text>
-    <rect x="612" y="171" width="178" height="42" rx="21" fill="#10445B"/>
-    <text x="701" y="198" fill="#DFFAFF" font-family="Segoe UI, Arial, sans-serif" font-size="22" text-anchor="middle">ATTENTION</text>
-    <rect x="953" y="171" width="174" height="42" rx="21" fill="#225061"/>
-    <text x="1040" y="198" fill="#FFF6DE" font-family="Segoe UI, Arial, sans-serif" font-size="22" text-anchor="middle">STRUCTURE</text>
-  </g>
+  <rect width="1400" height="788" fill="url(#bg)"/>
+  <rect width="1400" height="788" fill="url(#grid)"/>
+  <ellipse cx="470" cy="430" rx="470" ry="280" fill="url(#glow)"/>
+  <text x="92" y="92" fill="#34d399" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="22" font-weight="700" letter-spacing="5">AI · STRUCTURAL BIOLOGY</text>
+  <text x="90" y="152" fill="#eef3fb" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="46" font-weight="800">AlphaFold crosses the CASP14 threshold</text>
+  <text x="92" y="198" fill="#93a7c4" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="25">Structure prediction shifts from a research goal to a working tool.</text>
+
+  <rect x="108" y="256" width="724" height="346" rx="20" fill="#ffffff" fill-opacity="0.035" stroke="#94a3b8" stroke-opacity="0.20" stroke-width="1.5"/>
+  <text x="138" y="302" fill="#8ea3bf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="700" letter-spacing="3">CASP14 GDT SCORE</text>
+
+  <!-- 0-100 axis: 100 gridline at y=345, baseline (0) at y=565, span 220px -->
+  <line x1="250" y1="345" x2="780" y2="345" stroke="#94a3b8" stroke-opacity="0.30" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="232" y="351" text-anchor="end" fill="#8ea3bf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="15">100</text>
+  <line x1="250" y1="565" x2="780" y2="565" stroke="#94a3b8" stroke-opacity="0.30" stroke-width="1"/>
+  <text x="232" y="571" text-anchor="end" fill="#8ea3bf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="15">0</text>
+
+  <!-- Bar 1: 92.4 of 100 -> 203px, top y = 565-203 = 362 -->
+  <rect x="345" y="362" width="120" height="203" rx="6" fill="url(#sig)"/>
+  <text x="405" y="348" text-anchor="middle" fill="#6ee7b7" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="26" font-weight="800">92.4</text>
+  <text x="405" y="588" text-anchor="middle" fill="#c8d6ec" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17">overall median</text>
+
+  <!-- Bar 2: 87.0 of 100 -> 191px, top y = 565-191 = 374 -->
+  <rect x="565" y="374" width="120" height="191" rx="6" fill="url(#sig)"/>
+  <text x="625" y="360" text-anchor="middle" fill="#6ee7b7" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="26" font-weight="800">87.0</text>
+  <text x="625" y="588" text-anchor="middle" fill="#c8d6ec" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17">hardest targets</text>
+
+  <text x="872" y="302" fill="#fbbf24" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="700" letter-spacing="3">WHAT WAS REPORTED</text>
+
+  <rect x="868" y="324" width="424" height="58" rx="14" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.3"/>
+  <circle cx="898" cy="353" r="6" fill="#fbbf24"/>
+  <text x="920" y="360" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Blind CASP14 contest</text>
+
+  <rect x="868" y="392" width="424" height="58" rx="14" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.3"/>
+  <circle cx="898" cy="421" r="6" fill="#fbbf24"/>
+  <text x="920" y="428" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">~2/3 of targets near lab level</text>
+
+  <rect x="868" y="460" width="424" height="58" rx="14" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.3"/>
+  <circle cx="898" cy="489" r="6" fill="#fbbf24"/>
+  <text x="920" y="496" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Single proteins, not complexes</text>
+
+  <rect x="868" y="528" width="424" height="58" rx="14" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.3"/>
+  <circle cx="898" cy="557" r="6" fill="#fbbf24"/>
+  <text x="920" y="564" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Full paper not yet published</text>
+
+  <line x1="92" y1="690" x2="1308" y2="690" stroke="#94a3b8" stroke-opacity="0.22" stroke-width="1"/>
+  <text x="92" y="730" fill="#9fb3cf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="23">For many single-protein targets, predictions are now <tspan fill="#34d399" font-weight="700">good enough to use</tspan> in experiments.</text>
 </svg>

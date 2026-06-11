@@ -1,49 +1,69 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 788" role="img" aria-labelledby="title desc">
-  <title id="title">DART planetary defense test</title>
-  <desc id="desc">A spacecraft's impact path intersects a small asteroid moon while observation arcs measure orbital change.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="788" viewBox="0 0 1400 788" role="img" aria-labelledby="title desc">
+  <title id="title">DART tests asteroid deflection</title>
+  <desc id="desc">A spacecraft strikes the moonlet Dimorphos on its dashed orbit around Didymos, with a faint shifted orbit and a question mark because the orbit change is not yet measured, beside the key facts of the test.</desc>
   <defs>
-    <radialGradient id="bg" cx="68%" cy="46%" r="78%">
-      <stop offset="0" stop-color="#2b163f"/>
-      <stop offset=".48" stop-color="#0c1022"/>
-      <stop offset="1" stop-color="#06070d"/>
-    </radialGradient>
-    <linearGradient id="path" x1="0" x2="1">
-      <stop offset="0" stop-color="#33e6ff"/>
-      <stop offset=".55" stop-color="#f6d35f"/>
-      <stop offset="1" stop-color="#ff5f86"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#0a0f1c"/><stop offset="100%" stop-color="#0f1a30"/>
     </linearGradient>
-    <filter id="glow" x="-70%" y="-70%" width="240%" height="240%">
-      <feGaussianBlur stdDeviation="11" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <linearGradient id="sig" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#818cf8"/><stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <pattern id="grid" width="58" height="58" patternUnits="userSpaceOnUse">
+      <path d="M58 0 H0 V58" fill="none" stroke="#9fb3cf" stroke-width="1" opacity="0.05"/>
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.35"/><stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
   </defs>
   <rect width="1400" height="788" fill="url(#bg)"/>
-  <g transform="translate(760 260)">
-    <ellipse cx="190" cy="130" rx="330" ry="160" fill="none" stroke="#5967a7" stroke-width="3" opacity=".45"/>
-    <ellipse cx="190" cy="130" rx="430" ry="210" fill="none" stroke="#5967a7" stroke-width="2" opacity=".28"/>
-    <path d="M-80 266 C142 94 398 26 632 40" fill="none" stroke="#33e6ff" stroke-width="3" stroke-dasharray="10 18" opacity=".65"/>
-    <g filter="url(#glow)">
-      <path d="M440 110 C490 88 548 112 566 166 C586 228 532 282 468 270 C410 258 384 206 404 154 C412 132 424 120 440 110Z" fill="#2b203b" stroke="#f6d35f" stroke-width="5"/>
-      <path d="M210 118 C248 100 294 118 306 160 C320 210 276 252 226 238 C182 226 166 184 184 148 C190 136 200 126 210 118Z" fill="#19182c" stroke="#ff5f86" stroke-width="4"/>
-    </g>
-    <path d="M170 172 L128 144 L142 198 Z" fill="#f6d35f"/>
-    <path d="M116 148 L18 108" stroke="url(#path)" stroke-width="5" stroke-linecap="round"/>
-    <path d="M115 197 L12 234" stroke="url(#path)" stroke-width="4" stroke-linecap="round" opacity=".75"/>
-    <circle cx="184" cy="168" r="18" fill="#fff4bf" filter="url(#glow)"/>
-  </g>
-  <g transform="translate(150 155)" opacity=".96">
-    <path d="M0 260 C168 112 350 58 548 84" fill="none" stroke="url(#path)" stroke-width="6" stroke-linecap="round"/>
-    <path d="M42 248 L0 260 L24 222" fill="none" stroke="#33e6ff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-    <g transform="translate(506 72) rotate(12)">
-      <path d="M0 0 L82 30 L20 72 Z" fill="#0f1727" stroke="#33e6ff" stroke-width="4"/>
-      <path d="M20 72 L-30 108 M82 30 L136 50" stroke="#f6d35f" stroke-width="4" stroke-linecap="round"/>
-      <rect x="22" y="-28" width="76" height="22" rx="11" fill="#18233b" stroke="#ff5f86" stroke-width="3"/>
-    </g>
-  </g>
-  <g fill="none" stroke="#f6d35f" stroke-width="3" opacity=".7">
-    <path d="M154 552 C242 520 326 530 418 570"/>
-    <path d="M160 606 C260 570 366 582 468 642"/>
-    <circle cx="154" cy="552" r="7" fill="#f6d35f"/>
-    <circle cx="468" cy="642" r="7" fill="#f6d35f"/>
-  </g>
+  <rect width="1400" height="788" fill="url(#grid)"/>
+  <ellipse cx="470" cy="430" rx="470" ry="280" fill="url(#glow)"/>
+  <text x="92" y="92" fill="#a78bfa" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="22" font-weight="700" letter-spacing="5">SPACE · PLANETARY DEFENSE</text>
+  <text x="90" y="152" fill="#eef3fb" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="54" font-weight="800">DART tests asteroid deflection</text>
+  <text x="92" y="198" fill="#93a7c4" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="25">A kinetic impact whose real payoff is the measurement that follows.</text>
+  <rect x="108" y="256" width="724" height="346" rx="20" fill="#ffffff" fill-opacity="0.035" stroke="#94a3b8" stroke-opacity="0.20" stroke-width="1.5"/>
+  <text x="138" y="302" fill="#8ea3bf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="700" letter-spacing="3">KINETIC IMPACT</text>
+
+  <!-- Didymos: large primary body -->
+  <circle cx="430" cy="455" r="64" fill="url(#sig)" fill-opacity="0.92"/>
+  <text x="430" y="545" fill="#cdd6ec" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="18" font-weight="700" text-anchor="middle">Didymos</text>
+
+  <!-- Original orbit of Dimorphos (dashed) -->
+  <ellipse cx="430" cy="455" rx="158" ry="98" fill="none" stroke="#a78bfa" stroke-opacity="0.55" stroke-width="2" stroke-dasharray="7 7"/>
+
+  <!-- Faint shifted orbit suggesting an unmeasured change -->
+  <ellipse cx="430" cy="455" rx="142" ry="86" fill="none" stroke="#fbbf24" stroke-opacity="0.30" stroke-width="2" stroke-dasharray="4 8"/>
+
+  <!-- Dimorphos: small moonlet on the orbit (right side) -->
+  <circle cx="588" cy="455" r="20" fill="#fbbf24"/>
+  <text x="588" y="410" fill="#fbe7b0" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="16" font-weight="700" text-anchor="middle">Dimorphos</text>
+
+  <!-- Spacecraft dot and impact arrow striking Dimorphos -->
+  <circle cx="732" cy="455" r="7" fill="#eef3fb"/>
+  <line x1="724" y1="455" x2="616" y2="455" stroke="#eef3fb" stroke-width="3"/>
+  <path d="M616 455 L632 448 L632 462 Z" fill="#eef3fb"/>
+
+  <!-- Question mark: result not yet measured -->
+  <text x="588" y="566" fill="#fbbf24" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="34" font-weight="800" text-anchor="middle">?</text>
+
+  <text x="872" y="302" fill="#fbbf24" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="700" letter-spacing="3">THE TEST</text>
+
+  <rect x="868" y="324" width="424" height="58" rx="14" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.3"/>
+  <circle cx="898" cy="353" r="6" fill="#fbbf24"/>
+  <text x="920" y="360" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">First planetary defense test</text>
+
+  <rect x="868" y="392" width="424" height="58" rx="14" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.3"/>
+  <circle cx="898" cy="421" r="6" fill="#fbbf24"/>
+  <text x="920" y="428" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Kinetic impact on Dimorphos</text>
+
+  <rect x="868" y="460" width="424" height="58" rx="14" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.3"/>
+  <circle cx="898" cy="489" r="6" fill="#fbbf24"/>
+  <text x="920" y="496" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Autonomous terminal guidance</text>
+
+  <rect x="868" y="528" width="424" height="58" rx="14" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.3"/>
+  <circle cx="898" cy="557" r="6" fill="#fbbf24"/>
+  <text x="920" y="564" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Orbit change to be measured</text>
+
+  <line x1="92" y1="690" x2="1308" y2="690" stroke="#94a3b8" stroke-opacity="0.22" stroke-width="1"/>
+  <text x="92" y="730" fill="#9fb3cf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="23">The impact is only step one; the value comes from <tspan fill="#a78bfa" font-weight="700">measuring the orbit change</tspan>.</text>
 </svg>

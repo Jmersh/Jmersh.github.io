@@ -1,115 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="800" viewBox="0 0 1400 800" role="img" aria-labelledby="title desc">
-  <title id="title">Ethereum consensus migration</title>
-  <desc id="desc">Two blockchain layers cross a glowing merge seam and resolve into a grid of validator slots and finality checkpoints.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="788" viewBox="0 0 1400 788" role="img" aria-labelledby="title desc">
+  <title id="title">The Merge ends proof of work</title>
+  <desc id="desc">A tall proof-of-work energy bar collapses to a tiny proof-of-stake bar, beside what The Merge actually changed.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#06101d"/>
-      <stop offset="50%" stop-color="#071a2d"/>
-      <stop offset="100%" stop-color="#07140b"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#0a0f1c"/><stop offset="100%" stop-color="#0f1a30"/>
     </linearGradient>
-    <radialGradient id="greenGlow" cx="60%" cy="48%" r="46%">
-      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.36"/>
-      <stop offset="62%" stop-color="#14532d" stop-opacity="0.1"/>
-      <stop offset="100%" stop-color="#06101d" stop-opacity="0"/>
+    <linearGradient id="sig" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#34d399"/><stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <pattern id="grid" width="58" height="58" patternUnits="userSpaceOnUse">
+      <path d="M58 0 H0 V58" fill="none" stroke="#9fb3cf" stroke-width="1" opacity="0.05"/>
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#059669" stop-opacity="0.35"/><stop offset="100%" stop-color="#059669" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="blueGlow" cx="35%" cy="54%" r="44%">
-      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.26"/>
-      <stop offset="74%" stop-color="#06101d" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="work" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#f59e0b"/>
-      <stop offset="100%" stop-color="#60a5fa"/>
-    </linearGradient>
-    <linearGradient id="stake" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#60a5fa"/>
-      <stop offset="100%" stop-color="#22c55e"/>
-    </linearGradient>
-    <filter id="soft" x="-40%" y="-80%" width="180%" height="260%">
-      <feGaussianBlur stdDeviation="8" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
   </defs>
-  <rect width="1400" height="800" fill="url(#bg)"/>
-  <rect width="1400" height="800" fill="url(#greenGlow)"/>
-  <rect width="1400" height="800" fill="url(#blueGlow)"/>
+  <rect width="1400" height="788" fill="url(#bg)"/>
+  <rect width="1400" height="788" fill="url(#grid)"/>
+  <ellipse cx="470" cy="430" rx="470" ry="280" fill="url(#glow)"/>
+  <text x="92" y="92" fill="#34d399" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="22" font-weight="700" letter-spacing="5">CRYPTO · INFRASTRUCTURE</text>
+  <text x="90" y="152" fill="#eef3fb" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="54" font-weight="800">The Merge ends proof of work</text>
+  <text x="92" y="198" fill="#93a7c4" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="25">A live network swapped its consensus engine without losing its history.</text>
 
-  <g opacity="0.35" stroke="#94a3b8" stroke-width="1.6" fill="none">
-    <path d="M104 210 C296 160 506 198 664 318 C836 448 1048 500 1288 432"/>
-    <path d="M110 588 C302 646 520 604 684 482 C856 356 1062 316 1282 372"/>
-  </g>
+  <rect x="108" y="256" width="724" height="346" rx="20" fill="#ffffff" fill-opacity="0.035" stroke="#94a3b8" stroke-opacity="0.20" stroke-width="1.5"/>
+  <text x="138" y="302" fill="#8ea3bf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="700" letter-spacing="3">ENERGY USE</text>
 
-  <g filter="url(#soft)" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M118 300 C292 252 430 276 560 370 C676 454 792 510 956 500 C1088 492 1192 444 1280 386"
-          stroke="url(#work)" stroke-width="16" opacity="0.9"/>
-    <path d="M122 510 C306 548 454 508 584 418 C700 336 828 296 982 314 C1110 330 1208 378 1282 452"
-          stroke="url(#stake)" stroke-width="16" opacity="0.9"/>
-  </g>
+  <!-- baseline -->
+  <line x1="170" y1="560" x2="790" y2="560" stroke="#94a3b8" stroke-opacity="0.25" stroke-width="1.5"/>
 
-  <g opacity="0.78" fill="#020617" stroke-width="2.4">
-    <g stroke="#f59e0b">
-      <rect x="152" y="260" width="72" height="72" rx="14" transform="rotate(-10 188 296)"/>
-      <rect x="308" y="252" width="72" height="72" rx="14" transform="rotate(6 344 288)"/>
-      <rect x="462" y="320" width="72" height="72" rx="14" transform="rotate(12 498 356)"/>
-    </g>
-    <g stroke="#60a5fa">
-      <circle cx="190" cy="510" r="38"/>
-      <circle cx="350" cy="524" r="38"/>
-      <circle cx="506" cy="470" r="38"/>
-    </g>
-  </g>
+  <!-- proof of work bar: tall, muted -->
+  <rect x="250" y="338" width="150" height="222" rx="6" fill="#64748b" fill-opacity="0.55" stroke="#94a3b8" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="325" y="586" fill="#aebdd4" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="19" font-weight="700" text-anchor="middle">PROOF OF WORK</text>
 
-  <g transform="translate(652 160)" filter="url(#soft)">
-    <path d="M76 0 C34 106 38 202 78 286 C118 374 114 474 70 590" fill="none" stroke="#d1fae5" stroke-width="7" stroke-linecap="round"/>
-    <path d="M112 0 C70 112 74 202 114 286 C154 374 150 478 106 590" fill="none" stroke="#22c55e" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
-    <g fill="#22c55e">
-      <circle cx="76" cy="86" r="7"/>
-      <circle cx="92" cy="210" r="6"/>
-      <circle cx="94" cy="350" r="7"/>
-      <circle cx="78" cy="498" r="6"/>
-    </g>
-  </g>
+  <!-- proof of stake bar: tiny, sig gradient -->
+  <rect x="560" y="549" width="150" height="11" rx="4" fill="url(#sig)"/>
+  <text x="635" y="586" fill="#6ee7b7" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="19" font-weight="700" text-anchor="middle">PROOF OF STAKE</text>
 
-  <g transform="translate(854 206)">
-    <g fill="#020617" fill-opacity="0.58" stroke="#22c55e" stroke-opacity="0.5" stroke-width="2">
-      <rect x="0" y="0" width="92" height="70" rx="16"/>
-      <rect x="126" y="34" width="92" height="70" rx="16"/>
-      <rect x="252" y="0" width="92" height="70" rx="16"/>
-      <rect x="378" y="34" width="92" height="70" rx="16"/>
-      <rect x="64" y="166" width="92" height="70" rx="16"/>
-      <rect x="190" y="132" width="92" height="70" rx="16"/>
-      <rect x="316" y="166" width="92" height="70" rx="16"/>
-    </g>
-    <g fill="#dcfce7">
-      <circle cx="46" cy="35" r="7" fill="#22c55e"/>
-      <circle cx="172" cy="69" r="7" fill="#60a5fa"/>
-      <circle cx="298" cy="35" r="7" fill="#22c55e"/>
-      <circle cx="424" cy="69" r="7" fill="#60a5fa"/>
-      <circle cx="110" cy="201" r="7" fill="#22c55e"/>
-      <circle cx="236" cy="167" r="7" fill="#f59e0b"/>
-      <circle cx="362" cy="201" r="7" fill="#22c55e"/>
-    </g>
-    <g stroke="#334155" stroke-width="2" fill="none" opacity="0.56">
-      <path d="M92 40 C112 42 118 50 126 64"/>
-      <path d="M218 64 C232 52 242 44 252 40"/>
-      <path d="M344 40 C358 48 368 56 378 64"/>
-      <path d="M156 198 C170 184 180 174 190 166"/>
-      <path d="M282 166 C296 178 306 188 316 198"/>
-    </g>
-  </g>
+  <!-- drop annotation -->
+  <line x1="425" y1="345" x2="540" y2="345" stroke="#6ee7b7" stroke-opacity="0.5" stroke-width="1.5" stroke-dasharray="5 5"/>
+  <line x1="540" y1="345" x2="540" y2="549" stroke="#6ee7b7" stroke-opacity="0.5" stroke-width="1.5" stroke-dasharray="5 5"/>
+  <text x="425" y="424" fill="#6ee7b7" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="44" font-weight="800">-99.95%</text>
+  <text x="425" y="456" fill="#93a7c4" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="18">energy use, per ethereum.org</text>
 
-  <g fill="#f8fafc" opacity="0.82">
-    <circle cx="188" cy="296" r="6" fill="#f59e0b"/>
-    <circle cx="344" cy="288" r="6" fill="#f59e0b"/>
-    <circle cx="498" cy="356" r="6" fill="#f59e0b"/>
-    <circle cx="190" cy="510" r="6" fill="#60a5fa"/>
-    <circle cx="350" cy="524" r="6" fill="#60a5fa"/>
-    <circle cx="506" cy="470" r="6" fill="#60a5fa"/>
-  </g>
+  <text x="872" y="302" fill="#5eead4" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="700" letter-spacing="3">WHAT CHANGED</text>
 
-  <g opacity="0.42" stroke="#22c55e" stroke-width="2" fill="none">
-    <path d="M818 590 H1260"/>
-    <path d="M888 630 H1196"/>
-    <circle cx="1260" cy="590" r="8" fill="#22c55e" fill-opacity="0.5"/>
-    <circle cx="1196" cy="630" r="6" fill="#60a5fa" fill-opacity="0.5"/>
-  </g>
+  <rect x="868" y="324" width="424" height="58" rx="14" fill="#5eead4" fill-opacity="0.09" stroke="#5eead4" stroke-opacity="0.3"/>
+  <circle cx="898" cy="353" r="6" fill="#5eead4"/>
+  <text x="920" y="360" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Mining dropped for staked ETH</text>
+
+  <rect x="868" y="392" width="424" height="58" rx="14" fill="#5eead4" fill-opacity="0.09" stroke="#5eead4" stroke-opacity="0.3"/>
+  <circle cx="898" cy="421" r="6" fill="#5eead4"/>
+  <text x="920" y="428" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Beacon Chain now does consensus</text>
+
+  <rect x="868" y="460" width="424" height="58" rx="14" fill="#5eead4" fill-opacity="0.09" stroke="#5eead4" stroke-opacity="0.3"/>
+  <circle cx="898" cy="489" r="6" fill="#5eead4"/>
+  <text x="920" y="496" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Chain history stays intact</text>
+
+  <rect x="868" y="528" width="424" height="58" rx="14" fill="#5eead4" fill-opacity="0.09" stroke="#5eead4" stroke-opacity="0.3"/>
+  <circle cx="898" cy="557" r="6" fill="#5eead4"/>
+  <text x="920" y="564" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Nodes run two clients now</text>
+
+  <line x1="92" y1="690" x2="1308" y2="690" stroke="#94a3b8" stroke-opacity="0.22" stroke-width="1"/>
+  <text x="92" y="730" fill="#9fb3cf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="23">The Merge changed only how Ethereum agrees on blocks, while <tspan fill="#34d399" font-weight="700">execution kept running</tspan>.</text>
 </svg>

@@ -1,52 +1,88 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 788" role="img" aria-labelledby="title desc">
-  <title id="title">CRISPR programmable editing</title>
-  <desc id="desc">A guide RNA rail aligns a Cas9 cutting shape with a DNA strand over a dark botanical gradient.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="788" viewBox="0 0 1400 788" role="img" aria-labelledby="title desc">
+  <title id="title">CRISPR makes biology programmable</title>
+  <desc id="desc">A guide RNA directs Cas9 to a matching site on a DNA double helix and cuts it, beside why the 2020 Chemistry Nobel work matters.</desc>
   <defs>
-    <radialGradient id="bg" cx="56%" cy="50%" r="72%">
-      <stop offset="0" stop-color="#153622"/>
-      <stop offset=".5" stop-color="#081914"/>
-      <stop offset="1" stop-color="#050909"/>
-    </radialGradient>
-    <linearGradient id="dna" x1="0" x2="1">
-      <stop offset="0" stop-color="#65f0a2"/>
-      <stop offset=".48" stop-color="#ffe66d"/>
-      <stop offset="1" stop-color="#ff6ea8"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#0a0f1c"/><stop offset="100%" stop-color="#0f1a30"/>
     </linearGradient>
-    <filter id="soft" x="-80%" y="-80%" width="260%" height="260%">
-      <feGaussianBlur stdDeviation="10" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <linearGradient id="sig" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2dd4bf"/><stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <pattern id="grid" width="58" height="58" patternUnits="userSpaceOnUse">
+      <path d="M58 0 H0 V58" fill="none" stroke="#9fb3cf" stroke-width="1" opacity="0.05"/>
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0d9488" stop-opacity="0.35"/><stop offset="100%" stop-color="#0d9488" stop-opacity="0"/>
+    </radialGradient>
   </defs>
   <rect width="1400" height="788" fill="url(#bg)"/>
-  <g opacity=".28" fill="none" stroke="#2d6d52" stroke-width="2">
-    <path d="M60 168 C260 95 430 160 612 265 C820 385 1005 442 1338 336"/>
-    <path d="M92 646 C328 522 472 574 686 626 C902 680 1058 548 1330 604"/>
+  <rect width="1400" height="788" fill="url(#grid)"/>
+  <ellipse cx="470" cy="430" rx="470" ry="280" fill="url(#glow)"/>
+  <text x="92" y="92" fill="#2dd4bf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="22" font-weight="700" letter-spacing="5">CHEMISTRY · NOBEL</text>
+  <text x="90" y="152" fill="#eef3fb" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="54" font-weight="800">CRISPR makes biology programmable</text>
+  <text x="92" y="198" fill="#93a7c4" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="25">Change the guide RNA and Cas9 cuts a new target. The rest stays the same.</text>
+
+  <!-- LEFT PANEL -->
+  <rect x="108" y="256" width="724" height="346" rx="20" fill="#ffffff" fill-opacity="0.035" stroke="#94a3b8" stroke-opacity="0.20" stroke-width="1.5"/>
+  <text x="138" y="302" fill="#8ea3bf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="700" letter-spacing="3">GUIDE-DIRECTED TARGETING</text>
+
+  <!-- guide RNA box (top) -->
+  <rect x="262" y="332" width="172" height="48" rx="12" fill="#2dd4bf" fill-opacity="0.10" stroke="#2dd4bf" stroke-opacity="0.55" stroke-width="1.5"/>
+  <text x="348" y="362" text-anchor="middle" fill="#5eead4" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="20" font-weight="700">guide RNA</text>
+
+  <!-- arrow: guide RNA -> Cas9 -->
+  <line x1="348" y1="382" x2="348" y2="430" stroke="#5eead4" stroke-width="3" stroke-opacity="0.8"/>
+  <path d="M348 442 L342 428 L354 428 Z" fill="#5eead4"/>
+  <text x="372" y="418" fill="#93a7c4" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="15" font-weight="600">directs</text>
+
+  <!-- Cas9 complex sitting at the cut site -->
+  <ellipse cx="348" cy="486" rx="64" ry="44" fill="url(#sig)" fill-opacity="0.18" stroke="url(#sig)" stroke-width="2.5"/>
+  <text x="348" y="493" text-anchor="middle" fill="#eef3fb" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="22" font-weight="800">Cas9</text>
+
+  <!-- DNA double helix (two sine-like strands), running x:170-792 around y:540 -->
+  <path d="M170 540 C 220 504, 270 504, 320 540 S 420 576, 470 540 S 570 504, 620 540 S 720 576, 770 540"
+        fill="none" stroke="url(#sig)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M170 540 C 220 576, 270 576, 320 540 S 420 504, 470 540 S 570 576, 620 540 S 720 504, 770 540"
+        fill="none" stroke="#5eead4" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+  <!-- base-pair rungs -->
+  <g stroke="#9fb3cf" stroke-width="2" opacity="0.4">
+    <line x1="220" y1="525" x2="220" y2="555"/>
+    <line x1="270" y1="525" x2="270" y2="555"/>
+    <line x1="570" y1="525" x2="570" y2="555"/>
+    <line x1="620" y1="525" x2="620" y2="555"/>
+    <line x1="720" y1="525" x2="720" y2="555"/>
   </g>
-  <g transform="translate(140 170)">
-    <path d="M0 245 C130 105 265 105 390 245 S650 385 780 245 S1040 105 1180 245" fill="none" stroke="url(#dna)" stroke-width="9" stroke-linecap="round" filter="url(#soft)"/>
-    <path d="M0 315 C130 455 265 455 390 315 S650 175 780 315 S1040 455 1180 315" fill="none" stroke="url(#dna)" stroke-width="9" stroke-linecap="round" opacity=".72"/>
-    <g stroke="#b9ffd6" stroke-width="4" opacity=".75">
-      <path d="M92 178 L92 380"/><path d="M180 132 L180 426"/><path d="M280 158 L280 400"/>
-      <path d="M500 370 L500 190"/><path d="M610 432 L610 128"/><path d="M720 368 L720 192"/>
-      <path d="M930 160 L930 398"/><path d="M1042 125 L1042 432"/>
-    </g>
+
+  <!-- cut site: gap in the strand under Cas9, with a small scissors mark -->
+  <line x1="348" y1="528" x2="348" y2="552" stroke="#0f1a30" stroke-width="14"/>
+  <g stroke="#22d3ee" stroke-width="3.5" stroke-linecap="round">
+    <line x1="334" y1="526" x2="362" y2="554"/>
+    <line x1="362" y1="526" x2="334" y2="554"/>
   </g>
-  <g transform="translate(462 198)">
-    <path d="M0 86 C155 36 318 36 474 86" fill="none" stroke="#ffe66d" stroke-width="4" stroke-linecap="round"/>
-    <path d="M34 118 C166 84 308 84 440 118" fill="none" stroke="#65f0a2" stroke-width="4" stroke-linecap="round"/>
-    <g fill="#ffe66d">
-      <circle cx="84" cy="98" r="8"/><circle cx="170" cy="78" r="8"/><circle cx="260" cy="72" r="8"/><circle cx="352" cy="80" r="8"/><circle cx="430" cy="100" r="8"/>
-    </g>
-  </g>
-  <g transform="translate(658 270)">
-    <path d="M0 0 L146 80 L146 230 L0 310 L-146 230 L-146 80 Z" fill="#132218" stroke="#ff6ea8" stroke-width="4"/>
-    <path d="M-58 88 C-16 55 22 55 64 88 M-58 222 C-16 255 22 255 64 222" fill="none" stroke="#ffe66d" stroke-width="10" stroke-linecap="round"/>
-    <path d="M-82 150 H82" stroke="#65f0a2" stroke-width="9" stroke-linecap="round"/>
-    <path d="M-24 116 L28 196 M28 116 L-24 196" stroke="#ff6ea8" stroke-width="8" stroke-linecap="round"/>
-  </g>
-  <g opacity=".9">
-    <rect x="1046" y="180" width="104" height="38" rx="19" fill="#16271d" stroke="#65f0a2" stroke-width="3"/>
-    <rect x="1105" y="260" width="166" height="38" rx="19" fill="#21190b" stroke="#ffe66d" stroke-width="3"/>
-    <rect x="1012" y="555" width="134" height="38" rx="19" fill="#28121d" stroke="#ff6ea8" stroke-width="3"/>
-  </g>
+  <circle cx="333" cy="525" r="4" fill="none" stroke="#22d3ee" stroke-width="3"/>
+  <circle cx="363" cy="525" r="4" fill="none" stroke="#22d3ee" stroke-width="3"/>
+  <text x="348" y="586" text-anchor="middle" fill="#93a7c4" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="15" font-weight="600">cut at matching site</text>
+
+  <!-- RIGHT LIST -->
+  <text x="872" y="302" fill="#5eead4" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="700" letter-spacing="3">WHY IT MATTERS</text>
+
+  <rect x="868" y="324" width="424" height="58" rx="14" fill="#5eead4" fill-opacity="0.09" stroke="#5eead4" stroke-opacity="0.3"/>
+  <circle cx="898" cy="353" r="6" fill="#5eead4"/>
+  <text x="920" y="360" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">2020 Nobel: Charpentier &amp; Doudna</text>
+
+  <rect x="868" y="392" width="424" height="58" rx="14" fill="#5eead4" fill-opacity="0.09" stroke="#5eead4" stroke-opacity="0.3"/>
+  <circle cx="898" cy="421" r="6" fill="#5eead4"/>
+  <text x="920" y="428" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Retarget by swapping the RNA</text>
+
+  <rect x="868" y="460" width="424" height="58" rx="14" fill="#5eead4" fill-opacity="0.09" stroke="#5eead4" stroke-opacity="0.3"/>
+  <circle cx="898" cy="489" r="6" fill="#5eead4"/>
+  <text x="920" y="496" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">A whole toolchain grew around it</text>
+
+  <rect x="868" y="528" width="424" height="58" rx="14" fill="#5eead4" fill-opacity="0.09" stroke="#5eead4" stroke-opacity="0.3"/>
+  <circle cx="898" cy="557" r="6" fill="#5eead4"/>
+  <text x="920" y="564" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Off-target cuts still matter</text>
+
+  <!-- FOOTER -->
+  <line x1="92" y1="690" x2="1308" y2="690" stroke="#94a3b8" stroke-opacity="0.22" stroke-width="1"/>
+  <text x="92" y="730" fill="#9fb3cf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="23">A bacterial defense became a tool that makes <tspan fill="#2dd4bf" font-weight="700">where you cut programmable</tspan>.</text>
 </svg>

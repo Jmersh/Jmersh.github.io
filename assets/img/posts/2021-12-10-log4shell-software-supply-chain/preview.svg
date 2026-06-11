@@ -1,91 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="800" viewBox="0 0 1400 800" role="img" aria-labelledby="title desc">
-  <title id="title">Log4Shell dependency blast radius</title>
-  <desc id="desc">A cracked logging package emits a red-orange blast wave through stacked dependency layers and scattered service tiles.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="788" viewBox="0 0 1400 788" role="img" aria-labelledby="title desc">
+  <title id="title">Log4Shell: one log line to RCE</title>
+  <desc id="desc">A left-to-right exploit chain showing how a logged string becomes a JNDI lookup, an attacker LDAP fetch, and remote class loading, beside the key facts to know about CVE-2021-44228.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0b0b10"/>
-      <stop offset="54%" stop-color="#210b12"/>
-      <stop offset="100%" stop-color="#120f08"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#0a0f1c"/><stop offset="100%" stop-color="#0f1a30"/>
     </linearGradient>
-    <radialGradient id="blast" cx="38%" cy="50%" r="54%">
-      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.56"/>
-      <stop offset="36%" stop-color="#f59e0b" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#0b0b10" stop-opacity="0"/>
+    <linearGradient id="sig" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <pattern id="grid" width="58" height="58" patternUnits="userSpaceOnUse">
+      <path d="M58 0 H0 V58" fill="none" stroke="#9fb3cf" stroke-width="1" opacity="0.05"/>
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#b91c1c" stop-opacity="0.35"/><stop offset="100%" stop-color="#b91c1c" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="heat" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#fee2e2"/>
-      <stop offset="34%" stop-color="#ef4444"/>
-      <stop offset="72%" stop-color="#f59e0b"/>
-      <stop offset="100%" stop-color="#334155" stop-opacity="0"/>
-    </linearGradient>
-    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="9" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0 L6 3 L0 6 Z" fill="#ef4444"/>
+    </marker>
   </defs>
+  <rect width="1400" height="788" fill="url(#bg)"/>
+  <rect width="1400" height="788" fill="url(#grid)"/>
+  <ellipse cx="470" cy="430" rx="470" ry="280" fill="url(#glow)"/>
+  <text x="92" y="92" fill="#fb7185" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="22" font-weight="700" letter-spacing="5">SECURITY · SUPPLY CHAIN</text>
+  <text x="90" y="152" fill="#eef3fb" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="54" font-weight="800">Log4Shell: one log line to RCE</text>
+  <text x="92" y="198" fill="#93a7c4" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="25">A logging library flaw becomes a supply-chain inventory emergency.</text>
 
-  <rect width="1400" height="800" fill="url(#bg)"/>
-  <rect width="1400" height="800" fill="url(#blast)"/>
+  <rect x="108" y="256" width="724" height="346" rx="20" fill="#ffffff" fill-opacity="0.035" stroke="#94a3b8" stroke-opacity="0.20" stroke-width="1.5"/>
+  <text x="138" y="302" fill="#8ea3bf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="700" letter-spacing="3">EXPLOIT CHAIN</text>
 
-  <g transform="translate(138 180) rotate(-5 170 220)" filter="url(#soft)">
-    <rect x="0" y="0" width="340" height="432" rx="34" fill="#140f12" stroke="#f59e0b" stroke-width="3" stroke-opacity="0.76"/>
-    <path d="M172 0 L142 92 L184 150 L132 238 L182 306 L150 432" fill="none" stroke="#fee2e2" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-    <g fill="#7f1d1d" opacity="0.74">
-      <rect x="58" y="76" width="178" height="20" rx="10"/>
-      <rect x="58" y="124" width="238" height="20" rx="10"/>
-      <rect x="58" y="172" width="142" height="20" rx="10"/>
-      <rect x="58" y="264" width="218" height="68" rx="16"/>
-    </g>
-    <g stroke="#fee2e2" stroke-width="5" stroke-linecap="round" opacity="0.82">
-      <path d="M84 290 H214"/>
-      <path d="M84 312 H178"/>
-    </g>
-  </g>
+  <!-- chain of 4 stacked boxes inside x:150-800 y:320-585 -->
+  <rect x="184" y="338" width="556" height="46" rx="12" fill="#ffffff" fill-opacity="0.05" stroke="#94a3b8" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="462" y="367" text-anchor="middle" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="22" font-weight="600">logged string</text>
+  <line x1="462" y1="384" x2="462" y2="412" stroke="url(#sig)" stroke-width="4" marker-end="url(#arrow)"/>
 
-  <g opacity="0.74" fill="none" stroke-linecap="round">
-    <path d="M450 360 C620 274 760 242 960 232 C1080 226 1190 238 1280 266" stroke="url(#heat)" stroke-width="8"/>
-    <path d="M452 398 C656 382 806 382 984 412 C1124 436 1200 470 1288 526" stroke="url(#heat)" stroke-width="6"/>
-    <path d="M448 438 C588 530 748 590 948 606 C1090 618 1210 594 1298 552" stroke="url(#heat)" stroke-width="5"/>
-  </g>
+  <rect x="184" y="418" width="556" height="46" rx="12" fill="#ffffff" fill-opacity="0.05" stroke="#94a3b8" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="462" y="447" text-anchor="middle" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="22" font-weight="600">JNDI lookup</text>
+  <line x1="462" y1="464" x2="462" y2="492" stroke="url(#sig)" stroke-width="4" marker-end="url(#arrow)"/>
 
-  <g transform="translate(600 170)" opacity="0.94">
-    <g fill="#020617" fill-opacity="0.62" stroke="#64748b" stroke-opacity="0.54" stroke-width="2">
-      <rect x="0" y="0" width="162" height="74" rx="18"/>
-      <rect x="236" y="34" width="190" height="74" rx="18"/>
-      <rect x="82" y="154" width="212" height="74" rx="18"/>
-      <rect x="386" y="188" width="172" height="74" rx="18"/>
-      <rect x="34" y="324" width="178" height="74" rx="18"/>
-      <rect x="292" y="360" width="244" height="74" rx="18"/>
-    </g>
-    <g stroke="#334155" stroke-width="3" fill="none" opacity="0.6">
-      <path d="M162 38 C202 40 216 58 236 70"/>
-      <path d="M184 108 C156 126 126 138 112 154"/>
-      <path d="M294 192 C328 194 360 204 386 224"/>
-      <path d="M176 228 C138 260 112 290 102 324"/>
-      <path d="M260 228 C292 276 330 314 382 360"/>
-    </g>
-    <g fill="#f8fafc">
-      <circle cx="68" cy="37" r="8" fill="#ef4444"/>
-      <circle cx="318" cy="71" r="7" fill="#f59e0b"/>
-      <circle cx="176" cy="191" r="7" fill="#94a3b8"/>
-      <circle cx="472" cy="225" r="8" fill="#ef4444"/>
-      <circle cx="108" cy="361" r="7" fill="#f59e0b"/>
-      <circle cx="414" cy="397" r="8" fill="#94a3b8"/>
-    </g>
-  </g>
+  <rect x="184" y="498" width="556" height="46" rx="12" fill="#ffffff" fill-opacity="0.05" stroke="#94a3b8" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="462" y="527" text-anchor="middle" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="22" font-weight="600">attacker LDAP</text>
+  <line x1="462" y1="544" x2="462" y2="572" stroke="url(#sig)" stroke-width="4" marker-end="url(#arrow)"/>
 
-  <g opacity="0.44" fill="none" stroke="#ef4444" stroke-width="2">
-    <path d="M394 402 C520 270 700 198 906 164"/>
-    <path d="M384 430 C554 506 730 548 966 556"/>
-    <path d="M390 390 C584 380 778 384 1044 438"/>
-  </g>
+  <rect x="184" y="578" width="556" height="46" rx="12" fill="#ef4444" fill-opacity="0.16" stroke="#fb7185" stroke-opacity="0.85" stroke-width="2"/>
+  <text x="462" y="607" text-anchor="middle" fill="#fda4af" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="22" font-weight="700">remote class load</text>
 
-  <g fill="#f59e0b" opacity="0.72">
-    <path d="M536 276 l18 34 -38 -4z"/>
-    <path d="M758 548 l24 26 -40 8z" fill="#ef4444"/>
-    <path d="M1078 298 l26 22 -34 16z"/>
-    <circle cx="1188" cy="620" r="5" fill="#ef4444"/>
-    <circle cx="560" cy="620" r="4"/>
-    <circle cx="1240" cy="164" r="4"/>
-  </g>
+  <text x="872" y="302" fill="#fb923c" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="700" letter-spacing="3">WHAT TO KNOW</text>
+
+  <rect x="868" y="324" width="424" height="58" rx="14" fill="#fb923c" fill-opacity="0.09" stroke="#fb923c" stroke-opacity="0.3"/>
+  <circle cx="898" cy="353" r="6" fill="#fb923c"/>
+  <text x="920" y="360" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">CVE-2021-44228, CVSS 10.0</text>
+
+  <rect x="868" y="392" width="424" height="58" rx="14" fill="#fb923c" fill-opacity="0.09" stroke="#fb923c" stroke-opacity="0.3"/>
+  <circle cx="898" cy="421" r="6" fill="#fb923c"/>
+  <text x="920" y="428" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Logged input triggers lookups</text>
+
+  <rect x="868" y="460" width="424" height="58" rx="14" fill="#fb923c" fill-opacity="0.09" stroke="#fb923c" stroke-opacity="0.3"/>
+  <circle cx="898" cy="489" r="6" fill="#fb923c"/>
+  <text x="920" y="496" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Affects Log4j Core 2.x</text>
+
+  <rect x="868" y="528" width="424" height="58" rx="14" fill="#fb923c" fill-opacity="0.09" stroke="#fb923c" stroke-opacity="0.3"/>
+  <circle cx="898" cy="557" r="6" fill="#fb923c"/>
+  <text x="920" y="564" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">2.15.0 fixes Java 8</text>
+
+  <line x1="92" y1="690" x2="1308" y2="690" stroke="#94a3b8" stroke-opacity="0.22" stroke-width="1"/>
+  <text x="92" y="730" fill="#9fb3cf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="23">The real fix starts with one question: <tspan fill="#fb7185" font-weight="700">know what you run</tspan> before a crisis forces it.</text>
 </svg>

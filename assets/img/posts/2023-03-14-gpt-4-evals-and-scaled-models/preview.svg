@@ -1,50 +1,88 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 788" role="img" aria-labelledby="title desc">
-  <title id="title">Model evaluation surface</title>
-  <desc id="desc">Layered prompts and model outputs pass through evaluation gates and safety traces on a dark teal and rose field.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="788" viewBox="0 0 1400 788" role="img" aria-labelledby="title desc">
+  <title id="title">GPT-4 makes evaluation part of the product</title>
+  <desc id="desc">A left-to-right flow from prompt through GPT-4 to output, which branches into evals and safety review before a final ship gate, beside what shipped on launch day.</desc>
   <defs>
-    <radialGradient id="bg" cx="50%" cy="48%" r="78%">
-      <stop offset="0" stop-color="#1b3440"/>
-      <stop offset=".42" stop-color="#0d1420"/>
-      <stop offset="1" stop-color="#07080d"/>
-    </radialGradient>
-    <linearGradient id="hot" x1="0" x2="1">
-      <stop offset="0" stop-color="#47f5d6"/>
-      <stop offset=".48" stop-color="#ffd166"/>
-      <stop offset="1" stop-color="#ff6b9a"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#0a0f1c"/><stop offset="100%" stop-color="#0f1a30"/>
     </linearGradient>
-    <filter id="glow" x="-70%" y="-70%" width="240%" height="240%">
-      <feGaussianBlur stdDeviation="10" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <linearGradient id="sig" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/><stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <pattern id="grid" width="58" height="58" patternUnits="userSpaceOnUse">
+      <path d="M58 0 H0 V58" fill="none" stroke="#9fb3cf" stroke-width="1" opacity="0.05"/>
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.35"/><stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#67e8f9"/>
+    </marker>
   </defs>
   <rect width="1400" height="788" fill="url(#bg)"/>
-  <g transform="translate(120 160)">
-    <g opacity=".95">
-      <path d="M40 40 H500 L560 100 V382 H40 Z" fill="#101b26" stroke="#47f5d6" stroke-width="3"/>
-      <path d="M500 40 V100 H560" fill="none" stroke="#47f5d6" stroke-width="3"/>
-      <rect x="90" y="108" width="330" height="18" rx="9" fill="#47f5d6" opacity=".75"/>
-      <rect x="90" y="162" width="390" height="14" rx="7" fill="#6b7e9d"/>
-      <rect x="90" y="206" width="350" height="14" rx="7" fill="#6b7e9d"/>
-      <rect x="90" y="250" width="420" height="14" rx="7" fill="#6b7e9d"/>
-      <rect x="90" y="308" width="220" height="42" rx="16" fill="#172a31" stroke="#ffd166" stroke-width="3"/>
-    </g>
-    <g transform="translate(660 16)" filter="url(#glow)">
-      <path d="M0 0 H310 L420 190 L310 380 H0 L110 190 Z" fill="#121827" stroke="url(#hot)" stroke-width="5"/>
-      <path d="M120 104 H295 M90 190 H330 M120 276 H295" stroke="#47f5d6" stroke-width="8" stroke-linecap="round"/>
-      <path d="M210 58 V322" stroke="#ff6b9a" stroke-width="4" stroke-dasharray="8 18"/>
-    </g>
-  </g>
-  <g transform="translate(900 140)">
-    <rect x="190" y="0" width="148" height="76" rx="22" fill="#111a25" stroke="#47f5d6" stroke-width="3"/>
-    <path d="M222 38 L252 62 L306 18" fill="none" stroke="#47f5d6" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
-    <rect x="252" y="154" width="148" height="76" rx="22" fill="#1d1a14" stroke="#ffd166" stroke-width="3"/>
-    <path d="M326 175 V207 M326 225 V226" stroke="#ffd166" stroke-width="10" stroke-linecap="round"/>
-    <rect x="172" y="312" width="148" height="76" rx="22" fill="#21141c" stroke="#ff6b9a" stroke-width="3"/>
-    <path d="M216 334 L276 366 M276 334 L216 366" stroke="#ff6b9a" stroke-width="8" stroke-linecap="round"/>
-  </g>
-  <g fill="none" stroke="url(#hot)" stroke-width="3" opacity=".72">
-    <path d="M680 350 C792 278 910 188 1090 178"/>
-    <path d="M704 386 C832 388 940 326 1152 332"/>
-    <path d="M680 424 C820 502 916 510 1072 490"/>
-  </g>
+  <rect width="1400" height="788" fill="url(#grid)"/>
+  <ellipse cx="470" cy="430" rx="470" ry="280" fill="url(#glow)"/>
+  <text x="92" y="92" fill="#38bdf8" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="22" font-weight="700" letter-spacing="5">AI · EVALUATION</text>
+  <text x="90" y="152" fill="#eef3fb" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="44" font-weight="800">GPT-4 makes evaluation part of the product</text>
+  <text x="92" y="198" fill="#93a7c4" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="25">The model is one part. The harness around it decides what ships.</text>
+
+  <rect x="108" y="256" width="724" height="346" rx="20" fill="#ffffff" fill-opacity="0.035" stroke="#94a3b8" stroke-opacity="0.20" stroke-width="1.5"/>
+  <text x="138" y="302" fill="#8ea3bf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="700" letter-spacing="3">THE STACK AROUND THE MODEL</text>
+
+  <!-- Flow: prompt -> GPT-4 -> output -> {evals, safety review} -> ship gate -->
+  <!-- prompt -->
+  <rect x="158" y="412" width="100" height="56" rx="12" fill="#ffffff" fill-opacity="0.04" stroke="#94a3b8" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="208" y="446" fill="#cdd9ec" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="20" font-weight="600" text-anchor="middle">prompt</text>
+
+  <!-- GPT-4 -->
+  <rect x="300" y="406" width="118" height="68" rx="14" fill="url(#sig)" fill-opacity="0.22" stroke="#67e8f9" stroke-opacity="0.7" stroke-width="2"/>
+  <text x="359" y="447" fill="#eef3fb" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="22" font-weight="800" text-anchor="middle">GPT-4</text>
+
+  <!-- output -->
+  <rect x="462" y="412" width="100" height="56" rx="12" fill="#ffffff" fill-opacity="0.04" stroke="#94a3b8" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="512" y="446" fill="#cdd9ec" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="20" font-weight="600" text-anchor="middle">output</text>
+
+  <!-- evals (upper branch) -->
+  <rect x="600" y="338" width="116" height="56" rx="12" fill="#ffffff" fill-opacity="0.04" stroke="#94a3b8" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="658" y="372" fill="#cdd9ec" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="20" font-weight="600" text-anchor="middle">evals</text>
+
+  <!-- safety review (lower branch) -->
+  <rect x="600" y="486" width="116" height="56" rx="12" fill="#ffffff" fill-opacity="0.04" stroke="#94a3b8" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="658" y="510" fill="#cdd9ec" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="16" font-weight="600" text-anchor="middle">safety</text>
+  <text x="658" y="530" fill="#cdd9ec" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="16" font-weight="600" text-anchor="middle">review</text>
+
+  <!-- ship gate -->
+  <rect x="668" y="412" width="118" height="56" rx="12" fill="#fbbf24" fill-opacity="0.12" stroke="#fbbf24" stroke-opacity="0.6" stroke-width="2"/>
+  <text x="727" y="438" fill="#fde9b8" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="16" font-weight="700" text-anchor="middle">ship</text>
+  <text x="727" y="457" fill="#fde9b8" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="16" font-weight="700" text-anchor="middle">gate</text>
+
+  <!-- main arrows on sig path -->
+  <line x1="260" y1="440" x2="294" y2="440" stroke="#22d3ee" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="420" y1="440" x2="456" y2="440" stroke="#22d3ee" stroke-width="3" marker-end="url(#arrow)"/>
+  <!-- output branches up to evals and down to safety -->
+  <path d="M564 432 C 582 418, 582 374, 594 368" fill="none" stroke="#22d3ee" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M564 452 C 582 466, 582 510, 594 514" fill="none" stroke="#22d3ee" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <!-- evals and safety feed the ship gate -->
+  <path d="M716 372 C 738 384, 740 408, 736 414" fill="none" stroke="#6366f1" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M716 510 C 738 498, 740 472, 736 466" fill="none" stroke="#6366f1" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <text x="872" y="302" fill="#fbbf24" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="700" letter-spacing="3">WHAT SHIPPED</text>
+
+  <rect x="868" y="324" width="424" height="58" rx="14" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.3"/>
+  <circle cx="898" cy="353" r="6" fill="#fbbf24"/>
+  <text x="920" y="360" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Multimodal: image + text in</text>
+
+  <rect x="868" y="392" width="424" height="58" rx="14" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.3"/>
+  <circle cx="898" cy="421" r="6" fill="#fbbf24"/>
+  <text x="920" y="428" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">OpenAI Evals open-sourced</text>
+
+  <rect x="868" y="460" width="424" height="58" rx="14" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.3"/>
+  <circle cx="898" cy="489" r="6" fill="#fbbf24"/>
+  <text x="920" y="496" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Beats GPT-3.5 on benchmarks</text>
+
+  <rect x="868" y="528" width="424" height="58" rx="14" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.3"/>
+  <circle cx="898" cy="557" r="6" fill="#fbbf24"/>
+  <text x="920" y="564" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Model size withheld</text>
+
+  <line x1="92" y1="690" x2="1308" y2="690" stroke="#94a3b8" stroke-opacity="0.22" stroke-width="1"/>
+  <text x="92" y="730" fill="#9fb3cf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="23">A more capable model raises the ceiling, which makes <tspan fill="#38bdf8" font-weight="700">checking worth more</tspan>, not less.</text>
 </svg>

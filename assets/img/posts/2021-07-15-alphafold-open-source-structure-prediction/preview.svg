@@ -1,105 +1,72 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="800" viewBox="0 0 1400 800" role="img" aria-labelledby="title desc">
-  <title id="title">Open protein structure prediction toolchain</title>
-  <desc id="desc">A continuous protein ribbon crosses residue beads, confidence bands, and model-artifact layers in an abstract structure workflow.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="788" viewBox="0 0 1400 788" role="img" aria-labelledby="title desc">
+  <title id="title">AlphaFold 2 enters the toolchain</title>
+  <desc id="desc">Two backbone-accuracy bars in angstroms, AlphaFold 2 at 0.96 far lower than the next best at 2.8, beside what shipped with the release.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#080714"/>
-      <stop offset="48%" stop-color="#1f1231"/>
-      <stop offset="100%" stop-color="#062825"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#0a0f1c"/><stop offset="100%" stop-color="#0f1a30"/>
     </linearGradient>
-    <radialGradient id="rose" cx="38%" cy="44%" r="44%">
-      <stop offset="0%" stop-color="#fb7185" stop-opacity="0.44"/>
-      <stop offset="70%" stop-color="#080714" stop-opacity="0"/>
+    <linearGradient id="sig" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#34d399"/><stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <pattern id="grid" width="58" height="58" patternUnits="userSpaceOnUse">
+      <path d="M58 0 H0 V58" fill="none" stroke="#9fb3cf" stroke-width="1" opacity="0.05"/>
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.35"/><stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="teal" cx="70%" cy="48%" r="40%">
-      <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.32"/>
-      <stop offset="72%" stop-color="#080714" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="ribbonA" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#fbbf24"/>
-      <stop offset="28%" stop-color="#fb7185"/>
-      <stop offset="62%" stop-color="#a78bfa"/>
-      <stop offset="100%" stop-color="#2dd4bf"/>
-    </linearGradient>
-    <linearGradient id="ribbonB" x1="1" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#67e8f9"/>
-      <stop offset="52%" stop-color="#a78bfa"/>
-      <stop offset="100%" stop-color="#fbbf24"/>
-    </linearGradient>
-    <filter id="soft" x="-30%" y="-80%" width="160%" height="260%">
-      <feGaussianBlur stdDeviation="8" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
   </defs>
-  <rect width="1400" height="800" fill="url(#bg)"/>
-  <rect width="1400" height="800" fill="url(#rose)"/>
-  <rect width="1400" height="800" fill="url(#teal)"/>
+  <rect width="1400" height="788" fill="url(#bg)"/>
+  <rect width="1400" height="788" fill="url(#grid)"/>
+  <ellipse cx="470" cy="430" rx="470" ry="280" fill="url(#glow)"/>
+  <text x="92" y="92" fill="#34d399" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="22" font-weight="700" letter-spacing="5">AI · STRUCTURAL BIOLOGY</text>
+  <text x="90" y="152" fill="#eef3fb" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="54" font-weight="800">AlphaFold 2 enters the toolchain</text>
+  <text x="92" y="198" fill="#93a7c4" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="25">A paper and code release turn a benchmark result into a usable tool.</text>
 
-  <g transform="translate(96 110)" opacity="0.5">
-    <g fill="none" stroke="#475569" stroke-width="2">
-      <rect x="0" y="0" width="382" height="164" rx="22"/>
-      <rect x="34" y="42" width="314" height="22" rx="11"/>
-      <rect x="34" y="82" width="238" height="22" rx="11"/>
-      <rect x="34" y="122" width="286" height="22" rx="11"/>
-    </g>
-    <g fill="#fbbf24">
-      <circle cx="56" cy="53" r="5"/><circle cx="104" cy="53" r="5" fill="#fb7185"/><circle cx="152" cy="53" r="5" fill="#2dd4bf"/>
-      <circle cx="86" cy="93" r="5" fill="#a78bfa"/><circle cx="178" cy="93" r="5"/>
-      <circle cx="66" cy="133" r="5" fill="#2dd4bf"/><circle cx="230" cy="133" r="5" fill="#fb7185"/>
-    </g>
-  </g>
+  <rect x="108" y="256" width="724" height="346" rx="20" fill="#ffffff" fill-opacity="0.035" stroke="#94a3b8" stroke-opacity="0.20" stroke-width="1.5"/>
+  <text x="138" y="302" fill="#8ea3bf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="700" letter-spacing="3">BACKBONE ACCURACY · LOWER IS BETTER</text>
 
-  <g transform="translate(870 130)" opacity="0.46">
-    <rect x="0" y="0" width="390" height="176" rx="24" fill="#020617" fill-opacity="0.28" stroke="#5eead4" stroke-opacity="0.35"/>
-    <g stroke="#5eead4" stroke-width="2" fill="none" opacity="0.62">
-      <path d="M44 126 H336"/>
-      <path d="M44 92 H336"/>
-      <path d="M44 58 H336"/>
-    </g>
-    <g fill="#5eead4">
-      <rect x="60" y="114" width="44" height="12" rx="6"/>
-      <rect x="124" y="80" width="78" height="12" rx="6" fill="#fbbf24"/>
-      <rect x="228" y="46" width="92" height="12" rx="6" fill="#fb7185"/>
-      <rect x="250" y="114" width="54" height="12" rx="6" fill="#a78bfa"/>
-    </g>
-  </g>
+  <!-- y axis: 0-3 angstroms, baseline y=560, 3A at y=360 (66.7px per A) -->
+  <line x1="300" y1="356" x2="300" y2="560" stroke="#94a3b8" stroke-opacity="0.30" stroke-width="1.5"/>
+  <line x1="296" y1="560" x2="300" y2="560" stroke="#94a3b8" stroke-opacity="0.45" stroke-width="1.5"/>
+  <text x="288" y="566" fill="#7e93b0" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="15" text-anchor="end">0 &#197;</text>
+  <line x1="296" y1="493" x2="300" y2="493" stroke="#94a3b8" stroke-opacity="0.45" stroke-width="1.5"/>
+  <text x="288" y="499" fill="#7e93b0" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="15" text-anchor="end">1 &#197;</text>
+  <line x1="296" y1="427" x2="300" y2="427" stroke="#94a3b8" stroke-opacity="0.45" stroke-width="1.5"/>
+  <text x="288" y="433" fill="#7e93b0" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="15" text-anchor="end">2 &#197;</text>
+  <line x1="296" y1="360" x2="300" y2="360" stroke="#94a3b8" stroke-opacity="0.45" stroke-width="1.5"/>
+  <text x="288" y="366" fill="#7e93b0" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="15" text-anchor="end">3 &#197;</text>
 
-  <g filter="url(#soft)" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M156 500 C250 358 414 360 512 476 C604 586 758 590 836 454 C918 310 1088 298 1242 410"
-          stroke="url(#ribbonA)" stroke-width="22"/>
-    <path d="M228 584 C350 482 456 510 548 604 C652 710 802 652 850 520 C900 382 1038 384 1148 512"
-          stroke="url(#ribbonB)" stroke-width="16" opacity="0.84"/>
-    <path d="M336 390 C434 250 590 280 646 412 C700 538 832 532 916 414 C988 314 1086 328 1198 362"
-          stroke="#fbbf24" stroke-width="10" opacity="0.76"/>
-  </g>
+  <!-- baseline -->
+  <line x1="300" y1="560" x2="782" y2="560" stroke="#94a3b8" stroke-opacity="0.30" stroke-width="1.5"/>
 
-  <g opacity="0.82">
-    <g fill="#f8fafc">
-      <circle cx="156" cy="500" r="8" fill="#fbbf24"/>
-      <circle cx="308" cy="402" r="7" fill="#fb7185"/>
-      <circle cx="512" cy="476" r="9" fill="#2dd4bf"/>
-      <circle cx="704" cy="570" r="7" fill="#a78bfa"/>
-      <circle cx="836" cy="454" r="8" fill="#fbbf24"/>
-      <circle cx="1010" cy="330" r="7" fill="#fb7185"/>
-      <circle cx="1242" cy="410" r="8" fill="#2dd4bf"/>
-    </g>
-    <g fill="none" stroke="#e9d5ff" stroke-width="2" opacity="0.42">
-      <circle cx="512" cy="476" r="34"/>
-      <circle cx="836" cy="454" r="42"/>
-      <circle cx="1010" cy="330" r="30"/>
-    </g>
-  </g>
+  <!-- Bar 1: AlphaFold 2 = 0.96 A -> height 64, top y=496 -->
+  <rect x="380" y="496" width="124" height="64" rx="6" fill="url(#sig)"/>
+  <text x="442" y="485" fill="#6ee7b7" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="25" font-weight="800" text-anchor="middle">0.96 &#197;</text>
+  <text x="442" y="584" fill="#cdd9ec" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="18" font-weight="600" text-anchor="middle">AlphaFold 2</text>
 
-  <g transform="translate(150 650)" opacity="0.72">
-    <rect x="0" y="0" width="1090" height="34" rx="17" fill="#020617" fill-opacity="0.56" stroke="#475569" stroke-opacity="0.36"/>
-    <rect x="18" y="9" width="188" height="16" rx="8" fill="#fb7185"/>
-    <rect x="226" y="9" width="292" height="16" rx="8" fill="#fbbf24"/>
-    <rect x="538" y="9" width="250" height="16" rx="8" fill="#2dd4bf"/>
-    <rect x="808" y="9" width="260" height="16" rx="8" fill="#a78bfa"/>
-  </g>
+  <!-- Bar 2: next best = 2.8 A -> height 187, top y=373 -->
+  <rect x="588" y="373" width="124" height="187" rx="6" fill="#5b6678" fill-opacity="0.85"/>
+  <text x="650" y="362" fill="#9fb0c6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="25" font-weight="800" text-anchor="middle">2.8 &#197;</text>
+  <text x="650" y="584" fill="#cdd9ec" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="18" font-weight="600" text-anchor="middle">next best</text>
 
-  <g fill="none" stroke="#a78bfa" stroke-width="2" opacity="0.22">
-    <path d="M118 628 C346 706 562 726 812 652 C1016 592 1134 598 1284 650"/>
-    <path d="M118 204 C328 272 542 256 720 198 C920 134 1098 150 1284 226"/>
-  </g>
+  <text x="872" y="302" fill="#fbbf24" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="700" letter-spacing="3">WHAT SHIPPED</text>
+
+  <rect x="868" y="324" width="424" height="58" rx="14" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.3"/>
+  <circle cx="898" cy="353" r="6" fill="#fbbf24"/>
+  <text x="920" y="360" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Peer-reviewed Nature paper</text>
+
+  <rect x="868" y="392" width="424" height="58" rx="14" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.3"/>
+  <circle cx="898" cy="421" r="6" fill="#fbbf24"/>
+  <text x="920" y="428" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Public code on GitHub</text>
+
+  <rect x="868" y="460" width="424" height="58" rx="14" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.3"/>
+  <circle cx="898" cy="489" r="6" fill="#fbbf24"/>
+  <text x="920" y="496" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Per-residue pLDDT score</text>
+
+  <rect x="868" y="528" width="424" height="58" rx="14" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.3"/>
+  <circle cx="898" cy="557" r="6" fill="#fbbf24"/>
+  <text x="920" y="564" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Tested beyond CASP14</text>
+
+  <line x1="92" y1="690" x2="1308" y2="690" stroke="#94a3b8" stroke-opacity="0.22" stroke-width="1"/>
+  <text x="92" y="730" fill="#9fb3cf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="23">The benchmark announced the result; <tspan fill="#34d399" font-weight="700">the paper and code hand it to the field</tspan>.</text>
 </svg>

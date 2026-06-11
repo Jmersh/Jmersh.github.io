@@ -1,51 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 788" role="img" aria-labelledby="title desc">
-  <title id="title">Mars helicopter autonomous flight</title>
-  <desc id="desc">A small helicopter rises over a Martian terrain grid with delayed communication pulses crossing the sky.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="788" viewBox="0 0 1400 788" role="img" aria-labelledby="title desc">
+  <title id="title">The first powered flight on Mars</title>
+  <desc id="desc">An altitude curve rises to a roughly three-metre hover, holds, then descends to a dashed Martian ground line, beside the key facts of Ingenuity's first flight.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#130b10"/>
-      <stop offset=".48" stop-color="#27120d"/>
-      <stop offset="1" stop-color="#07090f"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#0a0f1c"/><stop offset="100%" stop-color="#0f1a30"/>
     </linearGradient>
-    <radialGradient id="dust" cx="45%" cy="60%" r="60%">
-      <stop offset="0" stop-color="#ff8d4d" stop-opacity=".45"/>
-      <stop offset="1" stop-color="#ff8d4d" stop-opacity="0"/>
+    <linearGradient id="sig" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fbbf24"/><stop offset="100%" stop-color="#fb923c"/>
+    </linearGradient>
+    <pattern id="grid" width="58" height="58" patternUnits="userSpaceOnUse">
+      <path d="M58 0 H0 V58" fill="none" stroke="#9fb3cf" stroke-width="1" opacity="0.05"/>
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ea580c" stop-opacity="0.35"/><stop offset="100%" stop-color="#ea580c" stop-opacity="0"/>
     </radialGradient>
-    <filter id="glow" x="-70%" y="-70%" width="240%" height="240%">
-      <feGaussianBlur stdDeviation="9" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
   </defs>
   <rect width="1400" height="788" fill="url(#bg)"/>
-  <rect width="1400" height="788" fill="url(#dust)"/>
-  <g transform="translate(0 585)" fill="none" stroke="#8f4932" stroke-width="2" opacity=".5">
-    <path d="M0 62 C180 20 300 120 470 72 C675 15 830 120 1020 66 C1180 20 1270 52 1400 30"/>
-    <path d="M90 145 H1310"/><path d="M170 96 H1210"/>
-    <path d="M260 0 L130 180"/><path d="M470 0 L410 180"/><path d="M700 0 L700 180"/><path d="M930 0 L990 180"/><path d="M1140 0 L1270 180"/>
-  </g>
-  <g transform="translate(535 220)" filter="url(#glow)">
-    <ellipse cx="165" cy="0" rx="265" ry="32" fill="none" stroke="#ffc56d" stroke-width="5"/>
-    <ellipse cx="165" cy="0" rx="150" ry="18" fill="none" stroke="#ff6a3d" stroke-width="4" opacity=".8"/>
-    <rect x="110" y="96" width="110" height="74" rx="18" fill="#161a22" stroke="#ffd28b" stroke-width="4"/>
-    <path d="M165 32 V96" stroke="#ffd28b" stroke-width="6" stroke-linecap="round"/>
-    <path d="M92 132 H238" stroke="#ff8d4d" stroke-width="7" stroke-linecap="round"/>
-    <path d="M128 170 L98 234 M202 170 L232 234" stroke="#ffd28b" stroke-width="5" stroke-linecap="round"/>
-  </g>
-  <g fill="none" stroke-linecap="round">
-    <path d="M710 470 C708 430 705 390 700 350" stroke="#ffd28b" stroke-width="4" stroke-dasharray="8 18"/>
-    <path d="M742 468 C764 426 780 383 790 338" stroke="#ff8d4d" stroke-width="3" stroke-dasharray="6 15"/>
-    <path d="M678 468 C642 428 618 390 606 350" stroke="#62d7ff" stroke-width="3" stroke-dasharray="6 15"/>
-  </g>
-  <g opacity=".9">
-    <path d="M104 180 C232 122 356 118 506 170" fill="none" stroke="#62d7ff" stroke-width="3"/>
-    <path d="M104 230 C248 178 372 182 506 232" fill="none" stroke="#62d7ff" stroke-width="3" opacity=".55"/>
-    <circle cx="104" cy="180" r="9" fill="#62d7ff"/>
-    <circle cx="506" cy="170" r="9" fill="#62d7ff"/>
-    <rect x="86" y="252" width="128" height="54" rx="18" fill="#101820" stroke="#62d7ff" stroke-width="3"/>
-  </g>
-  <g opacity=".9">
-    <path d="M1168 188 L1240 224 L1312 188" fill="none" stroke="#ffc56d" stroke-width="4"/>
-    <path d="M1168 236 L1240 272 L1312 236" fill="none" stroke="#ffc56d" stroke-width="4" opacity=".55"/>
-    <circle cx="1240" cy="224" r="10" fill="#ffc56d"/>
-  </g>
+  <rect width="1400" height="788" fill="url(#grid)"/>
+  <ellipse cx="470" cy="430" rx="470" ry="280" fill="url(#glow)"/>
+  <text x="92" y="92" fill="#fb923c" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="22" font-weight="700" letter-spacing="5">SPACE · FLIGHT</text>
+  <text x="90" y="152" fill="#eef3fb" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="54" font-weight="800">The first powered flight on Mars</text>
+  <text x="92" y="198" fill="#93a7c4" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="25">Controlled flight on another world is now a robotics problem, not a stunt.</text>
+  <rect x="108" y="256" width="724" height="346" rx="20" fill="#ffffff" fill-opacity="0.035" stroke="#94a3b8" stroke-opacity="0.20" stroke-width="1.5"/>
+  <text x="138" y="302" fill="#8ea3bf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="700" letter-spacing="3">FLIGHT PROFILE</text>
+  <!-- viz inside x:150-800 y:320-585 -->
+  <!-- dashed ground line -->
+  <line x1="170" y1="560" x2="790" y2="560" stroke="#94a3b8" stroke-opacity="0.45" stroke-width="2" stroke-dasharray="9 10"/>
+  <text x="170" y="582" fill="#7e93b0" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="15" letter-spacing="1">MARTIAN SURFACE</text>
+  <!-- hover plateau reference line -->
+  <line x1="360" y1="396" x2="600" y2="396" stroke="#fbbf24" stroke-opacity="0.30" stroke-width="1.5" stroke-dasharray="4 8"/>
+  <!-- altitude curve: rise, hover plateau, descend to land -->
+  <path d="M190 560 C250 560 300 430 360 396 L600 396 C660 430 710 560 770 560" fill="none" stroke="url(#sig)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- liftoff and landing markers -->
+  <circle cx="190" cy="560" r="7" fill="#fbbf24"/>
+  <circle cx="770" cy="560" r="7" fill="#fb923c"/>
+  <!-- bright hover endpoints -->
+  <circle cx="360" cy="396" r="7" fill="#fde68a"/>
+  <circle cx="600" cy="396" r="7" fill="#fde68a"/>
+  <!-- hover height label -->
+  <text x="480" y="382" fill="#fde68a" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="22" font-weight="700" text-anchor="middle">~3 m</text>
+  <text x="480" y="430" fill="#9fb3cf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="16" text-anchor="middle">hover</text>
+  <!-- duration label -->
+  <text x="480" y="540" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21" font-weight="700" text-anchor="middle">39.1 s</text>
+  <text x="480" y="520" fill="#7e93b0" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="15" text-anchor="middle">total flight</text>
+  <!-- phase labels -->
+  <text x="250" y="500" fill="#8ea3bf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="15" text-anchor="middle">climb</text>
+  <text x="700" y="500" fill="#8ea3bf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="15" text-anchor="middle">descend</text>
+  <!-- RIGHT LIST -->
+  <text x="872" y="302" fill="#fbbf24" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="700" letter-spacing="3">THE FLIGHT</text>
+  <rect x="868" y="324" width="424" height="58" rx="14" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.3"/>
+  <circle cx="898" cy="353" r="6" fill="#fbbf24"/>
+  <text x="920" y="360" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">First powered flight on Mars</text>
+  <rect x="868" y="392" width="424" height="58" rx="14" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.3"/>
+  <circle cx="898" cy="421" r="6" fill="#fbbf24"/>
+  <text x="920" y="428" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Rose to ~3 m, held a hover</text>
+  <rect x="868" y="460" width="424" height="58" rx="14" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.3"/>
+  <circle cx="898" cy="489" r="6" fill="#fbbf24"/>
+  <text x="920" y="496" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Flies itself, no joystick</text>
+  <rect x="868" y="528" width="424" height="58" rx="14" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.3"/>
+  <circle cx="898" cy="557" r="6" fill="#fbbf24"/>
+  <text x="920" y="564" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Relayed via Perseverance</text>
+  <line x1="92" y1="690" x2="1308" y2="690" stroke="#94a3b8" stroke-opacity="0.22" stroke-width="1"/>
+  <text x="92" y="730" fill="#9fb3cf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="23">The signal delay is too long to fly by hand, so the craft has to <tspan fill="#fb923c" font-weight="700">fly itself</tspan>.</text>
 </svg>
