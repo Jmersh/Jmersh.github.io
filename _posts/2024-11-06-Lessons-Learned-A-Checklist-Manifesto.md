@@ -21,15 +21,15 @@ That gap is familiar enough to sting.
 ![Checklists as a reliability tool for complex work](preview.jpg){: w="700" h="394" .shadow }
 _A checklist makes skill more reliable under pressure rather than replacing it._
 
-## Ignorance Versus Execution
+## Ignorance versus execution
 
 Gawande splits failure into two kinds: not knowing enough, and not using what we know. In modern work, the second kind is everywhere.
 
-Software engineers forget a migration step. A lab process misses a calibration check. A deployment skips a rollback plan. A model evaluation ships without asking whether the benchmark is contaminated. None of these failures require ignorance. Each one happens when complexity outruns attention.
+Software engineers forget a migration step. A lab process misses a calibration check. A deployment skips a rollback plan. A model evaluation ships without asking whether the benchmark is contaminated. None of these slips come from a lack of skill. Each one happens when the work gets too busy to track.
 
 Checklists target the gap between knowing a step and doing it under load.
 
-## Why Experts Still Need Simple Tools
+## Why experts still need simple tools
 
 Checklists show up in fields that already take skill seriously. Pilots use them because memory is not enough in a cockpit. Builders use structured handoffs because a project is too complex for one person to track. Surgeons use them because skilled teams still miss steps when the room is noisy.
 
@@ -38,7 +38,7 @@ The WHO surgical safety checklist is a strong example. In a multi-hospital study
 {: .prompt-info }
 A good checklist does not replace judgment. It opens a moment where judgment has a better chance to show up.
 
-## What Makes A Checklist Good
+## What makes a checklist good
 
 The worst checklist is a long form that tries to make up for bad training. Few teams need another box to tick.
 
@@ -55,17 +55,17 @@ In technical work, that might look like:
 
 The common thread is cutting avoidable error, not adding red tape.
 
-## The Engineering Parallel
+## The engineering parallel
 
-Engineering teams already believe in this idea, even when they do not call it a checklist. They use tests, code review templates, pull request gates, runbooks, alerts, and postmortems. Each one admits that people need systems around complex work.
+Engineering teams already buy into this idea, even when they do not call it a checklist. They use tests, code review templates, pull request gates, runbooks, alerts, and postmortems. Each one admits that people need systems around hard work.
 
-Building those systems reflects maturity rather than weakness.
+Building those systems is a sign of skill, not weakness.
 
-[When Coding Benchmarks Stop Measuring Progress](/posts/when-coding-benchmarks-stop-measuring-progress/) treats AI benchmarks as test tools rather than scores to trust on sight. The same mindset fits here. A checklist is a small tool for measuring and lining up the work. It asks whether the team did the parts it already knows matter.
+The same mindset fits AI work: treat a benchmark as a test tool rather than a score to trust on sight. A checklist plays a similar role. It is a small tool that lines up the work and asks whether the team did the parts it already knows matter.
 
-## A Shift in Perspective
+## A shift in perspective
 
-Simple work systems earn attention because they survive contact with reality, not because they are flashy.
+Simple work systems earn trust because they hold up in the real world. They do not need to be flashy.
 
 Checklists work as a way to save attention. When the list carries the routine details, the person can spend more energy on the hard parts: judgment, tradeoffs, talking it through, and problem solving.
 
@@ -81,7 +81,7 @@ The best checklists are built by the people who know the work. They are tested w
 
 _The Checklist Manifesto_ is about humility in complex systems more than it is about lists.
 
-Expertise still needs structure. When the work matters, the basics deserve protection.
+Even an expert needs structure. When the work matters, guard the basics.
 
 ## References
 

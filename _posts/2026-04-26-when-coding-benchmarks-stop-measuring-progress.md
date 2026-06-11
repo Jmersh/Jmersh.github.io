@@ -19,7 +19,7 @@ OpenAI made that point in February 2026. It said it no longer uses SWE-bench Ver
 ![Benchmark dashboard with coding-agent evaluation signals](preview.svg){: w="700" h="394" .shadow }
 _A useful coding benchmark has to test the behavior we care about, not just the behavior that is easiest to score._
 
-## Why This Matters Now
+## Why this matters now
 
 SWE-bench is one of the best-known test sets for AI systems that try real software work. The setup is appealing because it looks like the day job. An agent gets a real GitHub issue, opens a repository, writes a patch, and is graded by tests.
 
@@ -32,7 +32,7 @@ That setup is much closer to real work than a toy coding puzzle. It also raises 
 
 These questions matter for anyone trying to use AI in real development work. A benchmark score is only useful if it predicts how the agent will behave in a real repository.
 
-## What SWE-bench Verified Was Trying To Fix
+## What SWE-bench Verified was trying to fix
 
 The first SWE-bench benchmark gathered real GitHub issues and their fixes from open-source Python repositories. A model had to write a patch from the issue text and the repository state. Tests then checked the patch. The target tests should fail before the fix and pass after it, while older regression tests should keep passing.
 
@@ -53,7 +53,7 @@ Second, leak risk has grown. SWE-bench Verified is public, widely discussed, and
 {: .prompt-info }
 Both problems get worse as models improve. A weak model fails for many reasons, so benchmark flaws hide in the noise. A stronger model lays the test flaws bare.
 
-## A Benchmark Is A Test System
+## A benchmark is a test system
 
 It helps to treat a benchmark as a software system, not a scoreboard. It has inputs, hidden state, scoring logic, failure modes, and users who act on the output.
 
@@ -70,7 +70,7 @@ flowchart LR
 
 When the scoring logic is shaky, the final number is shaky too. In normal software, we would call that a test quality problem. In AI scoring, that same number can drive a market, safety, or buying call. The shift often goes unnoticed until later.
 
-## Practical Engineering Takeaways
+## Practical engineering takeaways
 
 Benchmarks still help engineering teams, and ignoring them is the wrong call. They work best as one piece of evidence. Weigh them against other signals rather than read them as ground truth.
 
@@ -86,7 +86,7 @@ This connects to a broader engineering theme: simple process tools often protect
 
 It also ties back to the earlier look at model learning in [AI Innovation: Orca and Progressive Learning](/posts/AI-Innovation-Orca-and-Progressive-Learning/). As models learn from richer traces, explanations, and public examples, scoring has to get more careful about what the model can see before the test begins.
 
-## What This Means For AI Coding Agents
+## What this means for AI coding agents
 
 The next phase of coding-agent scoring will likely look less like one public leaderboard and more like a layered test program. Public benchmarks can still give a shared baseline. Private tasks can cut leaked data. Human review can judge intent and how easy the code is to maintain. Production data can show whether the tool speeds up delivery without adding more bugs.
 

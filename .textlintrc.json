@@ -1,0 +1,19 @@
+{
+  "rules": {
+    "no-todo": true,
+    "no-zero-width-spaces": true,
+    "@textlint-rule/no-invalid-control-character": true,
+    "no-empty-section": true,
+    "common-misspellings": true,
+    "write-good": {
+      "passive": false,
+      "illusion": false,
+      "so": false,
+      "thereIs": false,
+      "weasel": false,
+      "adverb": false,
+      "cliches": true,
+      "tooWordy": false
+    }
+  }
+}

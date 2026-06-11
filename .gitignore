@@ -15,6 +15,11 @@ _site
 node_modules
 package-lock.json
 
+# Prose lint reports and working dirs
+.slopless/
+.textlint/
+.svg-review/
+
 # IDE configurations
 .idea
 .vscode/*

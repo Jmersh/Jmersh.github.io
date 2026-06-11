@@ -12,43 +12,43 @@ math: false
 mermaid: true
 ---
 
-Post-quantum cryptography is leaving the standards conversation and entering the tools people use day to day. GnuPG 2.5.19, announced on April 24, 2026, is a useful signal. The 2.5 series adds Kyber, now standardized as ML-KEM in FIPS 203, as a post-quantum encryption algorithm.
+Post-quantum cryptography is moving out of the standards world. It is now showing up in tools people use every day. GnuPG 2.5.19, announced on April 24, 2026, is a useful signal. The 2.5 series adds Kyber, now standardized as ML-KEM in FIPS 203. That is a post-quantum encryption algorithm.
 
-Encrypted files, email, package signatures, and key-management workflows are not suddenly quantum-safe because of this release. The migration is becoming concrete. The work is moving from "cryptographers should solve this" to "software teams need to inventory, upgrade, test, and maintain this."
+This release does not make your encrypted files, email, package signatures, and key workflows quantum-safe. But the shift is now real. The work is moving from "cryptographers should solve this" to "software teams need to inventory, upgrade, test, and maintain this."
 
 ![Post-quantum cryptography moving into security tooling](preview.jpg){: w="700" h="394" .shadow }
-_Post-quantum migration is less about one algorithm swap and more about making cryptographic systems easier to change._
+_Post-quantum work is less about one algorithm swap. It is more about making crypto systems easy to change._
 
-## First, A Vocabulary Fix
+## First, a vocabulary fix
 
 People often say "quantum crypto" when they mean several different things.
 
-Quantum cryptography usually refers to systems that use quantum physics directly, such as quantum key distribution. Post-quantum cryptography is different. It runs on classical software and math. Its algorithms are designed so that known quantum attacks should not break them efficiently.
+Quantum cryptography uses quantum physics directly. One example is quantum key distribution. Post-quantum cryptography is not the same thing. It runs on normal software and math. Its algorithms are built so known quantum attacks should not break them fast.
 
-The GnuPG news is about post-quantum cryptography. The distinction keeps the engineering problem grounded as a software migration, rather than a speculative hardware story.
+The GnuPG news is about post-quantum cryptography. That gap matters. It keeps the problem grounded as a software job. It is not a far-off hardware story.
 
-## Why Quantum Computers Threaten Today's Public-Key Crypto
+## Why quantum computers threaten today's public-key crypto
 
-Modern public-key systems rely on math problems that are hard for ordinary computers. RSA leans on the difficulty of factoring large integers. Elliptic-curve cryptography leans on the difficulty of discrete logarithm problems over elliptic curves.
+Modern public-key systems rest on math that is hard for normal computers. RSA rests on how hard it is to factor large numbers. Elliptic-curve cryptography rests on hard discrete-log problems over elliptic curves.
 
-A capable quantum computer would change that risk model. Shor's algorithm showed that quantum computers can solve the underlying factoring and discrete-log problems far faster than classical computers. That speed would break much of today's public-key encryption and signatures.
+A strong quantum computer would change that risk. Shor's algorithm showed that quantum computers can solve the factoring and discrete-log problems. And they can do it much faster than normal computers. That speed would break much of today's public-key encryption and signatures.
 
-Symmetric cryptography does not disappear overnight, but protocols, keys, certificates, signatures, package verification, secure email, update systems, and long-lived encrypted data all need serious attention.
+Symmetric cryptography does not break overnight. But many other things still need a close look. The list is long. It covers protocols, keys, certs, and signatures. It also covers package checks, secure email, update systems, and old encrypted data.
 
-## What GnuPG Changed
+## What GnuPG changed
 
-GnuPG is one of the most practical places for this transition to show up. It is a free implementation of OpenPGP and S/MIME. Teams use it widely for encryption, signing, key management, software distribution, and integration through libraries such as GPGME.
+GnuPG is one of the best places to watch this shift. It is a free build of OpenPGP and S/MIME. Teams use it a lot. It handles encryption, signing, key management, and software releases. It also plugs into code through libraries such as GPGME.
 
-The April 2026 release announcement for GnuPG 2.5.19 says the 2.5 series adds Kyber, also called ML-KEM or FIPS 203, as a post-quantum encryption algorithm. It also notes that the older 2.4 series is nearing end-of-life. That timing makes this less of a lab curiosity and more of an upgrade-path question.
+The April 2026 release notes for GnuPG 2.5.19 say the 2.5 series adds Kyber. Kyber is also called ML-KEM or FIPS 203. It is a post-quantum encryption algorithm. The notes also say the older 2.4 series is nearing end-of-life. That makes this less of a lab demo and more of an upgrade question.
 
 {: .prompt-info }
-GnuPG's PQC support is about encryption, not a blanket statement that every signing or certification workflow is post-quantum today. The remaining gaps are what migration planning has to cover.
+GnuPG's PQC support is about encryption. It does not mean every signing or certification step is post-quantum today. Those gaps are what your migration plan has to cover.
 
-## Why ML-KEM Matters
+## Why ML-KEM matters
 
-NIST finalized its first three post-quantum cryptography standards in 2024. FIPS 203 defines ML-KEM, the Module-Lattice-Based Key-Encapsulation Mechanism, based on the CRYSTALS-Kyber algorithm. NIST means it to be the primary standard for general encryption and key establishment.
+NIST finalized its first three PQC standards in 2024. FIPS 203 defines ML-KEM. The full name is the Module-Lattice-Based Key-Encapsulation Mechanism. It is based on the CRYSTALS-Kyber algorithm. NIST wants it to be the main standard for general encryption and key setup.
 
-The core engineering idea is a key encapsulation mechanism. Instead of encrypting a large message with public-key math, a KEM helps two parties agree on shared secret material. That shared secret then feeds symmetric encryption, where modern systems are already strong and fast.
+The core idea is a key encapsulation mechanism. A KEM helps two sides agree on a shared secret. It skips the slow step of locking a large message with public-key math. That secret then feeds symmetric encryption. And symmetric systems are already strong and fast.
 
 At a high level:
 
@@ -63,56 +63,56 @@ flowchart LR
     G --> H[Message decrypted]
 ```
 
-The math underneath ML-KEM comes from module lattices, not the integer factoring or elliptic-curve discrete-log assumptions that quantum computers threaten more directly. Lattice hardness is what makes it a core part of the post-quantum transition.
+The math under ML-KEM comes from module lattices. It does not rest on integer factoring or elliptic-curve discrete-log math. Those are the problems quantum computers threaten most. Lattice hardness is what makes ML-KEM a core part of the post-quantum shift.
 
-## The Real Problem Is Crypto Agility
+## The real problem is crypto agility
 
-The hardest part of post-quantum migration is knowing where cryptography lives in the first place, well before any standard gets read or any package gets installed.
+The hardest part of post-quantum work comes first. You have to know where cryptography lives. That step matters long before you read a standard or install a package.
 
 Cryptography tends to hide in layers:
 
 - TLS libraries and certificate chains.
 - SSH keys and automation scripts.
-- Package signing and release verification.
-- S/MIME, OpenPGP, and archived email.
+- Package signing and release checks.
+- S/MIME, OpenPGP, and stored email.
 - Firmware and software update systems.
 - Hardware security modules and smartcards.
-- Vendor products with embedded crypto choices.
+- Vendor products with built-in crypto choices.
 
-For that reason, CISA, NSA, and NIST have pushed organizations toward quantum-readiness roadmaps, cryptographic inventories, risk assessments, and vendor talks. A system cannot migrate what nobody has mapped.
+So CISA, NSA, and NIST have pushed groups to build quantum-readiness roadmaps. They also ask for crypto inventories, risk checks, and vendor talks. A team cannot move what nobody has mapped.
 
-A plain checklist mindset helps here. [Finding Excellence in Simplicity: My Journey with "The Checklist Manifesto"](/posts/Lessons-Learned-A-Checklist-Manifesto/) covers simple process tools as a form of professional discipline. Post-quantum migration needs the same discipline. Find the cryptography, classify it, prioritize it, and keep revisiting it.
+A plain checklist mindset helps here. [Finding Excellence in Simplicity: My Journey with "The Checklist Manifesto"](/posts/Lessons-Learned-A-Checklist-Manifesto/) treats simple process tools as a form of discipline. Post-quantum work needs the same habit. Find the cryptography, sort it, rank it, and keep checking it.
 
-## What Software Teams Should Take From This
+## What software teams should take from this
 
-GnuPG's move does not call for switching everything immediately and declaring victory. It signals that the ecosystem is starting to provide real migration hooks.
+GnuPG's move is a sign, not a finish line. The ecosystem is starting to offer real migration hooks. Switching everything at once and calling it done would miss the point.
 
-For a software team, a reasonable first pass looks like this:
+For a software team, a good first pass looks like this:
 
-- Identify systems that use RSA, ECDH, ECDSA, or other public-key cryptography.
-- Separate confidentiality risks from authenticity risks. Encryption and signatures have different migration paths.
-- Prioritize data with a long secrecy lifetime because of harvest-now, decrypt-later risk.
-- Track dependency support for ML-KEM and post-quantum signatures.
+- Find systems that use RSA, ECDH, ECDSA, or other public-key cryptography.
+- Split confidentiality risks from authenticity risks. Encryption and signatures take different paths.
+- Rank data by how long it must stay secret. This guards against harvest-now, decrypt-later risk.
+- Track which dependencies support ML-KEM and post-quantum signatures.
 - Test upgrades in workflows that already use tools like GnuPG, SSH, TLS, package signing, or S/MIME.
-- Prefer designs that can change algorithms again without rewriting the whole system.
+- Favor designs that can swap algorithms again without a full rewrite.
 
-The last point is crypto agility. The safest long-term design rotates algorithms as standards, implementations, and threat models mature, rather than assuming ML-KEM is the final answer forever.
+The last point is crypto agility. The safest long-term design swaps algorithms as standards, code, and threats mature. It does not assume ML-KEM is the final answer forever.
 
-## Caveats Worth Keeping
+## Caveats worth keeping
 
-Post-quantum cryptography does not make systems automatically secure. Bugs, bad randomness, unsafe defaults, key-management mistakes, side channels, confusing UX, and weak operations all still matter.
+Post-quantum cryptography does not make a system safe on its own. Bugs still matter. So do bad randomness and unsafe defaults. So do key-handling slips, side channels, confusing UX, and weak operations.
 
-It also does not remove the need for signatures. ML-KEM handles key establishment for encryption. NIST's finalized signature standards include ML-DSA and SLH-DSA, but support across everyday tools will arrive unevenly.
+It also does not remove the need for signatures. ML-KEM handles key setup for encryption. NIST's finalized signature standards include ML-DSA and SLH-DSA. But support across everyday tools will arrive at an uneven pace.
 
-Finally, compatibility will be messy. Security tools have to work across old keys, old messages, regulated environments, smartcards, package managers, automation, and users who do not care what a lattice is. That broad compatibility surface stretches the transition into years rather than weeks.
+Finally, compatibility will be messy. Security tools have to work across old keys and old messages. They also have to handle regulated settings, smartcards, package managers, and scripts. And many users do not care what a lattice is. That wide surface stretches the shift into years, not weeks.
 
-## Practical Takeaway
+## Practical takeaway
 
-The GnuPG release makes post-quantum cryptography concrete. Standards are necessary, but tools are where adoption becomes real.
+The GnuPG release makes post-quantum cryptography real. Standards are needed. But tools are where adoption takes hold.
 
-Cryptography is best treated as infrastructure with a maintenance plan. Teams should know where it is, know why it is there, and design systems so the next algorithm transition is less painful than the last one.
+Treat cryptography as infrastructure with a maintenance plan. Teams should know where it is and why it is there. They should also design systems so the next algorithm swap hurts less than the last one.
 
-The quantum-safe future will arrive through ordinary release notes, library upgrades, compatibility testing, inventories, and teams doing careful engineering before the emergency, rather than as one dramatic switch.
+The quantum-safe future will not arrive as one big switch. It will come through plain release notes and library upgrades. It will come through compatibility tests and inventories. And it will come from teams doing careful work before the crunch hits.
 
 ## References
 

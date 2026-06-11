@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 788" role="img" aria-labelledby="title desc">
+  <title id="title">Mars helicopter autonomous flight</title>
+  <desc id="desc">A small helicopter rises over a Martian terrain grid with delayed communication pulses crossing the sky.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#130b10"/>
+      <stop offset=".48" stop-color="#27120d"/>
+      <stop offset="1" stop-color="#07090f"/>
+    </linearGradient>
+    <radialGradient id="dust" cx="45%" cy="60%" r="60%">
+      <stop offset="0" stop-color="#ff8d4d" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#ff8d4d" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="9" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1400" height="788" fill="url(#bg)"/>
+  <rect width="1400" height="788" fill="url(#dust)"/>
+  <g transform="translate(0 585)" fill="none" stroke="#8f4932" stroke-width="2" opacity=".5">
+    <path d="M0 62 C180 20 300 120 470 72 C675 15 830 120 1020 66 C1180 20 1270 52 1400 30"/>
+    <path d="M90 145 H1310"/><path d="M170 96 H1210"/>
+    <path d="M260 0 L130 180"/><path d="M470 0 L410 180"/><path d="M700 0 L700 180"/><path d="M930 0 L990 180"/><path d="M1140 0 L1270 180"/>
+  </g>
+  <g transform="translate(535 220)" filter="url(#glow)">
+    <ellipse cx="165" cy="0" rx="265" ry="32" fill="none" stroke="#ffc56d" stroke-width="5"/>
+    <ellipse cx="165" cy="0" rx="150" ry="18" fill="none" stroke="#ff6a3d" stroke-width="4" opacity=".8"/>
+    <rect x="110" y="96" width="110" height="74" rx="18" fill="#161a22" stroke="#ffd28b" stroke-width="4"/>
+    <path d="M165 32 V96" stroke="#ffd28b" stroke-width="6" stroke-linecap="round"/>
+    <path d="M92 132 H238" stroke="#ff8d4d" stroke-width="7" stroke-linecap="round"/>
+    <path d="M128 170 L98 234 M202 170 L232 234" stroke="#ffd28b" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <g fill="none" stroke-linecap="round">
+    <path d="M710 470 C708 430 705 390 700 350" stroke="#ffd28b" stroke-width="4" stroke-dasharray="8 18"/>
+    <path d="M742 468 C764 426 780 383 790 338" stroke="#ff8d4d" stroke-width="3" stroke-dasharray="6 15"/>
+    <path d="M678 468 C642 428 618 390 606 350" stroke="#62d7ff" stroke-width="3" stroke-dasharray="6 15"/>
+  </g>
+  <g opacity=".9">
+    <path d="M104 180 C232 122 356 118 506 170" fill="none" stroke="#62d7ff" stroke-width="3"/>
+    <path d="M104 230 C248 178 372 182 506 232" fill="none" stroke="#62d7ff" stroke-width="3" opacity=".55"/>
+    <circle cx="104" cy="180" r="9" fill="#62d7ff"/>
+    <circle cx="506" cy="170" r="9" fill="#62d7ff"/>
+    <rect x="86" y="252" width="128" height="54" rx="18" fill="#101820" stroke="#62d7ff" stroke-width="3"/>
+  </g>
+  <g opacity=".9">
+    <path d="M1168 188 L1240 224 L1312 188" fill="none" stroke="#ffc56d" stroke-width="4"/>
+    <path d="M1168 236 L1240 272 L1312 236" fill="none" stroke="#ffc56d" stroke-width="4" opacity=".55"/>
+    <circle cx="1240" cy="224" r="10" fill="#ffc56d"/>
+  </g>
+</svg>

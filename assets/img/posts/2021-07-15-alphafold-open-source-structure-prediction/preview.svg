@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="800" viewBox="0 0 1400 800" role="img" aria-labelledby="title desc">
+  <title id="title">Open protein structure prediction toolchain</title>
+  <desc id="desc">A continuous protein ribbon crosses residue beads, confidence bands, and model-artifact layers in an abstract structure workflow.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080714"/>
+      <stop offset="48%" stop-color="#1f1231"/>
+      <stop offset="100%" stop-color="#062825"/>
+    </linearGradient>
+    <radialGradient id="rose" cx="38%" cy="44%" r="44%">
+      <stop offset="0%" stop-color="#fb7185" stop-opacity="0.44"/>
+      <stop offset="70%" stop-color="#080714" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="teal" cx="70%" cy="48%" r="40%">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.32"/>
+      <stop offset="72%" stop-color="#080714" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ribbonA" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="28%" stop-color="#fb7185"/>
+      <stop offset="62%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <linearGradient id="ribbonB" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#67e8f9"/>
+      <stop offset="52%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <filter id="soft" x="-30%" y="-80%" width="160%" height="260%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1400" height="800" fill="url(#bg)"/>
+  <rect width="1400" height="800" fill="url(#rose)"/>
+  <rect width="1400" height="800" fill="url(#teal)"/>
+
+  <g transform="translate(96 110)" opacity="0.5">
+    <g fill="none" stroke="#475569" stroke-width="2">
+      <rect x="0" y="0" width="382" height="164" rx="22"/>
+      <rect x="34" y="42" width="314" height="22" rx="11"/>
+      <rect x="34" y="82" width="238" height="22" rx="11"/>
+      <rect x="34" y="122" width="286" height="22" rx="11"/>
+    </g>
+    <g fill="#fbbf24">
+      <circle cx="56" cy="53" r="5"/><circle cx="104" cy="53" r="5" fill="#fb7185"/><circle cx="152" cy="53" r="5" fill="#2dd4bf"/>
+      <circle cx="86" cy="93" r="5" fill="#a78bfa"/><circle cx="178" cy="93" r="5"/>
+      <circle cx="66" cy="133" r="5" fill="#2dd4bf"/><circle cx="230" cy="133" r="5" fill="#fb7185"/>
+    </g>
+  </g>
+
+  <g transform="translate(870 130)" opacity="0.46">
+    <rect x="0" y="0" width="390" height="176" rx="24" fill="#020617" fill-opacity="0.28" stroke="#5eead4" stroke-opacity="0.35"/>
+    <g stroke="#5eead4" stroke-width="2" fill="none" opacity="0.62">
+      <path d="M44 126 H336"/>
+      <path d="M44 92 H336"/>
+      <path d="M44 58 H336"/>
+    </g>
+    <g fill="#5eead4">
+      <rect x="60" y="114" width="44" height="12" rx="6"/>
+      <rect x="124" y="80" width="78" height="12" rx="6" fill="#fbbf24"/>
+      <rect x="228" y="46" width="92" height="12" rx="6" fill="#fb7185"/>
+      <rect x="250" y="114" width="54" height="12" rx="6" fill="#a78bfa"/>
+    </g>
+  </g>
+
+  <g filter="url(#soft)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M156 500 C250 358 414 360 512 476 C604 586 758 590 836 454 C918 310 1088 298 1242 410"
+          stroke="url(#ribbonA)" stroke-width="22"/>
+    <path d="M228 584 C350 482 456 510 548 604 C652 710 802 652 850 520 C900 382 1038 384 1148 512"
+          stroke="url(#ribbonB)" stroke-width="16" opacity="0.84"/>
+    <path d="M336 390 C434 250 590 280 646 412 C700 538 832 532 916 414 C988 314 1086 328 1198 362"
+          stroke="#fbbf24" stroke-width="10" opacity="0.76"/>
+  </g>
+
+  <g opacity="0.82">
+    <g fill="#f8fafc">
+      <circle cx="156" cy="500" r="8" fill="#fbbf24"/>
+      <circle cx="308" cy="402" r="7" fill="#fb7185"/>
+      <circle cx="512" cy="476" r="9" fill="#2dd4bf"/>
+      <circle cx="704" cy="570" r="7" fill="#a78bfa"/>
+      <circle cx="836" cy="454" r="8" fill="#fbbf24"/>
+      <circle cx="1010" cy="330" r="7" fill="#fb7185"/>
+      <circle cx="1242" cy="410" r="8" fill="#2dd4bf"/>
+    </g>
+    <g fill="none" stroke="#e9d5ff" stroke-width="2" opacity="0.42">
+      <circle cx="512" cy="476" r="34"/>
+      <circle cx="836" cy="454" r="42"/>
+      <circle cx="1010" cy="330" r="30"/>
+    </g>
+  </g>
+
+  <g transform="translate(150 650)" opacity="0.72">
+    <rect x="0" y="0" width="1090" height="34" rx="17" fill="#020617" fill-opacity="0.56" stroke="#475569" stroke-opacity="0.36"/>
+    <rect x="18" y="9" width="188" height="16" rx="8" fill="#fb7185"/>
+    <rect x="226" y="9" width="292" height="16" rx="8" fill="#fbbf24"/>
+    <rect x="538" y="9" width="250" height="16" rx="8" fill="#2dd4bf"/>
+    <rect x="808" y="9" width="260" height="16" rx="8" fill="#a78bfa"/>
+  </g>
+
+  <g fill="none" stroke="#a78bfa" stroke-width="2" opacity="0.22">
+    <path d="M118 628 C346 706 562 726 812 652 C1016 592 1134 598 1284 650"/>
+    <path d="M118 204 C328 272 542 256 720 198 C920 134 1098 150 1284 226"/>
+  </g>
+</svg>

@@ -23,7 +23,7 @@ Those are the kinds of questions I want this site to make room for.
 ![A technical blog moving into a new GitHub Pages home](preview.jpg){: w="700" h="394" .shadow }
 _A better site is a chance to sort out the thinking inside it, not only a new shell._
 
-## Why Move The Blog Here
+## Why move the blog here
 
 GitHub Pages fits this kind of writing well. It keeps the site close to the habits that make software maintainable: version control, plain text, small improvements, and a structure that can evolve without becoming hard to follow.
 
@@ -39,7 +39,7 @@ For me, those interests sit in a few overlapping areas:
 
 The aim is a thoughtful public record of curiosity and progress, rather than sounding like an expert in every room.
 
-## Where This Site Is Headed
+## Where this site is headed
 
 I want the posts here to do more than summarize interesting topics. A good technical post should make a useful connection, explain the background clearly, and leave the reader with a practical takeaway.
 
@@ -53,7 +53,7 @@ That means I want the site to have a few standards:
 
 Some posts will be exploratory. Some will be more polished. Some will be about science, some about code, and some about the habits that make both easier to do well.
 
-## The Value Of Keeping Older Work
+## The value of keeping older work
 
 Refreshing older posts is a little uncomfortable because it shows the distance between where I was and where I am now. The distance is the point.
 
@@ -61,7 +61,7 @@ Old writing captures the path. It shows what caught my attention, what I was try
 
 This site works best treated as a living portfolio rather than a perfect archive.
 
-## Moving Forward
+## Moving forward
 
 This is the starting point for a more deliberate writing practice. I want this blog to become a place where software, AI, engineering, chemistry, biochemistry, and physics can sit at the same table.
 
