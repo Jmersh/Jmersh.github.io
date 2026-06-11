@@ -6,7 +6,7 @@ tags: [log4shell, log4j, cybersecurity, software-supply-chain, java]
 description: "CVE-2021-44228 shows why logging, dependency inventory, patch paths, and runtime exposure matter as much as application code in production systems."
 media_subpath: /assets/img/posts/2021-12-10-log4shell-software-supply-chain/
 image:
-  path: preview.svg
+  path: cover.png
   alt: "Cracked logging package breaking through layered service blocks"
 math: false
 mermaid: true

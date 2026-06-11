@@ -6,7 +6,7 @@ tags: [ingenuity, mars, robotics, autonomy, nasa]
 description: "NASA's Ingenuity first flight turns powered flight on Mars into a robotics, autonomy, communications, and systems-engineering milestone on another world."
 media_subpath: /assets/img/posts/2021-04-19-ingenuity-first-powered-flight-mars/
 image:
-  path: preview.svg
+  path: cover.png
   alt: "Abstract Mars helicopter flight path with rotor arcs, terrain grid, and delayed communication pulses"
 math: false
 mermaid: true

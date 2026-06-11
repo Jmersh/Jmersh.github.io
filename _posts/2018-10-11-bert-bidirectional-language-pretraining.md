@@ -6,7 +6,7 @@ tags: [bert, natural-language-processing, transformers, machine-learning, pretra
 description: "BERT shows how masked-language pretraining makes Transformer encoders useful across question answering and language understanding workflows."
 media_subpath: /assets/img/posts/2018-10-11-bert-bidirectional-language-pretraining/
 image:
-  path: preview.svg
+  path: cover.png
   alt: "Abstract masked tokens flowing into a bidirectional Transformer encoder"
 math: false
 mermaid: true

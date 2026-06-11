@@ -6,7 +6,7 @@ tags: [xz, liblzma, supply-chain-security, openssh, linux]
 description: "The xz/liblzma backdoor disclosure shows how release tarballs, build scripts, maintainership, and runtime linking become security surfaces now."
 media_subpath: /assets/img/posts/2024-03-29-xz-liblzma-backdoor-supply-chain/
 image:
-  path: preview.svg
+  path: cover.png
   alt: "Abstract compromised build pipeline with tarball layers, linker hooks, and a guarded SSH boundary"
 math: false
 mermaid: true

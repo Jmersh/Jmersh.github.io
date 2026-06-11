@@ -6,7 +6,7 @@ tags: [event-horizon-telescope, black-holes, astrophysics, radio-astronomy, comp
 description: "The Event Horizon Telescope's M87 image shows how global radio arrays, timing, correlation, and imaging algorithms become one scientific instrument."
 media_subpath: /assets/img/posts/2019-04-10-event-horizon-telescope-black-hole-image/
 image:
-  path: preview.svg
+  path: cover.png
   alt: "Off-axis black hole ring beside interferometry samples and reconstruction contours"
 math: false
 mermaid: true

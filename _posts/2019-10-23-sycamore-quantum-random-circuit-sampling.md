@@ -6,7 +6,7 @@ tags: [quantum-computing, sycamore, superconducting-qubits, benchmarking, physic
 description: "Google's Sycamore result frames quantum advantage as a systems benchmark built from qubits, gates, error rates, sampling, and verification data."
 media_subpath: /assets/img/posts/2019-10-23-sycamore-quantum-random-circuit-sampling/
 image:
-  path: preview.svg
+  path: cover.png
   alt: "Abstract superconducting qubit chip with probability samples and verification lanes"
 math: false
 mermaid: true

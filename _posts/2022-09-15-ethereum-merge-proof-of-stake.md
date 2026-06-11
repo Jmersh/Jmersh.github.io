@@ -6,7 +6,7 @@ tags: [ethereum, proof-of-stake, distributed-systems, blockchain, consensus]
 description: "Ethereum's Merge replaces proof-of-work with proof-of-stake while preserving execution history, showing a rare live consensus migration at scale."
 media_subpath: /assets/img/posts/2022-09-15-ethereum-merge-proof-of-stake/
 image:
-  path: preview.svg
+  path: cover.png
   alt: "Abstract proof-of-work chain merging into proof-of-stake validator slots"
 math: false
 mermaid: true

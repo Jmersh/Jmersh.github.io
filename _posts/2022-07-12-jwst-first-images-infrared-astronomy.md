@@ -6,7 +6,7 @@ tags: [jwst, space-telescope, infrared-astronomy, astrophysics, systems-engineer
 description: "NASA's first Webb images show how infrared instruments, thermal design, and spectroscopy turn a deployed observatory into working science data."
 media_subpath: /assets/img/posts/2022-07-12-jwst-first-images-infrared-astronomy/
 image:
-  path: preview.svg
+  path: cover.png
   alt: "Abstract infrared telescope pipeline with mirror segments feeding spectral data"
 math: false
 mermaid: true

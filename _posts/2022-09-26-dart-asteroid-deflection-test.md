@@ -6,7 +6,7 @@ tags: [dart, planetary-defense, nasa, asteroids, autonomous-navigation]
 description: "NASA's DART impact tests asteroid deflection as an engineering loop: autonomous targeting, kinetic impact, observation, and orbit measurement."
 media_subpath: /assets/img/posts/2022-09-26-dart-asteroid-deflection-test/
 image:
-  path: preview.svg
+  path: cover.png
   alt: "Abstract spacecraft targeting a small asteroid moon with observation arcs and impact geometry"
 math: false
 mermaid: true

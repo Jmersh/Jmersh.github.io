@@ -6,7 +6,7 @@ tags: [gpt-4, language-models, evaluations, ai-safety, developer-tools]
 description: "OpenAI's GPT-4 release shifts attention from model scale alone to evals, system prompts, reliability limits, deployment controls, and API use."
 media_subpath: /assets/img/posts/2023-03-14-gpt-4-evals-and-scaled-models/
 image:
-  path: preview.svg
+  path: cover.png
   alt: "Abstract evaluation harness comparing model outputs through safety and reliability gates"
 math: false
 mermaid: true

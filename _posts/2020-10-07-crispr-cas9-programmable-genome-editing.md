@@ -6,7 +6,7 @@ tags: [crispr, gene-editing, nobel-prize, biotechnology, chemistry]
 description: "The 2020 Chemistry Nobel recognizes CRISPR/Cas9 as a programmable genome-editing tool with broad scientific and engineering implications for labs."
 media_subpath: /assets/img/posts/2020-10-07-crispr-cas9-programmable-genome-editing/
 image:
-  path: preview.svg
+  path: cover.png
   alt: "Abstract CRISPR guide RNA aligning Cas9 cutting geometry with a DNA strand"
 math: false
 mermaid: true

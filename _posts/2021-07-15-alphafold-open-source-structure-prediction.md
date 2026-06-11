@@ -6,7 +6,7 @@ tags: [alphafold, protein-folding, structural-biology, computational-biology, ma
 description: "DeepMind's AlphaFold 2 paper and code release turn a striking CASP result into a usable technical system for structural biology research teams."
 media_subpath: /assets/img/posts/2021-07-15-alphafold-open-source-structure-prediction/
 image:
-  path: preview.svg
+  path: cover.png
   alt: "Protein ribbon forms emerging from confidence-colored model panels and sequence tracks"
 math: false
 mermaid: true

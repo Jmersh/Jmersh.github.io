@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="800" viewBox="0 0 1400 800" role="img" aria-labelledby="title desc">
+  <title id="title">Ethereum consensus migration</title>
+  <desc id="desc">Two blockchain layers cross a glowing merge seam and resolve into a grid of validator slots and finality checkpoints.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06101d"/>
+      <stop offset="50%" stop-color="#071a2d"/>
+      <stop offset="100%" stop-color="#07140b"/>
+    </linearGradient>
+    <radialGradient id="greenGlow" cx="60%" cy="48%" r="46%">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.36"/>
+      <stop offset="62%" stop-color="#14532d" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#06101d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blueGlow" cx="35%" cy="54%" r="44%">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.26"/>
+      <stop offset="74%" stop-color="#06101d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="work" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="stake" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+    <filter id="soft" x="-40%" y="-80%" width="180%" height="260%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1400" height="800" fill="url(#bg)"/>
+  <rect width="1400" height="800" fill="url(#greenGlow)"/>
+  <rect width="1400" height="800" fill="url(#blueGlow)"/>
+
+  <g opacity="0.35" stroke="#94a3b8" stroke-width="1.6" fill="none">
+    <path d="M104 210 C296 160 506 198 664 318 C836 448 1048 500 1288 432"/>
+    <path d="M110 588 C302 646 520 604 684 482 C856 356 1062 316 1282 372"/>
+  </g>
+
+  <g filter="url(#soft)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M118 300 C292 252 430 276 560 370 C676 454 792 510 956 500 C1088 492 1192 444 1280 386"
+          stroke="url(#work)" stroke-width="16" opacity="0.9"/>
+    <path d="M122 510 C306 548 454 508 584 418 C700 336 828 296 982 314 C1110 330 1208 378 1282 452"
+          stroke="url(#stake)" stroke-width="16" opacity="0.9"/>
+  </g>
+
+  <g opacity="0.78" fill="#020617" stroke-width="2.4">
+    <g stroke="#f59e0b">
+      <rect x="152" y="260" width="72" height="72" rx="14" transform="rotate(-10 188 296)"/>
+      <rect x="308" y="252" width="72" height="72" rx="14" transform="rotate(6 344 288)"/>
+      <rect x="462" y="320" width="72" height="72" rx="14" transform="rotate(12 498 356)"/>
+    </g>
+    <g stroke="#60a5fa">
+      <circle cx="190" cy="510" r="38"/>
+      <circle cx="350" cy="524" r="38"/>
+      <circle cx="506" cy="470" r="38"/>
+    </g>
+  </g>
+
+  <g transform="translate(652 160)" filter="url(#soft)">
+    <path d="M76 0 C34 106 38 202 78 286 C118 374 114 474 70 590" fill="none" stroke="#d1fae5" stroke-width="7" stroke-linecap="round"/>
+    <path d="M112 0 C70 112 74 202 114 286 C154 374 150 478 106 590" fill="none" stroke="#22c55e" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+    <g fill="#22c55e">
+      <circle cx="76" cy="86" r="7"/>
+      <circle cx="92" cy="210" r="6"/>
+      <circle cx="94" cy="350" r="7"/>
+      <circle cx="78" cy="498" r="6"/>
+    </g>
+  </g>
+
+  <g transform="translate(854 206)">
+    <g fill="#020617" fill-opacity="0.58" stroke="#22c55e" stroke-opacity="0.5" stroke-width="2">
+      <rect x="0" y="0" width="92" height="70" rx="16"/>
+      <rect x="126" y="34" width="92" height="70" rx="16"/>
+      <rect x="252" y="0" width="92" height="70" rx="16"/>
+      <rect x="378" y="34" width="92" height="70" rx="16"/>
+      <rect x="64" y="166" width="92" height="70" rx="16"/>
+      <rect x="190" y="132" width="92" height="70" rx="16"/>
+      <rect x="316" y="166" width="92" height="70" rx="16"/>
+    </g>
+    <g fill="#dcfce7">
+      <circle cx="46" cy="35" r="7" fill="#22c55e"/>
+      <circle cx="172" cy="69" r="7" fill="#60a5fa"/>
+      <circle cx="298" cy="35" r="7" fill="#22c55e"/>
+      <circle cx="424" cy="69" r="7" fill="#60a5fa"/>
+      <circle cx="110" cy="201" r="7" fill="#22c55e"/>
+      <circle cx="236" cy="167" r="7" fill="#f59e0b"/>
+      <circle cx="362" cy="201" r="7" fill="#22c55e"/>
+    </g>
+    <g stroke="#334155" stroke-width="2" fill="none" opacity="0.56">
+      <path d="M92 40 C112 42 118 50 126 64"/>
+      <path d="M218 64 C232 52 242 44 252 40"/>
+      <path d="M344 40 C358 48 368 56 378 64"/>
+      <path d="M156 198 C170 184 180 174 190 166"/>
+      <path d="M282 166 C296 178 306 188 316 198"/>
+    </g>
+  </g>
+
+  <g fill="#f8fafc" opacity="0.82">
+    <circle cx="188" cy="296" r="6" fill="#f59e0b"/>
+    <circle cx="344" cy="288" r="6" fill="#f59e0b"/>
+    <circle cx="498" cy="356" r="6" fill="#f59e0b"/>
+    <circle cx="190" cy="510" r="6" fill="#60a5fa"/>
+    <circle cx="350" cy="524" r="6" fill="#60a5fa"/>
+    <circle cx="506" cy="470" r="6" fill="#60a5fa"/>
+  </g>
+
+  <g opacity="0.42" stroke="#22c55e" stroke-width="2" fill="none">
+    <path d="M818 590 H1260"/>
+    <path d="M888 630 H1196"/>
+    <circle cx="1260" cy="590" r="8" fill="#22c55e" fill-opacity="0.5"/>
+    <circle cx="1196" cy="630" r="6" fill="#60a5fa" fill-opacity="0.5"/>
+  </g>
+</svg>
