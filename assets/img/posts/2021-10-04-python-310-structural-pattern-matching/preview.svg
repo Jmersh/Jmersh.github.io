@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="788" viewBox="0 0 1400 788" role="img" aria-labelledby="title desc">
+<title id="title">What a mapping pattern checks</title>
+<desc id="desc">A four-field temperature record: kind matches a literal, value is captured and checked by a guard, unit matches C or F, and sensor is an allowed extra key.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#09152b"/><stop offset="1" stop-color="#16213b"/></linearGradient></defs>
+<rect width="1400" height="788" rx="30" fill="url(#bg)"/>
+<g font-family="Arial, sans-serif" fill="#ecf6ff">
+<text x="76" y="88" font-size="36" font-weight="700">A PATTERN SELECTS THE FIELDS IT NEEDS</text>
+<text x="76" y="132" font-size="24" fill="#a7bbd2">Example input: a Fahrenheit reading with sensor metadata</text>
+<g stroke-width="2">
+<rect x="76" y="183" width="580" height="88" rx="14" fill="#12383e" stroke="#45d6c8"/>
+<rect x="76" y="285" width="580" height="88" rx="14" fill="#35274c" stroke="#bb8cff"/>
+<rect x="76" y="387" width="580" height="88" rx="14" fill="#12383e" stroke="#45d6c8"/>
+<rect x="76" y="489" width="580" height="88" rx="14" fill="#242d40" stroke="#70849c"/>
+</g>
+<g font-family="Consolas, monospace" font-size="32">
+<text x="104" y="237">"kind": "temperature"</text>
+<text x="104" y="339">"value": 68</text>
+<text x="104" y="441">"unit": "F"</text>
+<text x="104" y="543" fill="#c2cedc">"sensor": "bench-2"</text>
+</g>
+<g stroke-width="3" fill="none"><path d="M672 227h70" stroke="#45d6c8"/><path d="M672 329h70" stroke="#bb8cff"/><path d="M672 431h70" stroke="#45d6c8"/><path d="M672 533h70" stroke="#70849c"/></g>
+<g font-size="27">
+<text x="768" y="222" fill="#6ee9da">MATCH A LITERAL</text>
+<text x="768" y="254" font-size="23">The kind must be temperature.</text>
+<text x="768" y="324" fill="#d0afff">CAPTURE, THEN CHECK</text>
+<text x="768" y="356" font-size="23">The guard tests type and finiteness.</text>
+<text x="768" y="426" fill="#6ee9da">MATCH EITHER UNIT</text>
+<text x="768" y="458" font-size="23">Accept C or F; retain it as unit.</text>
+<text x="768" y="528" fill="#acbbcd">ALLOW AN EXTRA KEY</text>
+<text x="768" y="560" font-size="23">This pattern does not check sensor.</text>
+</g>
+<rect x="76" y="625" width="1248" height="92" rx="16" fill="#342c2c" stroke="#e9b76b" stroke-width="2"/>
+<text x="108" y="682" font-size="29" fill="#ffda9d">68 °F  →  20.0 °C</text>
+<text x="500" y="682" font-size="25">Range and calibration remain application decisions.</text>
+</g></svg>

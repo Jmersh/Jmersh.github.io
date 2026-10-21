@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="788" viewBox="0 0 1400 788">
+<rect width="1400" height="788" fill="#111025"/>
+<g font-family="Arial, sans-serif" fill="#f4efff">
+<text x="80" y="95" font-size="38" font-weight="700">ONE SHOT, TWO ENERGY BOUNDARIES</text>
+<text x="80" y="143" font-size="24" fill="#b6acc9">NIF experiment • December 5, 2022 • reported December 13</text>
+<rect x="80" y="192" width="1240" height="335" rx="18" fill="#1d1931" stroke="#665279"/>
+<text x="112" y="239" font-size="25" fill="#c8bcde">TARGET BOUNDARY</text>
+<text x="112" y="302" font-size="25">Incident laser energy</text>
+<rect x="435" y="270" width="451" height="47" rx="5" fill="#b998ff"/>
+<text x="910" y="302" font-size="27">2.05 MJ</text>
+<text x="112" y="390" font-size="25">Fusion energy output</text>
+<rect x="435" y="358" width="693" height="47" rx="5" fill="#ffc77c"/>
+<text x="1150" y="390" font-size="27">3.15 MJ</text>
+<text x="112" y="478" font-size="26" fill="#ffdfa8">Target gain = 3.15 / 2.05 ≈ 1.54</text>
+<text x="80" y="592" font-size="25" fill="#c8bcde">WIDER PLANT BOUNDARY</text>
+<text x="80" y="641" font-size="25">Electricity in → laser + target + energy recovery → electricity out</text>
+<text x="80" y="695" font-size="25" fill="#b6acc9">Target gain alone does not establish net electrical output.</text>
+<text x="80" y="747" font-size="19" fill="#9387aa">Source: DOE announcement. Bars use one scale; wider boundary is conceptual.</text>
+</g></svg>

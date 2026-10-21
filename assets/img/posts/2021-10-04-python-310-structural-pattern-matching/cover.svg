@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 788" role="img" aria-labelledby="title desc">
+  <title id="title">Structural pattern matching cover</title>
+  <desc id="desc">Abstract violet, cyan, and gold data shapes resolving into branching paths on a dark background.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071329"/><stop offset=".55" stop-color="#16103a"/><stop offset="1" stop-color="#072c38"/></linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#47e3dc" stop-opacity="0"/><stop offset=".45" stop-color="#47e3dc"/><stop offset="1" stop-color="#ffbf5b" stop-opacity=".15"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="14" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1400" height="788" fill="url(#bg)"/>
+  <g opacity=".22" stroke="#8da3cf" stroke-width="1"><path d="M0 110H1400M0 250H1400M0 390H1400M0 530H1400M0 670H1400"/><path d="M160 0V788M420 0V788M680 0V788M940 0V788M1200 0V788"/></g>
+  <path d="M-20 148C240 130 312 182 530 315S910 486 1420 164" fill="none" stroke="url(#beam)" stroke-width="17" filter="url(#glow)"/>
+  <path d="M-20 576C270 600 416 500 620 430S977 366 1420 604" fill="none" stroke="#aa6cff" stroke-opacity=".55" stroke-width="9"/>
+  <g fill="#0b1d37" stroke-width="5" filter="url(#glow)">
+    <path d="M180 230l112-64 112 64v130l-112 64-112-64z" stroke="#47e3dc"/>
+    <path d="M558 278l82-82 82 82-82 82z" stroke="#ffbf5b"/>
+    <rect x="926" y="252" width="162" height="162" rx="28" stroke="#d276ff"/>
+  </g>
+  <g fill="#47e3dc"><circle cx="292" cy="296" r="17"/><circle cx="370" cy="252" r="9"/><circle cx="640" cy="278" r="12"/></g>
+  <g fill="#ffbf5b"><circle cx="1010" cy="333" r="23"/><circle cx="1092" cy="468" r="8"/><circle cx="782" cy="492" r="10"/></g>
+  <g fill="none" stroke="#e7f3ff" stroke-opacity=".5" stroke-width="3"><path d="M292 360v132l142 72"/><path d="M640 360v146l142 56"/><path d="M1010 414v92l-96 56"/></g>
+</svg>

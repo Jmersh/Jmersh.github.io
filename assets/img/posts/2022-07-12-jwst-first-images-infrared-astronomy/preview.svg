@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="788" viewBox="0 0 1400 788" role="img" aria-labelledby="title desc">
+  <title id="title">JWST opens the infrared sky</title>
+  <desc id="desc">A golden seven-segment mirror motif beside an infrared wavelength arrow with star and galaxy dots, next to what Webb's first images delivered.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#0a0f1c"/><stop offset="100%" stop-color="#0f1a30"/>
+    </linearGradient>
+    <linearGradient id="sig" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <pattern id="grid" width="58" height="58" patternUnits="userSpaceOnUse">
+      <path d="M58 0 H0 V58" fill="none" stroke="#9fb3cf" stroke-width="1" opacity="0.05"/>
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.35"/><stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1400" height="788" fill="url(#bg)"/>
+  <rect width="1400" height="788" fill="url(#grid)"/>
+  <ellipse cx="470" cy="430" rx="470" ry="280" fill="url(#glow)"/>
+  <text x="92" y="92" fill="#fbbf24" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="22" font-weight="700" letter-spacing="5">ASTRONOMY · INFRARED</text>
+  <text x="90" y="152" fill="#eef3fb" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="54" font-weight="800">JWST opens the infrared sky</text>
+  <text x="92" y="198" fill="#93a7c4" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="25">First images prove Webb works as one joined-up infrared science system.</text>
+
+  <rect x="108" y="256" width="724" height="346" rx="20" fill="#ffffff" fill-opacity="0.035" stroke="#94a3b8" stroke-opacity="0.20" stroke-width="1.5"/>
+  <text x="138" y="302" fill="#8ea3bf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="700" letter-spacing="3">FIRST IMAGES</text>
+
+  <!-- Seven-hexagon segmented mirror honeycomb (left). Hex points relative, group translated. -->
+  <g fill="url(#sig)" stroke="#fde68a" stroke-opacity="0.55" stroke-width="2">
+    <polygon points="270,360 305,380 305,420 270,440 235,420 235,380"/>
+    <polygon points="270,418 305,438 305,478 270,498 235,478 235,438"/>
+    <polygon points="320,389 355,409 355,449 320,469 285,449 285,409"/>
+    <polygon points="320,447 355,467 355,507 320,527 285,507 285,467"/>
+    <polygon points="220,389 255,409 255,449 220,469 185,449 185,409"/>
+    <polygon points="220,447 255,467 255,507 220,527 185,507 185,467"/>
+    <polygon points="270,476 305,496 305,536 270,556 235,536 235,496"/>
+  </g>
+
+  <!-- Infrared wavelength arrow: short -> long wavelength (left to right) -->
+  <line x1="430" y1="452" x2="788" y2="452" stroke="#fde68a" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="788,452 770,444 770,460" fill="#fde68a"/>
+  <text x="430" y="430" fill="#fbbf24" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="18" font-weight="700" letter-spacing="2">INFRARED</text>
+  <text x="430" y="486" fill="#8ea3bf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="14">short wavelength</text>
+  <text x="690" y="486" fill="#8ea3bf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="14">long wavelength</text>
+
+  <!-- Star / galaxy dots scattered along the infrared arrow -->
+  <circle cx="470" cy="408" r="4" fill="#fde68a"/>
+  <circle cx="540" cy="510" r="3" fill="#c084fc"/>
+  <circle cx="600" cy="402" r="6" fill="#f59e0b"/>
+  <circle cx="640" cy="520" r="4" fill="#fde68a"/>
+  <circle cx="700" cy="404" r="3" fill="#c084fc"/>
+  <circle cx="748" cy="512" r="5" fill="#f59e0b"/>
+
+  <text x="872" y="302" fill="#fbbf24" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="700" letter-spacing="3">WHAT IT DELIVERED</text>
+
+  <rect x="868" y="324" width="424" height="58" rx="14" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.3"/>
+  <circle cx="898" cy="353" r="6" fill="#fbbf24"/>
+  <text x="920" y="360" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">18-segment primary mirror</text>
+
+  <rect x="868" y="392" width="424" height="58" rx="14" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.3"/>
+  <circle cx="898" cy="421" r="6" fill="#fbbf24"/>
+  <text x="920" y="428" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">SMACS 0723 deep field</text>
+
+  <rect x="868" y="460" width="424" height="58" rx="14" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.3"/>
+  <circle cx="898" cy="489" r="6" fill="#fbbf24"/>
+  <text x="920" y="496" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Water seen on WASP-96 b</text>
+
+  <rect x="868" y="528" width="424" height="58" rx="14" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.3"/>
+  <circle cx="898" cy="557" r="6" fill="#fbbf24"/>
+  <text x="920" y="564" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Five first-light targets</text>
+
+  <line x1="92" y1="690" x2="1308" y2="690" stroke="#94a3b8" stroke-opacity="0.22" stroke-width="1"/>
+  <text x="92" y="730" fill="#9fb3cf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="23">A faint, cold, stretched signal survives only when the <tspan fill="#fbbf24" font-weight="700">hardware protects it end to end</tspan>.</text>
+</svg>

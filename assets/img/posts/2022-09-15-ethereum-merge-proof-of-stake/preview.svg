@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="788" viewBox="0 0 1400 788" role="img" aria-labelledby="title desc">
+  <title id="title">The Merge ends proof of work</title>
+  <desc id="desc">A tall proof-of-work energy bar collapses to a tiny proof-of-stake bar, beside what The Merge actually changed.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#0a0f1c"/><stop offset="100%" stop-color="#0f1a30"/>
+    </linearGradient>
+    <linearGradient id="sig" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#34d399"/><stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <pattern id="grid" width="58" height="58" patternUnits="userSpaceOnUse">
+      <path d="M58 0 H0 V58" fill="none" stroke="#9fb3cf" stroke-width="1" opacity="0.05"/>
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#059669" stop-opacity="0.35"/><stop offset="100%" stop-color="#059669" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1400" height="788" fill="url(#bg)"/>
+  <rect width="1400" height="788" fill="url(#grid)"/>
+  <ellipse cx="470" cy="430" rx="470" ry="280" fill="url(#glow)"/>
+  <text x="92" y="92" fill="#34d399" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="22" font-weight="700" letter-spacing="5">CRYPTO · INFRASTRUCTURE</text>
+  <text x="90" y="152" fill="#eef3fb" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="54" font-weight="800">The Merge ends proof of work</text>
+  <text x="92" y="198" fill="#93a7c4" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="25">A live network swapped its consensus engine without losing its history.</text>
+
+  <rect x="108" y="256" width="724" height="346" rx="20" fill="#ffffff" fill-opacity="0.035" stroke="#94a3b8" stroke-opacity="0.20" stroke-width="1.5"/>
+  <text x="138" y="302" fill="#8ea3bf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="700" letter-spacing="3">ENERGY USE</text>
+
+  <!-- baseline -->
+  <line x1="170" y1="560" x2="790" y2="560" stroke="#94a3b8" stroke-opacity="0.25" stroke-width="1.5"/>
+
+  <!-- proof of work bar: tall, muted -->
+  <rect x="250" y="338" width="150" height="222" rx="6" fill="#64748b" fill-opacity="0.55" stroke="#94a3b8" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="325" y="586" fill="#aebdd4" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="19" font-weight="700" text-anchor="middle">PROOF OF WORK</text>
+
+  <!-- proof of stake bar: tiny, sig gradient -->
+  <rect x="560" y="549" width="150" height="11" rx="4" fill="url(#sig)"/>
+  <text x="635" y="586" fill="#6ee7b7" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="19" font-weight="700" text-anchor="middle">PROOF OF STAKE</text>
+
+  <!-- drop annotation -->
+  <line x1="425" y1="345" x2="540" y2="345" stroke="#6ee7b7" stroke-opacity="0.5" stroke-width="1.5" stroke-dasharray="5 5"/>
+  <line x1="540" y1="345" x2="540" y2="549" stroke="#6ee7b7" stroke-opacity="0.5" stroke-width="1.5" stroke-dasharray="5 5"/>
+  <text x="425" y="424" fill="#6ee7b7" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="44" font-weight="800">-99.95%</text>
+  <text x="425" y="456" fill="#93a7c4" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="18">energy use, per ethereum.org</text>
+
+  <text x="872" y="302" fill="#5eead4" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="700" letter-spacing="3">WHAT CHANGED</text>
+
+  <rect x="868" y="324" width="424" height="58" rx="14" fill="#5eead4" fill-opacity="0.09" stroke="#5eead4" stroke-opacity="0.3"/>
+  <circle cx="898" cy="353" r="6" fill="#5eead4"/>
+  <text x="920" y="360" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Mining dropped for staked ETH</text>
+
+  <rect x="868" y="392" width="424" height="58" rx="14" fill="#5eead4" fill-opacity="0.09" stroke="#5eead4" stroke-opacity="0.3"/>
+  <circle cx="898" cy="421" r="6" fill="#5eead4"/>
+  <text x="920" y="428" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Beacon Chain now does consensus</text>
+
+  <rect x="868" y="460" width="424" height="58" rx="14" fill="#5eead4" fill-opacity="0.09" stroke="#5eead4" stroke-opacity="0.3"/>
+  <circle cx="898" cy="489" r="6" fill="#5eead4"/>
+  <text x="920" y="496" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Chain history stays intact</text>
+
+  <rect x="868" y="528" width="424" height="58" rx="14" fill="#5eead4" fill-opacity="0.09" stroke="#5eead4" stroke-opacity="0.3"/>
+  <circle cx="898" cy="557" r="6" fill="#5eead4"/>
+  <text x="920" y="564" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Nodes run two clients now</text>
+
+  <line x1="92" y1="690" x2="1308" y2="690" stroke="#94a3b8" stroke-opacity="0.22" stroke-width="1"/>
+  <text x="92" y="730" fill="#9fb3cf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="23">The Merge changed only how Ethereum agrees on blocks, while <tspan fill="#34d399" font-weight="700">execution kept running</tspan>.</text>
+</svg>

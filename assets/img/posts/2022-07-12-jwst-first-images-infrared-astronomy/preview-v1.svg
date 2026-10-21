@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="800" viewBox="0 0 1400 800" role="img" aria-labelledby="title desc">
+  <title id="title">JWST infrared optics and spectra</title>
+  <desc id="desc">A segmented mirror field, diffraction spikes, and a prism-like spectral fan represent Webb's first science images.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#04070f"/>
+      <stop offset="50%" stop-color="#11101f"/>
+      <stop offset="100%" stop-color="#1b1005"/>
+    </linearGradient>
+    <radialGradient id="goldGlow" cx="35%" cy="54%" r="46%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.42"/>
+      <stop offset="58%" stop-color="#92400e" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#04070f" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blueGlow" cx="72%" cy="42%" r="40%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.28"/>
+      <stop offset="74%" stop-color="#04070f" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="mirror" cx="45%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#fff7ad"/>
+      <stop offset="38%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </radialGradient>
+    <linearGradient id="spectrum" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="26%" stop-color="#fb7185"/>
+      <stop offset="54%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="9" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="800" fill="url(#bg)"/>
+  <rect width="1400" height="800" fill="url(#goldGlow)"/>
+  <rect width="1400" height="800" fill="url(#blueGlow)"/>
+
+  <g opacity="0.48" stroke="#94a3b8" stroke-width="1.6" fill="none">
+    <path d="M96 184 C254 104 420 124 560 214"/>
+    <path d="M94 612 C252 686 424 656 570 560"/>
+    <path d="M832 158 C982 118 1120 140 1284 204"/>
+    <path d="M840 626 C1004 664 1142 648 1304 568"/>
+  </g>
+
+  <g transform="translate(212 210)" filter="url(#soft)">
+    <g fill="url(#mirror)" stroke="#fff7ad" stroke-opacity="0.52" stroke-width="2.2">
+      <polygon points="160,0 226,38 226,114 160,152 94,114 94,38"/>
+      <polygon points="78,142 144,180 144,256 78,294 12,256 12,180" opacity="0.86"/>
+      <polygon points="242,142 308,180 308,256 242,294 176,256 176,180" opacity="0.92"/>
+      <polygon points="160,284 226,322 226,398 160,436 94,398 94,322" opacity="0.76"/>
+      <polygon points="-4,0 62,38 62,114 -4,152 -70,114 -70,38" opacity="0.68"/>
+      <polygon points="324,0 390,38 390,114 324,152 258,114 258,38" opacity="0.7"/>
+      <polygon points="-86,142 -20,180 -20,256 -86,294 -152,256 -152,180" opacity="0.52"/>
+      <polygon points="406,142 472,180 472,256 406,294 340,256 340,180" opacity="0.5"/>
+    </g>
+  </g>
+
+  <g transform="translate(708 230)" filter="url(#soft)">
+    <polygon points="42,110 138,52 138,168" fill="#020617" fill-opacity="0.5" stroke="#e9d5ff" stroke-width="2.4"/>
+    <path d="M138 70 C270 24 420 12 588 34" stroke="url(#spectrum)" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M138 104 C290 98 432 116 600 164" stroke="url(#spectrum)" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M138 140 C280 194 410 246 560 314" stroke="url(#spectrum)" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M42 110 C-10 108 -64 104 -118 98" stroke="#fbbf24" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.78"/>
+  </g>
+
+  <g fill="#f8fafc">
+    <circle cx="858" cy="300" r="5" fill="#fbbf24"/>
+    <circle cx="1004" cy="258" r="7" fill="#fb7185"/>
+    <circle cx="1168" cy="250" r="5" fill="#38bdf8"/>
+    <circle cx="948" cy="344" r="5" fill="#a78bfa"/>
+    <circle cx="1126" cy="386" r="7" fill="#38bdf8"/>
+    <circle cx="1022" cy="482" r="6" fill="#fbbf24"/>
+    <circle cx="1208" cy="548" r="5" fill="#fb7185"/>
+  </g>
+
+  <g opacity="0.72" stroke-linecap="round">
+    <path d="M418 408 H568" stroke="#fbbf24" stroke-width="3"/>
+    <path d="M493 333 V483" stroke="#fbbf24" stroke-width="3"/>
+    <path d="M444 360 L542 456" stroke="#fff7ad" stroke-width="2"/>
+    <path d="M542 360 L444 456" stroke="#fff7ad" stroke-width="2"/>
+  </g>
+
+  <g fill="#fbbf24" opacity="0.82">
+    <circle cx="112" cy="236" r="3"/>
+    <circle cx="156" cy="574" r="4"/>
+    <circle cx="650" cy="138" r="3" fill="#38bdf8"/>
+    <circle cx="1296" cy="150" r="4" fill="#fb7185"/>
+    <circle cx="742" cy="650" r="3" fill="#a78bfa"/>
+    <circle cx="1240" cy="672" r="3" fill="#38bdf8"/>
+  </g>
+</svg>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="788" viewBox="0 0 1400 788" role="img" aria-labelledby="title desc">
+  <title id="title">AlphaFold crosses the CASP14 threshold</title>
+  <desc id="desc">Two bars on a 0-to-100 GDT axis showing a 92.4 overall median and 87.0 on the hardest targets, beside what DeepMind reported at CASP14.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#0a0f1c"/><stop offset="100%" stop-color="#0f1a30"/>
+    </linearGradient>
+    <linearGradient id="sig" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#34d399"/><stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <pattern id="grid" width="58" height="58" patternUnits="userSpaceOnUse">
+      <path d="M58 0 H0 V58" fill="none" stroke="#9fb3cf" stroke-width="1" opacity="0.05"/>
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.35"/><stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1400" height="788" fill="url(#bg)"/>
+  <rect width="1400" height="788" fill="url(#grid)"/>
+  <ellipse cx="470" cy="430" rx="470" ry="280" fill="url(#glow)"/>
+  <text x="92" y="92" fill="#34d399" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="22" font-weight="700" letter-spacing="5">AI · STRUCTURAL BIOLOGY</text>
+  <text x="90" y="152" fill="#eef3fb" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="46" font-weight="800">AlphaFold crosses the CASP14 threshold</text>
+  <text x="92" y="198" fill="#93a7c4" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="25">Structure prediction shifts from a research goal to a working tool.</text>
+
+  <rect x="108" y="256" width="724" height="346" rx="20" fill="#ffffff" fill-opacity="0.035" stroke="#94a3b8" stroke-opacity="0.20" stroke-width="1.5"/>
+  <text x="138" y="302" fill="#8ea3bf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="700" letter-spacing="3">CASP14 GDT SCORE</text>
+
+  <!-- 0-100 axis: 100 gridline at y=345, baseline (0) at y=565, span 220px -->
+  <line x1="250" y1="345" x2="780" y2="345" stroke="#94a3b8" stroke-opacity="0.30" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="232" y="351" text-anchor="end" fill="#8ea3bf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="15">100</text>
+  <line x1="250" y1="565" x2="780" y2="565" stroke="#94a3b8" stroke-opacity="0.30" stroke-width="1"/>
+  <text x="232" y="571" text-anchor="end" fill="#8ea3bf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="15">0</text>
+
+  <!-- Bar 1: 92.4 of 100 -> 203px, top y = 565-203 = 362 -->
+  <rect x="345" y="362" width="120" height="203" rx="6" fill="url(#sig)"/>
+  <text x="405" y="348" text-anchor="middle" fill="#6ee7b7" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="26" font-weight="800">92.4</text>
+  <text x="405" y="588" text-anchor="middle" fill="#c8d6ec" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17">overall median</text>
+
+  <!-- Bar 2: 87.0 of 100 -> 191px, top y = 565-191 = 374 -->
+  <rect x="565" y="374" width="120" height="191" rx="6" fill="url(#sig)"/>
+  <text x="625" y="360" text-anchor="middle" fill="#6ee7b7" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="26" font-weight="800">87.0</text>
+  <text x="625" y="588" text-anchor="middle" fill="#c8d6ec" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17">hardest targets</text>
+
+  <text x="872" y="302" fill="#fbbf24" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="700" letter-spacing="3">WHAT WAS REPORTED</text>
+
+  <rect x="868" y="324" width="424" height="58" rx="14" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.3"/>
+  <circle cx="898" cy="353" r="6" fill="#fbbf24"/>
+  <text x="920" y="360" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Blind CASP14 contest</text>
+
+  <rect x="868" y="392" width="424" height="58" rx="14" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.3"/>
+  <circle cx="898" cy="421" r="6" fill="#fbbf24"/>
+  <text x="920" y="428" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">~2/3 of targets near lab level</text>
+
+  <rect x="868" y="460" width="424" height="58" rx="14" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.3"/>
+  <circle cx="898" cy="489" r="6" fill="#fbbf24"/>
+  <text x="920" y="496" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Single proteins, not complexes</text>
+
+  <rect x="868" y="528" width="424" height="58" rx="14" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.3"/>
+  <circle cx="898" cy="557" r="6" fill="#fbbf24"/>
+  <text x="920" y="564" fill="#e3ebf6" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="21">Full paper not yet published</text>
+
+  <line x1="92" y1="690" x2="1308" y2="690" stroke="#94a3b8" stroke-opacity="0.22" stroke-width="1"/>
+  <text x="92" y="730" fill="#9fb3cf" font-family="Inter,'Segoe UI',system-ui,sans-serif" font-size="23">For many single-protein targets, predictions are now <tspan fill="#34d399" font-weight="700">good enough to use</tspan> in experiments.</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 788" role="img" aria-labelledby="title desc">
+  <title id="title">Model evaluation surface</title>
+  <desc id="desc">Layered prompts and model outputs pass through evaluation gates and safety traces on a dark teal and rose field.</desc>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="48%" r="78%">
+      <stop offset="0" stop-color="#1b3440"/>
+      <stop offset=".42" stop-color="#0d1420"/>
+      <stop offset="1" stop-color="#07080d"/>
+    </radialGradient>
+    <linearGradient id="hot" x1="0" x2="1">
+      <stop offset="0" stop-color="#47f5d6"/>
+      <stop offset=".48" stop-color="#ffd166"/>
+      <stop offset="1" stop-color="#ff6b9a"/>
+    </linearGradient>
+    <filter id="glow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1400" height="788" fill="url(#bg)"/>
+  <g transform="translate(120 160)">
+    <g opacity=".95">
+      <path d="M40 40 H500 L560 100 V382 H40 Z" fill="#101b26" stroke="#47f5d6" stroke-width="3"/>
+      <path d="M500 40 V100 H560" fill="none" stroke="#47f5d6" stroke-width="3"/>
+      <rect x="90" y="108" width="330" height="18" rx="9" fill="#47f5d6" opacity=".75"/>
+      <rect x="90" y="162" width="390" height="14" rx="7" fill="#6b7e9d"/>
+      <rect x="90" y="206" width="350" height="14" rx="7" fill="#6b7e9d"/>
+      <rect x="90" y="250" width="420" height="14" rx="7" fill="#6b7e9d"/>
+      <rect x="90" y="308" width="220" height="42" rx="16" fill="#172a31" stroke="#ffd166" stroke-width="3"/>
+    </g>
+    <g transform="translate(660 16)" filter="url(#glow)">
+      <path d="M0 0 H310 L420 190 L310 380 H0 L110 190 Z" fill="#121827" stroke="url(#hot)" stroke-width="5"/>
+      <path d="M120 104 H295 M90 190 H330 M120 276 H295" stroke="#47f5d6" stroke-width="8" stroke-linecap="round"/>
+      <path d="M210 58 V322" stroke="#ff6b9a" stroke-width="4" stroke-dasharray="8 18"/>
+    </g>
+  </g>
+  <g transform="translate(900 140)">
+    <rect x="190" y="0" width="148" height="76" rx="22" fill="#111a25" stroke="#47f5d6" stroke-width="3"/>
+    <path d="M222 38 L252 62 L306 18" fill="none" stroke="#47f5d6" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="252" y="154" width="148" height="76" rx="22" fill="#1d1a14" stroke="#ffd166" stroke-width="3"/>
+    <path d="M326 175 V207 M326 225 V226" stroke="#ffd166" stroke-width="10" stroke-linecap="round"/>
+    <rect x="172" y="312" width="148" height="76" rx="22" fill="#21141c" stroke="#ff6b9a" stroke-width="3"/>
+    <path d="M216 334 L276 366 M276 334 L216 366" stroke="#ff6b9a" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g fill="none" stroke="url(#hot)" stroke-width="3" opacity=".72">
+    <path d="M680 350 C792 278 910 188 1090 178"/>
+    <path d="M704 386 C832 388 940 326 1152 332"/>
+    <path d="M680 424 C820 502 916 510 1072 490"/>
+  </g>
+</svg>

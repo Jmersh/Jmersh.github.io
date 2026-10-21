@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 788" role="img" aria-labelledby="title desc">
+  <title id="title">Quantum sampling benchmark</title>
+  <desc id="desc">A superconducting qubit chip sends sampled probability bars into verification lanes on a dark indigo background.</desc>
+  <defs>
+    <radialGradient id="bg" cx="48%" cy="52%" r="70%">
+      <stop offset="0" stop-color="#172a46"/>
+      <stop offset=".48" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#060812"/>
+    </radialGradient>
+    <linearGradient id="chip" x1="0" x2="1">
+      <stop offset="0" stop-color="#40d6ff"/>
+      <stop offset=".52" stop-color="#8f7dff"/>
+      <stop offset="1" stop-color="#ffb85c"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1400" height="788" fill="url(#bg)"/>
+  <g opacity=".32">
+    <path d="M60 635 C230 540 310 230 520 180 C780 118 908 346 1340 245" fill="none" stroke="#314a79" stroke-width="2"/>
+    <path d="M50 170 C248 260 378 580 625 568 C842 556 980 210 1345 370" fill="none" stroke="#273a61" stroke-width="2"/>
+  </g>
+  <g transform="translate(250 150) rotate(-8 260 245)">
+    <rect x="0" y="0" width="520" height="490" rx="42" fill="#0e1629" stroke="#2de2ff" stroke-width="3" opacity=".94"/>
+    <rect x="42" y="42" width="436" height="406" rx="24" fill="#111b31" stroke="#4c5f94" stroke-width="2"/>
+    <g stroke="url(#chip)" stroke-width="3" fill="none" filter="url(#glow)">
+      <path d="M112 105 H398"/>
+      <path d="M112 190 H398"/>
+      <path d="M112 275 H398"/>
+      <path d="M112 360 H398"/>
+      <path d="M155 78 V392"/>
+      <path d="M255 78 V392"/>
+      <path d="M355 78 V392"/>
+    </g>
+    <g fill="#ffb85c">
+      <circle cx="155" cy="105" r="9"/><circle cx="255" cy="190" r="9"/><circle cx="355" cy="275" r="9"/>
+      <circle cx="155" cy="360" r="9"/><circle cx="355" cy="105" r="9"/><circle cx="255" cy="360" r="9"/>
+    </g>
+    <g fill="#43dcff">
+      <circle cx="255" cy="105" r="7"/><circle cx="155" cy="275" r="7"/><circle cx="355" cy="190" r="7"/>
+    </g>
+  </g>
+  <g transform="translate(842 182)">
+    <path d="M0 56 C95 30 170 28 250 48 C322 66 392 68 486 37" fill="none" stroke="#8f7dff" stroke-width="3" opacity=".7"/>
+    <path d="M0 128 C86 154 162 146 248 108 C330 72 408 82 502 132" fill="none" stroke="#40d6ff" stroke-width="3" opacity=".7"/>
+    <path d="M0 210 C92 190 166 206 242 248 C326 294 416 270 502 222" fill="none" stroke="#ffb85c" stroke-width="3" opacity=".7"/>
+    <g fill="#10192b" stroke-width="3">
+      <rect x="88" y="300" width="44" height="130" rx="12" stroke="#40d6ff"/>
+      <rect x="160" y="260" width="44" height="170" rx="12" stroke="#8f7dff"/>
+      <rect x="232" y="332" width="44" height="98" rx="12" stroke="#ffb85c"/>
+      <rect x="304" y="230" width="44" height="200" rx="12" stroke="#40d6ff"/>
+      <rect x="376" y="284" width="44" height="146" rx="12" stroke="#8f7dff"/>
+    </g>
+    <g fill="#d7e5ff">
+      <circle cx="110" cy="96" r="7"/><circle cx="210" cy="126" r="6"/><circle cx="316" cy="84" r="7"/><circle cx="426" cy="118" r="6"/>
+      <circle cx="136" cy="220" r="6"/><circle cx="265" cy="244" r="7"/><circle cx="390" cy="220" r="6"/>
+    </g>
+  </g>
+</svg>

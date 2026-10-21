@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "lint:prose:slopless": "slopless \"_posts/*.md\"",
+    "lint:prose:textlint": "textlint \"_posts/*.md\"",
+    "lint:prose:drafts:slopless": "slopless \"_posts/2018-10-11-bert-bidirectional-language-pretraining.md\" \"_posts/2019-04-10-event-horizon-telescope-black-hole-image.md\" \"_posts/2021-07-15-alphafold-open-source-structure-prediction.md\" \"_posts/2021-12-10-log4shell-software-supply-chain.md\" \"_posts/2022-07-12-jwst-first-images-infrared-astronomy.md\" \"_posts/2022-09-15-ethereum-merge-proof-of-stake.md\"",
+    "lint:prose:drafts:slopless-style": "textlint --config .textlintrc.slopless.json \"_posts/2018-10-11-bert-bidirectional-language-pretraining.md\" \"_posts/2019-04-10-event-horizon-telescope-black-hole-image.md\" \"_posts/2021-07-15-alphafold-open-source-structure-prediction.md\" \"_posts/2021-12-10-log4shell-software-supply-chain.md\" \"_posts/2022-07-12-jwst-first-images-infrared-astronomy.md\" \"_posts/2022-09-15-ethereum-merge-proof-of-stake.md\"",
+    "lint:prose:drafts:textlint": "textlint \"_posts/2018-10-11-bert-bidirectional-language-pretraining.md\" \"_posts/2019-04-10-event-horizon-telescope-black-hole-image.md\" \"_posts/2021-07-15-alphafold-open-source-structure-prediction.md\" \"_posts/2021-12-10-log4shell-software-supply-chain.md\" \"_posts/2022-07-12-jwst-first-images-infrared-astronomy.md\" \"_posts/2022-09-15-ethereum-merge-proof-of-stake.md\""
+  },
+  "devDependencies": {
+    "@textlint-rule/textlint-rule-no-invalid-control-character": "^3.0.0",
+    "slopless": "^0.2.22",
+    "textlint": "^15.7.1",
+    "textlint-filter-rule-comments": "^1.3.0",
+    "textlint-rule-common-misspellings": "^1.0.1",
+    "textlint-rule-no-empty-section": "^1.1.0",
+    "textlint-rule-no-todo": "^2.0.1",
+    "textlint-rule-no-zero-width-spaces": "^1.0.1",
+    "textlint-rule-write-good": "^2.0.0",
+    "textlint-filter-rule-comments": "^1.2.2"
+  }
+}

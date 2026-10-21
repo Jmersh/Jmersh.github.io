@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="788" viewBox="0 0 1400 788" role="img" aria-labelledby="title desc">
+<title id="title">The machinery beneath the interface</title>
+<desc id="desc">Translucent software layers hover above a compact copper and teal processing plane with parallel lanes.</desc>
+<defs>
+  <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#100e13"/><stop offset="1" stop-color="#071e29"/></linearGradient>
+  <linearGradient id="slab" x2="1" y2="1"><stop stop-color="#382a2c"/><stop offset="1" stop-color="#121c26"/></linearGradient>
+  <linearGradient id="surface" x2="1" y2="1"><stop stop-color="#d9835e" stop-opacity=".18"/><stop offset="1" stop-color="#73d5cd" stop-opacity=".03"/></linearGradient>
+  <radialGradient id="halo"><stop stop-color="#ee8255" stop-opacity=".23"/><stop offset="1" stop-color="#ee8255" stop-opacity="0"/></radialGradient>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter>
+</defs>
+<rect width="1400" height="788" fill="url(#bg)"/>
+<ellipse cx="700" cy="487" rx="670" ry="310" fill="url(#halo)"/>
+<g stroke="#6a7e88" stroke-opacity=".1" fill="none"><path d="M0 620L1080 0M0 710L1235 0M0 800L1390 0M190 788L1400 90M345 788L1400 180M500 788L1400 270"/><path d="M0 200L1020 788M0 290L865 788M0 380L710 788M0 470L555 788"/></g>
+<path d="M188 505L810 173L1238 411L616 744Z" fill="#050d13"/>
+<path d="M188 466L810 134L1238 372L616 705Z" fill="url(#slab)" stroke="#c57e62" stroke-width="2"/>
+<path d="M188 466V505L616 744V705M616 705L1238 372V411" fill="#111a20" stroke="#735347" stroke-width="2"/>
+<g fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width="8">
+  <path d="M279 471L545 328L690 408L1027 228" stroke="#e9a17a"/>
+  <path d="M322 495L588 352L733 432L1070 252" stroke="#e9a17a"/>
+  <path d="M365 519L631 376L776 456L1113 276" stroke="#e9a17a"/>
+  <path d="M408 543L674 400L819 480L1156 300" stroke="#63cfc5"/>
+  <path d="M451 567L717 424L862 504L1199 324" stroke="#63cfc5"/>
+</g>
+<g fill="#fff3d8"><path d="M548 416l54-29 26 14-54 29z"/><path d="M591 440l54-29 26 14-54 29z"/><path d="M634 464l54-29 26 14-54 29z"/><path d="M677 488l54-29 26 14-54 29z"/><path d="M720 512l54-29 26 14-54 29z"/></g>
+<g stroke="#e9a17a" stroke-opacity=".38" stroke-width="2" stroke-dasharray="4 9"><path d="M310 328V449M768 84V205M1090 261V382M632 506V627"/></g>
+<path d="M310 328L768 84L1090 261L632 506Z" fill="url(#surface)" stroke="#d4b5a5" stroke-opacity=".6" stroke-width="2"/>
+<g fill="#e4c4b1" fill-opacity=".42"><path d="M390 313l123-66 20 11-123 66z"/><path d="M422 331l190-102 20 11-190 102z"/><path d="M454 349l150-80 20 11-150 80z"/><path d="M486 367l208-111 20 11-208 111z"/></g>
+<g fill="#72cfc8" fill-opacity=".5"><path d="M760 167l142 78-20 11-142-78z"/><path d="M723 187l142 78-20 11-142-78z"/><path d="M686 207l142 78-20 11-142-78z"/></g>
+<path d="M490 234L729 106L906 203L667 331Z" fill="#12191f" fill-opacity=".28" stroke="#dbe6e7" stroke-opacity=".17"/>
+<path d="M239 465L616 677L1201 364" fill="none" stroke="#eea270" stroke-width="8" opacity=".4" filter="url(#glow)"/>
+</svg>

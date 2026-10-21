@@ -1,0 +1,11 @@
+{% assign favicon_path = '/assets/img/favicons' | relative_url %}
+{% assign favicon_version = 'jm-large-20261020' %}
+<link rel="icon" type="image/png" sizes="96x96" href="{{ favicon_path }}/favicon-96x96.png?v={{ favicon_version }}">
+<link rel="icon" type="image/svg+xml" href="{{ favicon_path }}/favicon.svg?v={{ favicon_version }}">
+<link rel="shortcut icon" href="{{ favicon_path }}/favicon.ico?v={{ favicon_version }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ favicon_path }}/apple-touch-icon.png?v={{ favicon_version }}">
+<link rel="mask-icon" href="{{ favicon_path }}/safari-pinned-tab.svg?v={{ favicon_version }}" color="#119f9e">
+<meta name="msapplication-config" content="{{ favicon_path }}/browserconfig.xml?v={{ favicon_version }}">
+{% if site.pwa.enabled %}
+  <link rel="manifest" href="{{ favicon_path }}/site.webmanifest?v={{ favicon_version }}">
+{% endif %}
